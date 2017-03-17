@@ -1,0 +1,80 @@
+.form-search-list{
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right:0;
+	overflow:auto; 
+
+	>.list{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right:0;
+		overflow:auto;
+
+		>li{
+			position: relative;
+			padding-left: 28px;
+			height:32px;
+			line-height:32px;
+			cursor: pointer;
+
+			&:hover{
+				background-color: #f4f4f6;
+			}
+
+			>.name{
+				display: inline-block;
+				height: 32px;
+				width: 180px;
+				text-overflow:ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+				vertical-align: middle;
+			}
+
+			>.avatar{
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				border-radius: 20px;
+				background-size: 100%;
+				background-color: #f5f5f5;
+				vertical-align: middle;
+			}
+
+			>.check{
+				position: absolute;
+				display: inline-block;
+				top: 9px;
+				right: 15px;
+				width: 14px;
+				height: 14px;
+				background-size: 100%;
+				background-image: url(img/uncheck@2x.png?__sprite);
+			}
+
+			&.selected>.check{
+				background-image: url(img/check@2x.png?__sprite);
+			}
+		}
+
+	}
+
+	>.empty{
+		position: absolute;
+		display: none;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right:0;
+		text-align: center;
+	}
+
+
+
+}
+

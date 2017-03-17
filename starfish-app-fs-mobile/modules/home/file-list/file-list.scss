@@ -1,0 +1,27 @@
+.home-file-list{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	ul{
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		overflow-y: auto;
+		>.no-more,
+		>.more-loading,
+		>.more-error{
+		  display: none;
+		  font-size: .36rem;
+		  color: #989da6;
+		  text-align: center;
+		  height: 1.08rem;
+		  line-height: 1.08rem;
+		}
+	}
+}
+

@@ -1,0 +1,15 @@
+<div class="project-item-hd">
+	<h2 class="project-item-title" title="<%= name %>">
+		<%= name %>
+	</h2>
+</div>
+<div class="project-item-seq"></div>
+<div class="project-item-bd">
+	<div class="item-members <%= midClass %>">
+		<% var i = 0, len = members.length %>
+		<% for(; i < len; i++){ %>
+				<span class="item-member" style="background-image:url( <%= members[i].avatar %>?width=70&height=70 )" title="<%= members[i].name %>"></span>
+		<% } %>
+	</div>
+</div>
+<span class="item-detail JS-detail"></span>

@@ -1,0 +1,14 @@
+{
+  "name": "zepto",
+  "homepage": "https://github.com/bit-mobile/zepto",
+  "version": "0.0.1",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "9ffb47617ca5fd2cc467e23d1918f10edcb6e28a"
+  },
+  "_source": "git://github.com/bit-mobile/zepto.git",
+  "_target": "0.0.1",
+  "_originalSource": "bit-mobile/zepto"
+}

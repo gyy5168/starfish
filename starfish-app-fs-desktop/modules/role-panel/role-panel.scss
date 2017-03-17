@@ -1,0 +1,27 @@
+.role-panel{
+	position: absolute;
+	display: none;
+	width: 80px;
+	border-radius: 3px;
+	background-color: #fff;
+	border: 1px solid #d5d5d5;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	z-index: 10;
+	right: 0;
+	top: 32px;
+	li{
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		cursor: pointer;
+
+		&:hover{
+			color: #fff;
+			background-color: #3c9dda;
+		};
+	}
+	li.last{
+		border-top: 1px solid #e1e1e1;
+	}
+}

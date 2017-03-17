@@ -1,0 +1,155 @@
+.task-list-view {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    .toolbar {
+        font-size: 15px;
+        color: #383d48;
+        height: 66px;
+        line-height: 66px;
+        border-bottom: 1px solid #ebeeee;
+        padding-left: 12px;
+        padding-right: 16px;
+        .nav-item {
+            cursor: default;
+            display: inline-block;
+            max-width: 400px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .nav-item.index {
+            color: #383d48;
+            cursor: pointer;
+            text-decoration: none;
+            color: #52a9e7;
+        }
+        .statistics-btn {
+            position: absolute;
+            text-align: center;
+            width: 34px;
+            height: 34px;
+            top: 16px;
+            right: 148px;
+            background-size: 100%;
+            background-image: url(img/statistics@2x.png?__sprite);
+            cursor: pointer;
+            &:hover {
+                background-image: url(img/statistics-active@2x.png?__sprite);
+            }
+        }
+        .create-btn {
+            position: absolute;
+            text-align: center;
+            top: 15px;
+            right: 16px;
+            width: 116px;
+            height: 36px;
+            line-height: 36px;
+            border-radius: 2px;
+            color: #fff;
+            background-color: #52a9e7;
+            cursor: pointer;
+            &:hover {
+                background-color: #3677b0;
+            }
+            i {
+                display: inline-block;
+                width: 11px;
+                height: 11px;
+                background-size: 100%;
+                background-image: url(img/create.png?__sprite);
+            }
+        }
+    }
+    .filter {
+        height: auto;
+        min-height: 50px;
+        padding-left: 12px;
+        color: #9399a8;
+        font-size: 15px;
+        .filter-condition {
+            padding-top: 5px;
+            height: auto;
+            padding-bottom: 10px;
+            display: none;
+            .condition-item {
+                margin-right: 10px;
+                border-radius: 2px;
+                border: 1px solid #9399a8;
+                display: inline-block;
+                margin-top: 5px;
+                height: 25px;
+                line-height: 23px;
+                padding: 0px 5px;
+                font-size: 12px;
+                color: #fff;
+                background-color: rgba(#9399a8, .5);
+                position:relative;
+                padding-left: 5px;
+                padding-right: 20px;
+                .remove {
+                    display: inline-block;
+                    position:absolute;
+                    top: 8px;
+                    right: 5px;
+                    margin-left: 10px;
+                    width: 7px;
+                    height: 7px;
+                    vertical-align: middle;
+                    background-size: 7px;
+                    cursor: pointer;
+                    background-image: url(img/close.png?__sprite);
+                }
+            }
+        }
+    }
+    .filter-item {
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 30px;
+        border-bottom: 2px solid transparent;
+        height: 28px;
+        line-height: 31px;
+        cursor: pointer;
+        &:hover,
+        &.active {
+            color: #4395dc;
+        }
+        ;
+        &.active {
+            color: #4395dc;
+            border-bottom: 2px solid #4395dc;
+        }
+    }
+    >.content-main {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    >.content-main.mini {
+        right: 378px;
+    }
+    >.content-main>.list {
+        position: absolute;
+        left: 0;
+        top: 116px;
+        right: 0;
+        bottom: 0;
+    }
+    .task-create,
+    .task-detail,
+    .statistics {
+        position: absolute;
+        display: none;
+        width: 378px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-left: 1px solid #fafafa;
+    }
+}

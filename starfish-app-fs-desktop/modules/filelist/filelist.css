@@ -1,0 +1,31 @@
+.filelist{
+	position: absolute;
+	/*display: none;*/
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+	padding-left: 15px;
+}
+
+.filelist-empty{
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+}
+.filelist-empty p{
+	position: absolute;
+	width: 100%;
+	color: #969696;
+	font-size: 18px;
+	top:280px; 
+	text-align: center;
+}
+
+
+

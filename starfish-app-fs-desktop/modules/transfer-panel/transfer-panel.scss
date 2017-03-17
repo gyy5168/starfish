@@ -1,0 +1,92 @@
+.transfer-panel{
+	position: absolute;
+	display: none;
+	top: 78px;
+	right: 20px;
+	width: 315px;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+	overflow: auto;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0,0,0,.2);
+	z-index:100;
+
+	.transfer-hd{
+		height: 52px;
+		line-height: 52px;
+		border-bottom: 1px solid #e5e5e5;
+		
+		h2{
+			text-align: center;
+			margin: 0 36px;
+			font-weight: normal;
+			font-size: 15px;
+			color: #383d48;
+		}
+		span{
+			display: inline-block;
+			position: absolute;
+			top: 16px;
+			right: 16px;
+			width: 20px;
+			height: 20px;
+			background-image: url(img/close@2x.png);
+			background-size: 100%;
+			cursor: pointer;
+			&:hover{
+				background-image:url(img/close-active@2x.png);
+			};
+		}
+	}
+
+	.transfer-tabs{
+		height: 40px;
+		line-height: 40px;
+		font-size: 15px;
+		color: #74787e;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-bottom: 1px solid #e5e5e5;
+
+		span{
+			cursor: pointer;
+
+			&:active,
+			&.selected{
+				color: #3d9ddb;
+			}
+		}
+
+		.seq{
+			margin-left: 10px;
+			margin-right: 10px;
+			color: #7c8999;
+			margin-top: -2px;
+		}
+	}
+
+	.transfer-tab-items{
+		position: relative;
+
+		.transfer-tab-item{
+			position: relative;
+			height: 350px;
+			
+			&.hide{
+				display: none;
+			}
+
+			.empty{
+				line-height: 42px;
+				height: 42px;
+				font-size: 15px;
+				color: #74787e;
+				padding-left: 20px;
+				margin: 0;
+			}
+		}
+	}
+}
+
+
+

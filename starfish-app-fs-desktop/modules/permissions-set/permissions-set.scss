@@ -1,0 +1,44 @@
+.permissions-set{
+	font-size: 13px;
+	color: #383d48;
+
+	.modal-bd{
+		min-height: 200px;
+	}
+	.content{
+		position: relative;
+		padding:20px;
+	}
+
+	input{
+		width: 100%;
+		height: 26px;
+		border-radius: 26px;
+		border: 1px solid #e1e1e1;
+		outline: 0;
+		padding: 0 15px;
+		color: #383d48;
+		font-size: 13px;
+	}
+
+	.search{
+		margin-bottom: 15px;
+	}
+
+	.permissions-info{
+		span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-size: 100%;
+			background-image: url(img/detail@2x.png?__sprite);
+			vertical-align: middle;
+			margin-top: -2px;
+
+			&:hover{
+				background-image: url(img/detail-active@2x.png?__sprite);
+			}
+		}
+	}
+	
+}

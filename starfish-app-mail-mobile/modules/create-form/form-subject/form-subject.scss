@@ -1,0 +1,33 @@
+.form-subject{
+	position: relative;
+	margin-left: .3rem;
+	border-bottom: 1px solid #eaf1f5;
+	height: .88rem;
+	line-height: 0;
+
+	>label{
+		position: absolute;
+		display: inline-block;
+		height: .88rem;
+		line-height: .88rem;
+		top: 0;
+		left: 0;
+		font-size: .34rem;
+		color: #8f959e;
+	}
+
+	>input{
+		font-size: .28rem;
+		color: #282828;
+		height: .88rem;
+		width: 100%;
+		padding-left: .9rem;
+		border: none;
+		outline: none;
+		background-color: transparent;
+	}
+}
+
+
+
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Starfish-专业的企业沟通平台</title>
+    <link href="css/base.scss" rel="stylesheet">
+    <link href="css/function.scss" rel="stylesheet">
+    <meta name="keywords" content="比特兄弟,Starfish,企业内部通讯录,企业内部微信,开源软件,开放源码,企业即时通讯软件,Starfish.im">
+    <meta name="description" content="Starfish是一个干净纯粹的企业内部沟通平台，让员工不被生活噪音所干扰。基础服务免费，服务开放，软件开源，数据归企业所有，保证企业能够随时取走全部消息数据。">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="nav block">
+        <div class="block-content">
+            <div class="nav-logo">
+                <a href="/index.html">
+                </a>
+            </div>
+            <ul class="nav-btns">
+                <a href="/pages/manage/index.html" target="_blank" class="org-manage">组织管理</a>
+                <a href="/pages/register/index.html" target="_blank" class="org-register">组织注册</a>
+            </ul>
+            <ul class="nav-tabs">
+                <li><a href="/index.html">首页</a></li>
+                <li><a href="/download.html">下载</a></li>
+                <li class="active">功能</li>
+                <li><a href="/price.html">价格</a></li>
+                <li class="unready">SDK</li>
+                <li><a href="/about-us.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="banner block first-block">
+        <div class="block-content">
+            <span class="banner-text"></span>
+            <div class="banner-register">
+                <input placeholder="请输入手机号">
+                <button class="home-button-common">组织注册</button>
+            </div>
+        </div>
+    </div> -->
+    <div class="function block first-block">
+        <div class="block-title">
+            <img src="img/function/function-title.png">
+        </div>
+        <div class="block-content">
+            <!-- <div class="block-title">核心功能</div>
+            <div class="block-divide">
+                <span class=line></span><span class="point"></span><span class=line></span>
+            </div> -->
+            <div class="function-group first-item">
+                <div class="function-item chat first-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">单聊、群聊、部门聊</span>
+                    <span class="function-item-info">可以跟特定的成员进行单聊，也可以拉几个不同的人进行群聊，还可以跟你所在的部门发起部门聊</span>
+                </div>
+                <div class="function-item message">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">应用消息</span>
+                    <span class="function-item-info">会话中的应用消息可以直接在会话详情中进行浏览和处理，无需跳转到外部浏览器</span>
+                </div>
+                
+                <div class="function-item cancel last-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">消息撤销</span>
+                    <span class="function-item-info">消息发送成功后，可在30分钟之内进行撤销，对方看不到被撤销的消息</span>
+                </div>
+            </div>
+            <div class="function-group">
+                <div class="function-item at first-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">@某人</span>
+                    <span class="function-item-info">在群聊或部门聊中可以@某人，这样被@的人就会收到这个消息的提醒</span>
+                </div>
+                <div class="function-item receipt">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">已读回执</span>
+                    <span class="function-item-info">消息谁已读且在什么时间读，可以通过已读回执来查看</span>
+                </div>
+                <div class="function-item whisper last-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">悄悄话模式</span>
+                    <span class="function-item-info">在单聊中可以开启悄悄话模式，在悄悄话模式中，看不到对方的资料且发出的消息阅后即焚</span>
+                </div>
+            </div>
+            <div class="function-group">
+                <div class="function-item gift first-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">红包</span>
+                    <span class="function-item-info">通过发送拼手气红包和定向红包，可以给同事发放过节红利、优秀员工奖金等</span>
+                </div>
+                <div class="function-item location">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">发送地理位置</span>
+                    <span class="function-item-info">将自己当前所在的位置或选定的位置分享给同事</span>
+                </div>
+                <div class="function-item folder last-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">大文件断点续传</span>
+                    <span class="function-item-info">在会话中发送文件，当文件传输过程中出现异常，再次传输时可以直接从上一次传输的位置继续传输</span>
+                </div>
+            </div>
+            <div class="function-group">
+                <div class="function-item screenshot first-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">屏幕截图</span>
+                    <span class="function-item-info">通过快捷键或是截图按钮，来进行屏幕截图操作，并且可快速地把截图发给对方</span>
+                </div>
+                <div class="function-item meeting">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">实时会议</span>
+                    <span class="function-item-info">支持百人级语音会议、视频会议，通话流畅，并且在会议过程中可进行聊天、文件传输、屏幕共享等</span>
+                </div>
+                <div class="function-item structure last-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">组织架构</span>
+                    <span class="function-item-info">通过组织架构对人员职能进行清晰的划分，同时支持无限级的部门层级</span>
+                </div>
+            </div>
+            <div class="function-group">
+                <div class="function-item external-contact first-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">外部联系人</span>
+                    <span class="function-item-info">外部联系人可以看到部分成员的摘要信息，并且只能和部分成员进行沟通和协作</span>
+                </div>
+                <div class="function-item guest">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">访客</span>
+                    <span class="function-item-info">访客只能在特定的讨论组里进行讨论，只能看到组内成员的摘要信息</span>
+                </div>
+                <div class="function-item search last-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">全局搜索</span>
+                    <span class="function-item-info">通过搜索关键字定位到你需要找的人、讨论组、部门、或是消息</span>
+                </div>
+            </div>
+            <div class="function-group">
+                <div class="function-item device first-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">设备管理</span>
+                    <span class="function-item-info">通过任何一台设备查看之前登录过的设备情况，同时还可以对设备进行下线操作</span>
+                </div>
+                <div class="function-item organize">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">多组织</span>
+                    <span class="function-item-info">一个账号可以拥有多个组织，并且可以方便的在多个组织之间进行切换</span>
+                </div>
+                <div class="function-item multi-end last-item">
+                    <span class="function-item-icon"></span>
+                    <span class="function-item-title">多端实时同步</span>
+                    <span class="function-item-info">在任何一个端收发的消息，其它端都能实时看到，并且实现新消息计数同步</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact block">
+        <div class="block-content">
+            <div class="logo">
+                <img src="img/logo-footer.png">
+            </div>
+            <div class="contact-us">
+                <span class="contact-title">联系我们</span>
+                <span class="contact-item phone">010-62966383</span>
+                <span class="contact-item email">support@starfish.im</span>
+            </div>
+            <div class="address">
+                <span class="contact-title">&nbsp;</span>
+                <span class="contact-item location">北京市-海淀区-上地三街9号-嘉华大厦</span>
+                <span class="contact-item">沈阳市-浑南新区-天赐街5-1国贸中心大厦805</span>
+                <span class="contact-item">南京市-玄武区-珠江路88号-A座-4028室</span>
+            </div>
+            <div class="focus-us">
+                <span class="contact-title">关注我们</span>
+                <span class="contact-item wechat">官方微信：bitfamily</span>
+                <span class="wechat-code"></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer block">
+        <div class="block-content">
+            <span class="copyright">Copyright@2015比特兄弟（北京）科技有限公司 京ICP备13039396</span>
+        </div>
+    </div>
+</body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?7284f1b8df8c176b2136a6683e5ec7e0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</html>

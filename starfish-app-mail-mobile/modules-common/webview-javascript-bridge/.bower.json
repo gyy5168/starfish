@@ -1,0 +1,14 @@
+{
+  "name": "webview-javascript-bridge",
+  "homepage": "https://github.com/bit-mobile/webview-javascript-bridge",
+  "version": "0.0.1",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "5993abd94c62aa59df7fd850b1616de346b42472"
+  },
+  "_source": "git://github.com/bit-mobile/webview-javascript-bridge.git",
+  "_target": "~0.0.1",
+  "_originalSource": "bit-mobile/webview-javascript-bridge"
+}

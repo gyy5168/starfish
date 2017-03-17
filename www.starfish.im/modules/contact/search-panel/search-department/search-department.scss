@@ -1,0 +1,99 @@
+.search-department {
+    .department-content {
+        ul {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 134px;
+            overflow: auto;
+        }
+        li.picked,
+        li:hover {
+            background: #eeeeee;
+        }
+        .department-head,
+        li {
+            font-size: 0;
+            border-bottom: 1px solid #ededed;
+            padding-left: 20px;
+            cursor: pointer;
+            span {
+                vertical-align: middle;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                font-size: 12px;
+                color: #333;
+            }
+            .department-name {
+                width: 150px;
+                text-indent: 40px;
+                margin-right: 90px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                position: relative;
+                i {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    content: " ";
+                    border-radius: 50%;
+                    top: 5px;
+                    left: 0px;
+                    background-position: left center;
+                    background-size: 30px 30px;
+                    background-repeat: no-repeat;
+                }
+            }
+            .department-belong {
+                width: 110px;
+                margin-right: 90px;
+            }
+            .department-sub {
+                width: 40px;
+                margin-right: 50px;
+            }
+            .department-members {
+                width: 30px;
+            }
+        }
+        .department-head {
+            span {
+                color: #999;
+            }
+        }
+    }
+    .no-more,
+    .more-loading,
+    .more-error {
+        display: none;
+        font-size: 12px;
+        color: #989da6;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #e5e5e7;
+    }
+    .more-error,
+    .more-loading {
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .more-loading {
+        background: url("img/loading.gif") center no-repeat;
+        background-size: 24px 24px;
+    }
+    .common-empty-large {
+        .icon {
+            background-image: url(img/empty.png);
+        }
+    }
+    .common-loading-large,.common-error-large,.common-empty-large{
+        top: 134px;
+    }
+}

@@ -1,0 +1,23 @@
+.common-loading-small {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+
+	.icon{
+		position: absolute;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-size: 100%;
+		background-image: url(img/loading.gif);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}

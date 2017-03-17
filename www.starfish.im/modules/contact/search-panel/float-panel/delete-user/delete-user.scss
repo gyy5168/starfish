@@ -1,0 +1,36 @@
+/*  @require modules-common/ui/button/button.scss  */
+
+.delete-user-modal {
+    display: none;
+    .modal-dialog {
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+    }
+    .confirm-bd {
+        margin: 26px 20px 0px 20px;
+        line-height: 19px;
+        font-size: 13px;
+        color: #383d48;
+        text-align: left;
+        span {
+            height: 45px;
+            line-height: 45px;
+            background: url(img/delete-tip.png) no-repeat 0 center;
+            padding-left: 55px;
+            display: inline-block;
+        }
+    }
+    .confirm-ft {
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        .confirm-ok {
+            margin-left: 15px;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+.task-filter{
+
+    z-index:10;
+	font-size: 13px;
+	color: #383d48;
+
+	.filter-content{
+		height: 410px;
+	}
+
+	.form{
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 50px;
+		padding: 14px 20px 0 20px;
+		overflow: auto;
+	}
+
+	.form-group{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.group-hd{
+		height: 29px;
+		line-height: 29px;
+		.title{
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+		.down-icon{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background-size: 100%;
+			background-image: url(img/down.png?__sprite);
+			vertical-align: middle;
+			&:hover{
+				background-image: url(img/down-active.png?__sprite);
+			};
+		}
+	}
+
+	.people .group-content{
+		line-height: 55;
+
+		li{
+			position: relative;
+			display: inline-block;
+
+			img{
+				width: 40px;
+				height: 40px;
+				border-radius: 40px;
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+
+			.name{
+				display: inline-block;
+				width: 52px;
+				vertical-align: middle;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+				overflow:hidden;
+			}
+			
+			.remove{
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				visibility: hidden;
+				vertical-align: middle;
+				visibility: hidden;
+				background-size: 100%;
+				background-image:url(img/close.png?__sprite);
+				cursor: pointer;
+				&:hover{
+					background-image:url(img/close-active.png?__sprite);
+				};
+			}
+		}
+
+		li:hover{
+			.remove{
+				visibility: visible;
+			}
+		}
+	}
+
+	.status .group-content{
+		height: 32px;
+		line-height: 32px;
+	}
+	.status .item{
+		margin-right: 28px;
+		cursor: pointer;
+		i{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			vertical-align: middle;
+			margin-right: 10px;
+			margin-top: -3px;
+			background-size: 100%;
+			background-image:url(img/uncheck.png?__sprite);
+		}
+		&.selected i{
+			background-image:url(img/check.png?__sprite);
+		}
+
+	}
+
+	.btns{
+		position: absolute;
+		height: 50px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		margin-top: 10px;
+		text-align: center;
+
+		button{
+			width: 64px;
+			height: 30px;
+			line-height: 28px;
+			border-radius: 2px;
+			text-align: center;
+			padding: 0;
+			cursor: pointer;
+			outline: none;
+		}
+
+		.btn-ok{
+			margin-left: 10px;
+			color: #fff;
+			background-color: #4395dc;
+			border: none;
+
+			&:hover{
+				background-color: #3677b0;
+			};
+		}
+
+		.btn-cancel{
+			color: #383d48;
+			border: 1px solid #c9ccd3;
+			background-color: #fafafa;
+			&:hover{
+				background-color: #e5e5e5;
+			};
+		}
+	}
+}

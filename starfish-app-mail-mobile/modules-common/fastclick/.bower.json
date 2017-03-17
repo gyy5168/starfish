@@ -1,0 +1,14 @@
+{
+  "name": "fastclick",
+  "homepage": "https://github.com/bit-mobile/fastclick",
+  "version": "0.0.1",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "047523bc8d93851b293ead40c0343a7d199b012b"
+  },
+  "_source": "git://github.com/bit-mobile/fastclick.git",
+  "_target": "~0.0.1",
+  "_originalSource": "bit-mobile/fastclick"
+}

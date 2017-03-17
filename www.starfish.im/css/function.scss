@@ -1,0 +1,149 @@
+.function {
+    background-color: #fff;
+    height: 1905px;
+    .block-title{
+        height: 240px;
+        width: 100%;
+        background:#f4f4f4;
+        img{
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: 75px;
+        }
+    }
+    .function-group {
+        clear: both;
+        height: 260px;
+        &.first-item {
+            margin-top: 80px;
+        }
+        .function-item {
+            width: 385px;
+            height: 200px;
+            float: left;
+            margin-left: 35px;
+            padding: 30px 30px 0px;
+            &.first-item {
+                margin-left: 0;
+            }
+            &.last-item {
+                float: right;
+            }
+            .function-item-icon {
+                width: 325px;
+                display: inline-block;
+                height: 50px;
+                background: 0px 0px no-repeat;
+                background-size:50px 50px;
+            }
+            .function-item-title {
+                width: 325px;
+                display: inline-block;
+                font-size: 16px;
+                font-family: "FZLTXihei";
+                color: #333;
+                height: 60px;
+                line-height: 60px;
+                font-weight: bold;
+            }
+            .function-item-info {
+                width: 325px;
+                display: inline-block;
+                font-size: 14px;
+                color: #333;
+                line-height: 25px;
+            }
+            &.chat {
+                .function-item-icon {
+                    background-image: url("../img/function/chat.png?__sprite");
+                }
+            }
+            &.message {
+                .function-item-icon {
+                    background-image: url("../img/function/message.png?__sprite");
+                }
+            }
+            &.meeting {
+                .function-item-icon {
+                    background-image: url("../img/function/meeting.png?__sprite");
+                }
+            }
+            &.receipt {
+                .function-item-icon {
+                    background-image: url("../img/function/receipt.png?__sprite");
+                }
+            }
+            &.cancel {
+                .function-item-icon {
+                    background-image: url("../img/function/cancel.png?__sprite");
+                }
+            }
+            &.whisper {
+                .function-item-icon {
+                    background-image: url("../img/function/whisper.png?__sprite");
+                }
+            }
+            &.gift {
+                .function-item-icon {
+                    background-image: url("../img/function/gift.png?__sprite");
+                }
+            }
+            &.location {
+                .function-item-icon {
+                    background-image: url("../img/function/location.png?__sprite");
+                }
+            }
+            &.folder {
+                .function-item-icon {
+                    background-image: url("../img/function/folder.png?__sprite");
+                }
+            }
+            &.screenshot {
+                .function-item-icon {
+                    background-image: url("../img/function/screenshot.png?__sprite");
+                }
+            }
+            &.at {
+                .function-item-icon {
+                    background-image: url("../img/function/at.png?__sprite");
+                }
+            }
+            &.structure {
+                .function-item-icon {
+                    background-image: url("../img/function/structure.png?__sprite");
+                }
+            }
+            &.external-contact {
+                .function-item-icon {
+                    background-image: url("../img/function/external-contact.png?__sprite");
+                }
+            }
+            &.guest {
+                .function-item-icon {
+                    background-image: url("../img/function/guest.png?__sprite");
+                }
+            }
+            &.search {
+                .function-item-icon {
+                    background-image: url("../img/function/search.png?__sprite");
+                }
+            }
+            &.device {
+                .function-item-icon {
+                    background-image: url("../img/function/device.png?__sprite");
+                }
+            }
+            &.organize {
+                .function-item-icon {
+                    background-image: url("../img/function/organize.png?__sprite");
+                }
+            }
+            &.multi-end {
+                .function-item-icon {
+                    background-image: url("../img/function/multi-end.png?__sprite");
+                }
+            }
+        }
+    }
+}

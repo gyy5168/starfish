@@ -1,0 +1,71 @@
+.prompt{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	letter-spacing: 2px;
+
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 11;
+}
+
+.prompt .prompt-panel{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1.75rem;
+	margin-left: -3.04rem;
+
+	width: 6.08rem;
+	height: 3.5rem;
+
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: .25rem;
+
+	text-align: center;
+	font-size: .34rem;
+	color: #0079ff;
+}
+
+.prompt span{
+	display: inline-block;
+	text-align: center;
+}
+
+.prompt-text{
+	margin-top: .48rem;
+	color: #484b50;
+}
+
+.prompt input{
+	margin-top: .42rem;
+	width: 5.36rem;
+	height: .66rem;
+
+	padding: .05rem 0 .05rem .24rem;
+	font-size: .32rem;
+	outline: none;
+	border: 1px solid #a2a2a2;
+	border-radius: .11rem;
+}
+
+.prompt-ft{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-top: 1px solid #ced5da;
+}
+
+.prompt-ok,
+.prompt-cancel{
+	width: 2.92rem;
+	height: 1rem;
+	line-height: 1rem;
+}
+
+.prompt-cancel{
+	border-right: 1px solid #ced5da;
+}

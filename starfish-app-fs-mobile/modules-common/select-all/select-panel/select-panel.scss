@@ -1,0 +1,61 @@
+.people-all-select-panel{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	.category-panel{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	.category-panel-item{
+		position: relative;
+		font-size: .36rem;
+		color:#393d48;
+
+		>.item-content{
+			height: 1.28rem;
+			line-height: 1.28rem;
+			margin-left: .96rem;
+			border-bottom: 1px solid rgba(#919397, .5);
+		}
+
+		>.icon{
+			position: absolute;
+			height: 1.28rem;
+			width: .96rem;
+			left: 0;
+			top: 0;
+		}
+
+		>.arrow-right{
+			position: absolute;
+			width: .2rem;
+			height: 1.28rem;
+			right: .3rem;
+			top: 0;
+			background: url(img/arrow-right.png) no-repeat center center;
+			background-size: .2rem .34rem;
+		}
+	}
+
+	.icon-people{
+		background: url(img/people.png) no-repeat center center;
+		background-size: .5rem .48rem;
+	}
+
+	.icon-department{
+		background: url(img/department.png) no-repeat center center;
+		background-size: .64rem .54rem;
+	}
+
+	.icon-group{
+		background: url(img/group.png) no-repeat center center;
+		background-size: .56rem .5rem;
+	}
+}

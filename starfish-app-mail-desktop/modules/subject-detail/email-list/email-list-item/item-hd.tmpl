@@ -1,0 +1,28 @@
+<span class="icon-read JS-read"></span>
+
+<div class="detail-hd JS-detail-hd">
+	<span class="detail-name"><%= name %></span>
+</div>
+
+<!-- 时间 -->
+<span class="detail-time"><%= time %></span>
+
+<!-- 操作 -->
+<div class="detail-action">
+	<span class="reply-btn JS-reply" title="回复"><i></i></span><span class="drop-btn JS-drop-btn"><i></i></span>
+	<ul class="JS-action-panel">
+		<li data-action="reply">
+			<span class="reply-icon"></span>回复
+		</li>
+		<li data-action="reply-all" class="<%= replyAllClass %>">
+			<span class="reply-all-icon"></span>回复全部
+		</li>
+		<li data-action="forward">
+			<span class="forward-icon"></span>转发
+		</li>
+		<li data-action="remove">
+			<span class="remove-icon"></span>删除
+		</li>
+	</ul>
+</div>
+

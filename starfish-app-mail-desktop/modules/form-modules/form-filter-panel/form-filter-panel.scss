@@ -1,0 +1,55 @@
+.form-filter-panel{
+	position: absolute;
+	display: none;
+	border-radius: 5px;
+	border: 1px solid #cbcbcb;
+	background-color: #fff;
+	width: 300px;
+	overflow-y: auto;
+	z-index: 10;
+	font-size: 13px;
+	border-radius: 2px;
+
+	>.item{
+		height: 32px;
+		line-height: 32px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		cursor: pointer;
+		padding-right: 10px;
+
+		img{
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			vertical-align: middle;
+			margin-left: 16px;
+		}
+
+		.name{
+			margin-left: 12px;
+			color: #383d48;
+		}
+
+		.text{
+			color: #74787e;
+			font-size: 14px;
+		}
+
+		&.selected{
+			background-color: #3d9ddb;
+			.name{
+				color: #fff;
+			}
+			.text{
+				color: #fff;
+			}
+		}
+
+		&.show{
+			display: block;
+		}
+	}
+}
+

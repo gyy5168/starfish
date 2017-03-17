@@ -1,0 +1,44 @@
+.task-list{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom:0;
+	overflow-y: auto; 
+
+	.more-loading,
+	.more-error,
+	.empty,
+	.no-more{
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+	}
+	.task-placeholder{
+		height: 50px;
+		margin-left: 12px;
+		margin-right: 16px;
+		background-color: rgba(#4395dc, .14);
+	}
+	
+}
+
+.drag-num{
+	position: absolute;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	background-color: rgba(#4395dc, .7);
+	z-index: 999;
+}
+
+	
+
+
+
+

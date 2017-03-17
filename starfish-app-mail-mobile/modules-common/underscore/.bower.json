@@ -1,0 +1,14 @@
+{
+  "name": "underscore",
+  "homepage": "https://github.com/bit-mobile/underscore",
+  "version": "0.0.1",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "504690d0a31985b20e342e9601ab678fe1f25dff"
+  },
+  "_source": "git://github.com/bit-mobile/underscore.git",
+  "_target": "~0.0.1",
+  "_originalSource": "bit-mobile/underscore"
+}

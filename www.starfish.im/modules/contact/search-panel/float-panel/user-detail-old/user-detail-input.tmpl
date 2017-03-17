@@ -1,0 +1,41 @@
+        <p class="input-name">
+            <label>姓名</label>
+            <input type="text" value="<%= data.name %>"
+
+        </p>
+        <div class="name-info error-info">输入姓名不能为空</div>
+        <p class="input-sex">
+            <label>性别</label>
+            <% var male,female %>
+            <% if(data.gender==1) {%>
+                <% female="selected" %>
+                <% male="" %>
+            <%} else{ %>
+                 <% male="selected" %>
+                 <% female="" %>
+            <% } %>
+            <span class="male <%= male %>">男</span>
+            <span class="female <%= female %>">女</span>
+        </p>
+
+        <p class="text-sex">
+               <label>电话</label>
+               <span><%= data.phone %></span>
+        </p>
+
+        <p class="input-department">
+            <label>部门</label>
+
+            <input type="text"  readonly="readonly" class="" value="<%= data.departments.join(",") %>"/>
+        </p>
+
+        <p class="input-position">
+            <label>职位</label>
+            <input type="text" class="" value="<%= data.position %>" placeholder="请输入职位信息">
+        </p>
+        <div class="department-info error-info">输入职位不能超过30个字</div>
+        <p class="input-intro">
+            <label>简介</label>
+            <textarea placeholder="请输入简介信息"><%= data.intro %></textarea>
+        </p>
+         <div class="intro-info error-info">个人简介不能超过300个字</div>

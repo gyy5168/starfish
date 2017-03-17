@@ -1,0 +1,25 @@
+.toolbar{
+    position: relative;
+    height: 80px;
+	border-bottom: 1px solid #e2ecf0;
+
+    .create-btn{
+        margin-top: 22px;
+        margin-left: 20px;
+        i{
+            background-image: url(img/edit@2x.png?__sprite);
+        }
+    }
+
+    .setting-btn{
+        position: absolute;
+        display: inline-block;
+        width:32px;
+        height: 32px;
+        right: 20px;
+        top: 24px;
+        background-size: 100%;
+        background-image: url(img/set@2x.png?__sprite);
+        cursor: pointer;
+    }
+}

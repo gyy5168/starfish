@@ -1,0 +1,357 @@
+.register-view {
+    height: 100%;
+    min-width:1226px;
+    .header {
+        width: 100%;
+        height: 80px;
+        background-color: #283b53;
+        .logo {
+            height: 80px;
+            line-height: 80px;
+            background: url(img/logo.png) no-repeat 0 center;
+            width: 1226px;
+            margin: 0 auto;
+        }
+    }
+    .footer {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #283b53;
+        color: #a2b7d0;
+        font-size: 14px;
+        text-align: center;
+    }
+    .container {
+        min-height: 100%;
+        width: 1226px;
+        margin: -80px auto -40px;
+        padding-top: 100px;
+        padding-bottom: 60px;
+        font-size: 16px;
+        .steps {
+            width: 100%;
+            height: 80px;
+            line-height: 80px;
+            background-color: #ddefff;
+            .step-item {
+                width: 33%;
+                text-align: center;
+                color: #283b53;
+                display: inline-block;
+                span {
+                    display: inline-block;
+                    padding-left: 50px;
+                }
+            }
+            .step-item.selected {
+                color: #72bbff;
+            }
+            .step-first {
+                span {
+                    background: url(img/step-first-normal.png) no-repeat 0 center;
+                }
+            }
+            .step-first.selected {
+                span {
+                    background: url(img/step-first-selected.png) no-repeat 0 center;
+                }
+            }
+            .step-second {
+                span {
+                    background: url(img/step-second-normal.png) no-repeat 0 center;
+                }
+            }
+            .step-second.selected {
+                span {
+                    background: url(img/step-second-selected.png) no-repeat 0 center;
+                }
+            }
+            .step-finish {
+                span {
+                    background: url(img/step-finish-normal.png) no-repeat 0 center;
+                }
+            }
+            .step-finish.selected {
+                span {
+                    background: url(img/step-finish-selected.png) no-repeat 0 center;
+                }
+            }
+        }
+        .content {
+            .content-item {
+                margin-top: 50px;
+                display: none;
+                label {
+                    color: #666;
+                    height: 40px;
+                    line-height: 40px;
+                }
+                input {
+                    outline: none;
+                    border: 1px solid #ccc;
+                    width: 350px;
+                    height: 40px;
+                    line-height: 40px;
+                    color: #333;
+                    margin-left: 20px;
+                    padding-left: 10px;
+                    font-size: 14px;
+                }
+                input:focus {
+                    border: 1px solid #72bbff;
+                }
+                input::-webkit-input-placeholder {
+                    color: #c4c4c4 !important;
+                }
+                input:-moz-placeholder {
+                    color: #c4c4c4 !important;
+                }
+                input::-moz-placeholder {
+                    color: #c4c4c4 !important;
+                }
+                input:-ms-input-placeholder {
+                    color: #c4c4c4 !important;
+                }
+                button {
+                    height: 40px;
+                    line-height: 38px;
+                    border-radius: 3px;
+                    outline: none;
+                    border: none;
+                    color: #fff;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+                button.disabled {
+                    background-color: #dfdfdf;
+                }
+                .content-bottom {
+                    margin-top: 50px;
+                    button {
+                        width: 160px;
+                        font-weight: bold;
+                    }
+                }
+                .validate-info {
+                    padding-left: 24px;
+                    font-size: 12px;
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+                .validate-info.success {
+                    background: url(img/validate-success.png) no-repeat 0 center;
+                }
+                .validate-info.error {
+                    background: url(img/validate-error.png) no-repeat 0 center;
+                    color: #ff3b30;
+                }
+            }
+            .content-item.active {
+                display: block;
+            }
+            .content-first {
+                margin-left: 330px;
+                .token {
+                    margin-top: 30px;
+                    input {
+                        width: 210px;
+                    }
+                    button {
+                        width: 126px;
+                        margin-left: 10px;
+                        background-color: #72bbff;
+                        color: #fff;
+                    }
+                    button.re-get {
+                        background-color: #dfdfdf;
+                    }
+                }
+                .content-bottom {
+                    button {
+                        background-color: #72bbff;
+                        margin-left: 72px;
+                        &:hover,&:active{
+                            background-color:#589fe1;
+                        }
+                    }
+                    button.loading {
+                        background: #72bbff url(img/loading.gif) no-repeat 110px center / 25px 25px;
+                    }
+                }
+            }
+            .content-second {
+                width: 894px;
+                height: 705px;
+                margin: 30px auto 60px;
+                .form {
+                    select {
+                        height: 40px;
+                        border: 1px solid #ccc;
+                        padding-left: 5px;
+                        color: #333;
+                    }
+                    .form-title {
+                        color: #72bbff;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid #72bbff;
+                    }
+                    .input-group {
+                        padding-left: 150px;
+                        margin-top: 30px;
+                        label {
+                            display: inline-block;
+                            width: 64px;
+                            text-align: right;
+                        }
+                    }
+                }
+                .form-organize {
+                    margin-top: 10px;
+                    .location {
+                        .province {
+                            width: 158px;
+                            margin-left: 20px;
+                        }
+                        .city {
+                            width: 158px;
+                            margin-left: 30px;
+                        }
+                    }
+                    .industry {
+                        input {
+                            cursor: pointer;
+                            background: url(img/select-icon.png) no-repeat 325px center;
+                        }
+                    }
+                }
+                .form-person {
+                    .password-tip {
+                        color: #999;
+                        margin-top: 10px;
+                        padding-left: 250px;
+                    }
+                    .confirm-password {
+                        margin-top: 10px;
+                    }
+                }
+                .registered-info {
+                    padding-left: 150px;
+                    display: none;
+                    margin-top: 30px;
+                    color: #666;
+                }
+                .registered-person-info {
+                    color: #666;
+                    padding-left: 130px;
+                    display: none;
+                    margin-top: 30px;
+                    span {
+                        padding-left: 20px;
+                        background: url(img/validate-success.png) no-repeat left center;
+                    }
+                }
+                .content-bottom {
+                    margin-top: 30px;
+                    padding-left: 238px;
+                    .license {
+                        a {
+                            color: #72bbff;
+                            text-decoration: none;
+                        }
+                        a:link {
+                            color: #72bbff;
+                            text-decoration: none;
+                        }
+                        a:hover {
+                            color: #72bbff;
+                            text-decoration: none;
+                        }
+                        a:visited {
+                            color: #72bbff;
+                            text-decoration: none;
+                        }
+                        span {
+                            padding-left: 26px;
+                            cursor: pointer;
+                            background: url(img/license-unread.png) no-repeat 0 center;
+                        }
+                        span.read {
+                            background: url(img/license-read.png) no-repeat 0 center;
+                        }
+                    }
+                    button {
+                        margin-top: 30px;
+                        background-color: #72bbff;
+                        &:hover,&:active{
+                            background-color: #589fe1;
+                        }
+                    }
+                    button.disabled {
+                        background-color: #dfdfdf;
+                    }
+                    button.loading {
+                        background: #72bbff url(img/loading.gif) no-repeat 110px center / 25px 25px;
+                    }
+                }
+            }
+            .content-second.registered {
+                .form-person {
+                    .input-group {
+                        display: none;
+                    }
+                    .password-tip {
+                        display: none
+                    }
+                }
+                .registered-info {
+                    display: block;
+                }
+                .registered-person-info {
+                    display: none;
+                }
+            }
+            .content-second.registered-person {
+                .form-person {
+                    .input-group {
+                        display: none;
+                    }
+                    .password-tip {
+                        display: none
+                    }
+                }
+                .registered-info {
+                    display: none;
+                }
+                .registered-person-info {
+                    display: block;
+                }
+            }
+            .content-finish {
+                text-align: center;
+                margin-top: 100px;
+                .success {
+                    width: 300px;
+                    margin: 0 auto;
+                    background: url(img/step-finish-selected.png) no-repeat 0 center;
+                    padding-left: 70px;
+                    text-align: left;
+                    span {
+                        display: block;
+                        color: #72bbff;
+                        font-size: 18px;
+                    }
+                    
+                }
+                .content-bottom {
+                    button {
+                        background-color: #72bbff;
+                        &:hover{
+                            background-color: #589fe1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

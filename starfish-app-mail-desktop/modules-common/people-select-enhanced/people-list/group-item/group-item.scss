@@ -1,0 +1,53 @@
+.people-select-enhanced{
+	.group-item{
+		>ul{
+			display: none;
+		}
+
+		&.open{
+			>ul{
+				display: block;
+			}
+
+			.group-hd{
+				background-color: #2e8afc;
+				color: #fff;
+				>span{
+					background-image: url(img/arrow-active@2x.png?__sprite);
+				}
+			}
+		}
+
+	}
+
+	.searching .group-item{
+		>ul{
+			display: block;
+		}
+
+		.group-hd{
+			display: none;
+		}
+		
+	}
+
+	.group-hd{
+		height: 32px;
+		line-height: 32px;
+		cursor: pointer;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		>span{
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			vertical-align: middle;
+			margin-left: 10px;
+			background-size: 100%;
+			background-image: url(img/arrow@2x.png?__sprite);
+			margin-top: -3px;
+			margin-right: 6px;
+		}
+	}
+}

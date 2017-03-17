@@ -1,0 +1,85 @@
+@charset "utf-8";
+* {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+    -webkit-overflow-scrolling: touch;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+}
+
+input,
+textarea {
+    font-family: arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wraper {
+    height: 100%;
+    overflow: auto;
+    background-color: #fff;
+    /*min-width: 1226px;*/
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c2c2c2;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #c4c4c4;
+}
+
+:-moz-placeholder {
+    color: #c4c4c4;
+}
+
+::-moz-placeholder {
+    color: #c4c4c4;
+}
+
+:-ms-input-placeholder {
+    color: #c4c4c4;
+}
+
+.init {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/*button:hover{
+    background-color:#589fe1!important;
+}
+button:active{
+    background-color:#589fe1!important;
+}*/

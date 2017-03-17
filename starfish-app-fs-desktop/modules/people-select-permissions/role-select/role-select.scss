@@ -1,0 +1,33 @@
+.people-select-permissions .role-select{
+	position: absolute;
+	width: 80px;
+	height: 27px;
+	right: 5px;
+	top: 5px;
+	line-height: 27px;
+	
+	border: 1px solid #d5d5d5;
+	border-radius: 4px;
+	cursor: pointer;
+
+
+	.text{
+		padding-left: 15px;
+	}
+	.icon-down{
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		top: 7px;
+		right: 10px;
+		background-size: 100%;
+		background-image: url(img/arrow-down@2x.png?__sprite);
+	}
+
+	ul{
+		display: none;
+		border: 1px solid #d5d5d5;
+		text-align: center;
+		border-radius: 4px;
+	}
+}

@@ -1,0 +1,9 @@
+*.pyc
+*.log
+*.log.[0-9]*
+.coverage
+.idea
+.gitreview
+/htmlcov/
+starfish_main
+.ropeproject/*

@@ -1,0 +1,52 @@
+.common-load-error-large {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	text-align: center;
+
+	.content{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 230px;
+	}
+
+	.icon{
+		display: inline-block;
+		width: 120px;
+		height: 120px;
+		background-size: 100%;
+		background-image: url(img/icon@2x.png);
+	}
+
+	.text{
+		font-size: 16px;
+		color: #989da6;
+		margin-top: 32px;
+	}
+
+	.btn{
+		display: inline-block;
+		width: 80px;
+		height: 30px;
+		line-height: 28px;
+		border: 1px solid #acacac;
+		background-color: #fafafa;
+		border-radius: 2px;
+		font-size: 12px;
+		color: #383d48;
+		margin-top: 22px;
+		cursor: pointer;
+
+		&:active{
+			background-color: #fff;
+		}
+	}
+}

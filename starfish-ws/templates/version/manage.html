@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>版本管理</title>
+</head>
+<body>
+<p>
+要发布版本：
+</p>
+<p>
+1.<a target="_blank" href="/static/login.html">登录</a>
+</p>
+<p>
+2.<a target="_blank" href="/v1/versions">发布版本</a>
+</p>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>版本号</th>
+    <th>平台</th>
+    <th>下载地址</th>
+    <th>创建时间</th>
+    <th>是否调试</th>
+    <th>操作</th>
+  </tr>
+{% for v in versions %}
+  <tr>
+    <td>{{ v.id }}</td>
+    <td>{{ v.version }} / {{ v.code }}</td>
+    <td>{{ v.platform_name }}</td>
+    <td><a href="{{ v.package_url }}">下载</a></td>
+    <td>{{ v.create_time }}</td>
+    <td>{% if v.debug %}调试版{% else %}正式版{% endif %}</td>
+    <td><a href="javascript:delete_version({{ v.id }})">删除</a></td>
+  </tr>
+{% endfor %}
+</table>
+<script type="text/javascript" src="/static/invite-desktop/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+function delete_version(id) {
+    if (!confirm("是否要删除此版本")) {
+        return;
+    }
+
+    $.ajax({
+        type: "delete",
+        url: "https://api.starfish.im/v1/versions/" + id
+    });
+
+    window.location.reload();
+}
+</script>
+</body>
+</html>

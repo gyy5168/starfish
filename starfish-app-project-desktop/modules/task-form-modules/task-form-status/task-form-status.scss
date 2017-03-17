@@ -1,0 +1,71 @@
+.task-form-status {
+    position: relative;
+    height: 66px;
+    border-bottom: 1px solid #ebeeee;
+    padding-left: 20px;
+    padding-top:25px;
+    color: #383d48;
+    font-size: 13px;
+    .status {
+        position:absolute;
+    	vertical-align: middle;
+        display: inline-block;
+        width: 45px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .status-edit {
+        background: url("img/open.png?__sprite") no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        position:absolute;
+        left: 70px;
+        top: 25px;
+        vertical-align: middle;
+        &:hover {
+            background-image: url(img/open-press.png?__sprite);
+        }
+    }
+    .status-list{
+        display: none;
+        position: absolute;
+        width: 100px;
+        top: 50px;
+        left: 75px;
+        background-color:#fff;
+        z-index: 2;
+        box-shadow: -2px -1px 10px 0 rgba(0, 0, 0, 0.5);
+        padding-top:2px;
+        text-align: center;
+        li{
+            height: 24px;
+            line-height: 24px;
+            &:hover,&.active{
+                background-color:#eee;
+            }
+        }
+        li+li{
+            border-top:1px solid #d9dcdf;
+        }
+    }
+}
+.task-form-status.detail {
+    position: relative;
+    height: 66px;
+    border-bottom: 1px solid #ebeeee;
+    margin-left: 50px;
+    margin-right: 100px;
+    padding-left: 0px;
+    padding-top:0px;
+    color: #383d48;
+    font-size: 13px;
+    .status-edit {
+        left: 50px;
+    }
+    .status-list{
+        left: 50px;
+    }
+}

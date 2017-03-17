@@ -1,0 +1,160 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout:none;
+}
+input[type="text"] {
+    -webkit-appearance:none;  /* Remove default shadow */
+    border:1px solid black;   /* Possibly apply a custom border */
+}
+.invite{
+    height: 100%;
+
+    .loading,
+    .error,
+    .invalid,
+    .error-url{
+        position: relative;
+        display: none;
+        height: 100%;
+        font-size: 14px;
+        color: #666;
+    }
+
+    >.loading{
+        .content{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -20px;
+            height: 40px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .icon{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            background: url("img/loading.gif?__inline") center no-repeat;
+            background-size: 100%;
+        }
+
+        .text{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    >.error{
+
+        .content{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -60px;
+            height: 120px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .icon{
+            display: inline-block;
+            width: 67px;
+            height: 67px;
+            background: url("img/error.png?__inline") center no-repeat;
+            background-size: 100%;
+        }
+
+        .text{
+            margin-top: 10px;
+        }
+    }
+
+    >.invalid,
+    >.error-url{
+
+        .content{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -60px;
+            height: 120px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .icon{
+            display: inline-block;
+            width: 126px;
+            height: 87px;
+            background: url("img/invalid.png?__inline") center no-repeat;
+            background-size: 100%;
+        }
+
+        .text{
+            margin-top: 10px;
+        }
+
+        .footer{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom:20px;
+            text-align: center;
+            font-size: 14px;
+            color: #ccc;
+        }
+    }
+
+    >.content{
+        display: none;
+
+        >.banner{
+            position: relative;
+            height: 186px;
+            background: url("img/banner.jpg") center 0 no-repeat;
+            background-size: 100%;
+
+            >span{
+                display: inline-block;
+                position: absolute;
+                width: 76px;
+                height: 64px;
+                left: 50%;
+                top: 50%;
+                margin-left: -38px;
+                margin-top: -32px;
+                background: url("img/logo.png") center no-repeat;
+                background-size: 100%;
+            }
+        }
+
+        >.info{
+            height: 86px;
+            line-height: 86px;
+            color: #47b2ff;
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+            padding: 0 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        >.footer{
+            margin-top: 80px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #c4c4c4;
+            font-size: 11px;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.task-form-operates{
+	position: relative;
+	font-size: 13px;
+	color: rgba(#383d48, 0.7);
+	margin-top: 15px;
+	margin-bottom: 10px;
+
+	.list-body{
+		position: relative;
+		margin-left: 45px;
+		margin-right: 20px;
+        padding-right: 25px;
+		overflow-y: hidden;
+		max-height: 29px;
+	}
+
+	.more-icon{
+		height: 16px;
+		cursor: pointer;
+		text-align: center;
+
+		i{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background-size: 100%;
+			background-image: url(img/open_icon.png?__sprite);
+		}
+		
+		&:hover{
+
+			i{
+				background-image: url(img/open_icon_hover.png?__sprite);
+			}
+			
+		}
+	}
+
+	.operate-item{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		line-height: 19px;
+	}
+}
+
+.task-form-operates.more{
+	.more-icon{
+
+		i{
+			background-size: 100%;
+			background-image: url(img/put_away_icon.png?__sprite);
+		}
+		
+
+		&:hover{
+
+			i{
+				background-image: url(img/put_away_icon_hover.png?__sprite);
+			}
+			
+		}
+	}
+
+	.list-body{
+		overflow-y: auto;
+		max-height: 116px;
+	}
+}

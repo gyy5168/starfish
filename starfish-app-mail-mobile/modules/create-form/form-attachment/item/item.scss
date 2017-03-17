@@ -1,0 +1,175 @@
+.form-attachment-item{
+	position: relative;
+	height: .72rem;
+	margin-top: .2rem;
+
+	>.icon{
+		position: absolute;
+		display: inline-block;
+		width: .72rem;
+		height: .72rem;
+		top: 0;
+		left: .2rem;
+		background-size: 100%;
+	}
+
+	>.name{
+		margin-left: 1.4rem;
+		margin-right: 1rem;
+		margin-top: .1rem;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		font-size: .28rem;
+		color: #a6afbb;
+	}
+
+	>.info{
+		margin-left: 1.4rem;
+		margin-right: 1rem;
+		margin-top: .15rem;
+		font-size: 0;
+		line-height: 0;
+
+		>.size{
+			font-size: .26rem;
+			line-height: 1;
+			color: #a6afbb;
+			margin-right: .2rem;
+		}
+
+		>.progress-bar{
+			position: relative;
+			display: none;
+			height: .12rem;
+			width: 1.8rem;
+			border: 1px solid #83d569;
+			border-radius: .12rem;
+			overflow: hidden;
+			vertical-align: top;
+			margin-top: .07rem;
+
+			>span{
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: .1rem;
+				background-color: #bee9b1;
+			
+			}
+		}
+
+		>.progress-num{
+			margin-left: .2rem;
+			font-size: .26rem;
+			color: #c7cfd8;
+		}
+
+		>.wait-info{
+			display: none;
+			font-size: .26rem;
+			color: #a6afbb;
+		}
+
+		>.success-info{
+			display: none;
+			font-size: .26rem;
+			color: #a6afbb;
+		}
+
+		>.error-info{
+			display: none;
+			font-size: .26rem;
+			color: #d94949;
+		}
+	}
+
+	.remove{
+		position: absolute;
+		display: inline-block;
+		width: .32rem;
+		height: .32rem;
+		right: .1rem;
+		top: .2rem;
+		background-size: 100%;
+		background-image: url(img/remove.png?__inline);
+	}
+
+	&.wait>.info{
+		.success-info{
+			display: none;
+		}
+		.error-info{
+			display: none;
+		}
+		.wait-info{
+			display: inline-block;
+		}
+		.progress-bar{
+			display: none;
+		}
+		.progress-num{
+			display: none;
+		}
+	}
+
+	&.success{
+		.success-info{
+			display: inline-block;
+		}
+		.error-info{
+			display: none;
+		}
+		.wait-info{
+			display: none;
+		}
+		.progress-bar{
+			display: none;
+		}
+		.progress-num{
+			display: none;
+		}
+	}
+
+	&.progress{
+		.success-info{
+			display: none;
+		}
+		.error-info{
+			display: none;
+		}
+		.wait-info{
+			display: none;
+		}
+		.progress-bar{
+			display: inline-block;
+		}
+		.progress-num{
+			display: inline-block;
+		}
+	}
+
+	&.error{
+		.success-info{
+			display: none;
+		}
+		.error-info{
+			display: inline-block;
+		}
+		.wait-info{
+			display: none;
+		}
+		.progress-bar{
+			display: none;
+		}
+		.progress-num{
+			display: none;
+		}
+	}
+
+
+}
+
+
+
+

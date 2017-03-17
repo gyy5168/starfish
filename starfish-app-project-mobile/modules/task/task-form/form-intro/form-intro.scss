@@ -1,0 +1,79 @@
+.form-intro {
+    background-color: #fff;
+    font-size: .32rem;
+    min-height: 1.2rem;
+    padding-left: .3rem;
+    .info-panel {
+        position: relative;
+        >div {
+            margin-right: 0.8rem;
+            textarea {
+                padding-top: .43rem;
+                padding-bottom: .43rem;
+                vertical-align: middle;
+                font-size: .34rem;
+                width: 100%;
+                background-color: transparent;
+            }
+            textarea:disabled,
+            textarea[disabled] {
+                color: #000;
+                opacity: 1;
+            }
+            textarea::-webkit-input-placeholder {
+                font-size: .32rem;
+                line-height: .32rem;
+                color: #8f959e;
+            }
+        }
+    }
+}
+
+.modify-panel.intro {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 9;
+    display: none;
+    padding: 0 .3rem;
+    background-color: #fff;
+    >div {
+        min-height: 1.2rem;
+        border-bottom: 1px solid #e3ebf0;
+        position: relative;
+        textarea {
+            padding-top: .43rem;
+            padding-bottom: .43rem;
+            vertical-align: middle;
+            font-size: .34rem;
+            width: 100%;
+            background-color: transparent;
+        }
+        textarea:disabled,
+        textarea[disabled] {
+            color: #000;
+            opacity: 1;
+        }
+        textarea::-webkit-input-placeholder {
+            font-size: .32rem;
+            line-height: .32rem;
+            color: #8f959e;
+        }
+    }
+}
+
+.form-name.create {
+    .info-panel {
+        >div {
+            margin-right: 0.3rem;
+            i {
+                display: none;
+            }
+        }
+    }
+}

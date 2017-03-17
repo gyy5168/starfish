@@ -1,0 +1,46 @@
+.project-item {
+    background-color: #fff;
+    padding-left: .3rem;
+    font-size: .32rem;
+    .item-wraper {
+        position: relative;
+        border-bottom: 1px solid #e2ecf0;
+        .item-title {
+            cursor: pointer;
+            height: 1.4rem;
+            line-height: 1.4rem;
+            width: 5.6rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            color: #383d48;
+        }
+        .item-icon {
+            position: absolute;
+            height: 1.4rem;
+            width: 1rem;
+            top: 0;
+            right: 0;
+            .icon-project-info {
+                position: absolute;
+                width: .64rem;
+                height: .64rem;
+                top: .38rem;
+                right: .26rem;
+                cursor: pointer;
+                background-image: url(img/project_info_normal.png);
+            }
+        }
+    }
+}
+
+.ios .project-item .item-title {
+    cursor: pointer;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    width: 4.6rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #383d48;
+}

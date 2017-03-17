@@ -1,0 +1,38 @@
+.task-form-description{
+	position: relative;
+	font-size: 0;
+	margin: 12px 39px 48px 39px;
+	&.short-margin{
+		margin-bottom: 20px;
+	}
+
+	.edit-area{
+		width: 100%;
+		padding: 4px 5px;
+		color: #333333;
+		line-height: 21px;
+		background-color: transparent;
+		border: 1px solid transparent;
+		font-size: 13px;
+		overflow:hidden;
+		margin: 0;
+		resize:none;
+		outline: none;
+		-webkit-transition: box-shadow 0.30s ease-in-out; 
+		transition: box-shadow 0.30s ease-in-out;
+
+		&:hover{
+			border: 1px solid #d2d4d5;
+		}
+
+		&:focus{
+			border: 1px solid #52a9e7;
+			box-shadow: 0 0 8px #d4ebf8;
+		}
+
+		&:-webkit-input-placeholder{
+			color:#8c959d;
+			line-height: 1.4;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.about-us {
+    padding: 138px 20px 0;
+    height: 960px;
+    font-size: 16px;
+    font-family: "FZLTXihei";
+    .profile-title {
+        color: #1c4f82;
+        font-size: 24px;
+        height: 24px;
+        line-height: 24px;
+    }
+    .profile-info {
+        color: #333;
+    }
+    .block-content {
+        .block-show {
+            padding-top: 50px;
+            width: 750px;
+            img {
+                height: 380px;
+            }
+        }
+        .block-info {
+            width: 470px;
+            padding-top: 130px;
+            li{
+                position: relative;
+                height: 16px;
+                line-height: 16px;
+                margin-top: 20px;
+                label{
+                    position:absolute;
+                }
+                span{
+                    padding-left: 80px;
+                    display: inline-block;
+                }
+                span+span{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,224 @@
+.task-list-item{
+	position: relative;
+	border-bottom: 1px dashed transparent;
+	-webkit-user-select:none;
+	
+	&:first-child{
+		border-top: 1px dashed transparent;
+	};
+
+	.inner{
+		position: relative;
+		margin-left: 12px;
+		margin-right: 16px;
+		height: 50px;
+		line-height: 46px;
+		font-size: 13px;
+		color: #383d48;
+		border-radius: 2px;
+		border: 2px solid transparent;
+	}
+
+	&:hover .inner{
+		border: 2px solid #559fdf;
+	}
+
+	&.drag-down{
+		border-bottom: 1px dashed rgba(#9399a8, .6);
+	}
+
+	&.drag-up{
+		border-top: 1px dashed rgba(#9399a8, .6);
+	}
+	
+	&:nth-child(2n + 1) .inner{
+		background-color: #f7f8fb;
+	};
+
+	&.selected .inner{
+		background-color: rgba(#4395dc, .14);
+	}
+	
+	.drag{
+		position: absolute;
+		/*display: inline-block;*/
+		display: none;
+		left: 0;
+		top: 11px;
+		width: 24px;
+		height: 24px;
+		background-size: 100%;
+		background-image: url(img/drag.png?__sprite);
+		visibility: hidden;
+		cursor: move;
+	}
+
+	&:hover,
+	&.selected{
+		.drag{
+			visibility: visible;
+		}
+	};
+
+	.index{
+		position: absolute;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		line-height: 24px;
+		left: 26px;
+		top: 11px;
+		text-align: center;
+	}
+
+	&:hover,
+	&.selected{
+		.index{
+			visibility: hidden;
+		}
+	};
+
+	.mark{
+		position: absolute;
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		left: 26px;
+		top: 11px;
+		visibility: hidden;
+		background-size: 100%;
+		background-image: url(img/uncomplete@2x.png?__sprite);
+		cursor: pointer;
+
+		&:hover{
+			background-image: url(img/uncomplete-active@2x.png?__sprite);
+		}
+
+		&.completed{
+			background-image: url(img/complete@2x.png?__sprite);
+		}
+
+		&.completed:hover{
+			background-image: url(img/complete-active@2x.png?__sprite);
+		}
+	}
+
+	&:hover,
+	&.selected{
+		.mark{
+			visibility: visible;
+		}
+	};
+	
+	.status{
+		cursor: pointer;
+	}
+
+	.tag{
+		margin-right: 2px;
+		border-radius: 2px;
+		border: 1px solid #9399a8;
+		height: 20px;
+		padding: 4px 5px;
+		font-size: 12px;
+		color: #fff;
+		background-color: rgba(#9399a8, .5);
+		cursor: pointer;
+	}
+
+	.content{
+		margin-left: 56px;
+		margin-right: 94px;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+
+		&.min{
+			margin-right: 170px;
+		}
+	}
+
+	.subject{
+		/*-webkit-user-select:text;*/
+	}
+
+	.time{
+		position: absolute;
+		display: none;
+		width: 110px;
+		height: 24px;
+		line-height: 24px;
+		top: 11px;
+		right: 94px;
+		text-align: right;
+
+		&.uncompleted{
+			display: inline-block;
+			color: rgba(#e02828, .8);
+		}
+
+		&.completed{
+			display: inline-block;
+		}
+
+        &.expect{
+            display: inline-block;
+            color: #aaa;
+        }
+	}
+
+	.charge{
+		position: absolute;
+		display: inline-block;
+		width: 52px;
+		height: 24px;
+		line-height: 24px;
+		top: 11px;
+		right: 12px;
+		text-align: right;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		cursor: pointer;
+	}
+
+	.arrow{
+		position: absolute;
+		display: inline-block;
+		width: 11px;
+		height: 50px;
+		right: 3px;
+		top: 0px;
+		background-color: rgba(#9399a8, .1);
+
+		cursor: pointer;
+		visibility: hidden;
+
+		i{
+			display: inline-block;
+			width: 11px;
+			height: 11px;
+			margin-top: 20px;
+			background-size: 100%;
+			background-image: url(img/arrow-left.png?__sprite);
+		}
+	}
+
+	&:hover,
+	&.selected{
+		.arrow{
+			visibility: visible;
+		}
+	};
+}
+
+.narrow .task-list-item .arrow{
+	i{
+		background-size: 100%;
+		background-image: url(img/arrow-right.png?__sprite);
+	}
+	
+}
+.status-uncompleted .task-list-item .drag{
+	display: inline-block;
+}

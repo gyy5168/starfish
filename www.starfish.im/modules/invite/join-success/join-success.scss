@@ -1,0 +1,40 @@
+.has-register{
+    padding-left: 33px;
+    padding-right: 33px;
+    P{
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+        font-size: 14px;
+        line-height: 2;
+        border-radius: 5px;
+        border: 1px solid #ced0d6;
+    }
+
+    span{
+        font-size: 20px;
+        color: #47b2ff;
+    }
+
+    >.next{
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #47b2ff;
+        cursor: pointer;
+
+        &:active{
+            background-color: #3fa1e7;
+        }
+    }
+}

@@ -1,0 +1,134 @@
+.create-department{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  .modal-content{
+    width: 400px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -110px;
+    z-index: 20;
+
+    box-shadow: 0 2px 10px 0 #595959;
+    border-radius: 3px;
+    background: #FFFFFF;
+
+    .modal-header{
+      height: 42px;
+      line-height: 42px;
+      border-bottom: 1px solid #d9dcdf;
+      text-align: center;
+
+      .close{
+        cursor: pointer;
+        width: 42px;
+        height: 42px;
+        display: inline-block;
+        float: right;
+        background: url("img/close.png") no-repeat center;
+      }
+    }
+
+    .modal-input{
+      display: block;
+      padding: 0 20px;
+      height: 62px;
+      margin-top: 25px;
+
+      input{
+        height: 40px;
+        width: 100%;
+        outline: none;
+        border: 1px solid #eeeeee;
+
+        &:hover,&:focus{
+          border: 1px solid #72bbff;
+        }
+      }
+
+      p{
+        background: url("img/error.png") left center no-repeat;
+        text-indent: 25px;
+        line-height: 12px;
+        font-size: 12px;
+        color: #fe0000;
+        margin-top: 10px;
+        display: none;
+      }
+    }
+
+    .modal-btn{
+      width: 140px;
+      height: 30px;
+      margin: 45px auto 20px auto;
+      div{
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+
+
+    .btn-ok{
+      float: left;
+      width: 60px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      border-radius: 3px;
+      color: #666666;
+      border: 1px solid #d9dcdf;
+      background: #f4f4f4;
+      &:hover{
+        background: #dddddd;
+      }
+    }
+
+    .btn-cancel{
+      float: right;
+      width: 60px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      border-radius: 3px;
+      color: #FFFFFF;
+      background: #72bbff;
+      &:hover{
+        background: #589fe1;
+      }
+    }
+  }
+
+  .modal-wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 15;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+.manage-org-select {
+    float: left;
+    height: 40px;
+    cursor: pointer;
+    img {
+        width: 40px;
+        height: 40px;
+        vertical-align: top;
+        margin-right: 5px;
+        border-radius: 50%;
+        display: inline-block;
+        background-size: 100%;
+        cursor: pointer;
+    }
+    .org-name {
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        max-width: 540px;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #fff;
+        font-size: 14px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .org-drop {
+        position: relative;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        line-height: 40px;
+        vertical-align: middle;
+        background: url("img/select-drop.png") center no-repeat;
+        cursor: pointer;
+    }
+    .arrow {
+            position: absolute;
+            display: none;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: transparent;
+            border-bottom-color: #fff;
+            content: "";
+            top: 19px;
+            left: -4px;
+            border-width: 0px 10px 10px;
+            border-top-width: 0;
+            z-index: 11;
+        }
+    ul {
+        position: absolute;
+        display: none;
+        top: 28px;
+        left: -106px;
+        width: 224px;
+        max-height: 300px;
+        padding: 4px 0;
+        border: 1px solid #d9dcdf;
+        border-radius: 3px;
+        background-color: #fff;
+        overflow: auto;
+        font-size: 14px;
+        color: #333;
+        box-shadow: -2px -1px 10px 0px rgba(0, 0, 0, 0.5);
+        z-index: 10;
+        
+        li {
+            position: relative;
+            height: 36px;
+            line-height: 36px;
+            padding: 0 42px 0 56px;
+            border-bottom: 1px solid #d9dcdf;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            color: #333;
+            &:hover {
+                background-color: #eee;
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+            img {
+                position: absolute;
+                top: 8px;
+                left: 16px;
+                width: 24px;
+                height: 24px;
+                border-radius: 24px;
+            }
+        }
+    }
+}
+
+//.manage-head .manage-org{
+//  float: left;
+//  height: 68px;
+//  .org-logo{
+//    width: 40px;
+//    height: 68px;
+//    margin-right: 10px;
+//    background-repeat: no-repeat;
+//    background-position: left center;
+//    background-size: 40px 40px;
+//  }
+//
+//  .org-name{
+//    color: #FFFFFF;
+//    font-size: 18px;
+//    max-width: 540px;
+//    text-wrap: none;
+//    white-space: nowrap;
+//    text-overflow: ellipsis;
+//    margin-right: 10px;
+//  }
+//
+//  .org-drop-icon{
+//    width: 12px;
+//    height: 68px;
+//    background: url("../img/triangle-down.png") center no-repeat;
+//    margin-right: 30px;
+//    position: relative;
+//
+//    .org-list{
+//      z-index: 10;
+//      position: absolute;
+//      left: -112px;
+//      top: 70px;
+//      display: none;
+//      width: 224px;
+//      max-height: 270px;
+//      background: #FFFFFF;
+//      color: #333333;
+//      padding: 4px 0;
+//      border-radius: 3px;
+//      li{
+//        width: 224px;
+//        height: 34px;
+//        font-size: 16px;
+//        color: red;
+//        &:first-child{
+//          border-top:  1px solid #d9dcdf;
+//        }
+//        border-bottom: 1px solid #d9dcdf;
+//        span{
+//          height: 34px;
+//          max-width: 126px;
+//          text-wrap: none;
+//          white-space: nowrap;
+//          text-overflow: ellipsis;
+//          text-indent: 52px;
+//          background-size: 20px 20px ;
+//          background-position: 16px center ;
+//          background-repeat: no-repeat ;
+//          vertical-align: top;
+//          line-height: 34px;
+//        }
+//        &:hover{
+//          background: #eeeeee;
+//        }
+//      }
+//    }
+//  }
+//}

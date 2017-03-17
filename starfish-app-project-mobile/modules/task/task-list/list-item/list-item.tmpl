@@ -1,0 +1,15 @@
+<div class="task-wraper">
+    <span class="JS-complete task-complete <%= completeClass %>" data-completed="<%= isCompleted %>">
+      <span></span>
+    </span>
+    <div class="JS-subject task-subject <%= completeClass %>">
+        <% for(var i = 0; i < tags.length; i++) { %>
+            <span><%=tags[i].name%></span>
+        <%}%>
+        <%= subject %>
+    </div>
+    <div class="task-btm">
+        <span class="JS-assignee task-assignee"><%= assignee %></span>
+        <span class="JS-time task-time"><%= time %></span>
+    </div>
+</div>

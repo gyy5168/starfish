@@ -1,0 +1,79 @@
+.mail-list{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #f7f7f7;
+
+  .content{
+
+    >h3.mail-list-header{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 0.8rem;
+      margin: 0;
+      padding: 0.2rem 0.2rem 0.2rem 0.7rem;
+      color: #383d48;
+      font-size: 0.34rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    >ul.mail-list-content{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0.8rem;
+      bottom: 1rem;
+      margin: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      //第一封邮件没有展开详情列表
+      li:first-child{
+        .detail-more{display: none}
+      }
+    }
+
+    >.mail-operate-panel{
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1rem;
+      margin: 0;
+      background:#f9f9f9 ;
+      opacity: 0.95;
+      border-top: 1px solid #cfcfcf;
+      font-size: 0;
+
+      >span{
+        display: inline-block;
+        height: 1rem;
+        line-height: 1rem;
+        color: #1b86ea;
+
+        &.reply{
+          width: 33%;
+          text-align: left;
+          font-size: 0.28rem;
+          padding-left: 0.7rem;
+        }
+        &.replyTOAll{
+          width: 34%;
+          text-align: center;
+          font-size: 0.28rem;
+        }
+        &.tranSend{
+          width: 33%;
+          text-align: right;
+          font-size: 0.28rem;
+          padding-right: 0.7rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<li class='item JS-item <%= className %>' data-id="<%= id %>">
+	<% if ( avatar ) { %>
+		<span class="item-avatar" style="background-image:url(<%= avatar %>?width=70&height=70)">
+		</span>
+	<% } %>
+	<div class="item-name">
+        <%= name %>
+        <% if( children_count !== 0 ) { %>
+            <div class="item-tips">包含子部门</div>
+        <% } %>
+    </div>
+    
+	<span class="checkbox JS-checkbox"></span>
+</li>

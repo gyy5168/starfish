@@ -1,0 +1,69 @@
+.member-list .member-item {
+	background-color: #fff;
+	padding-left: .34rem;
+}
+.member-list .member-item .item-wraper{
+	overflow: hidden;
+	position: relative;
+	height: 1.2rem;
+}
+.member-list .member-item:last-child .item-wraper{
+	border-bottom: none;
+}
+.member-list .member-item .item-wraper img{
+	width: .74rem;
+	height: .74rem;
+	margin-top: .23rem;
+	border-radius: 50%;
+	position: absolute;
+}
+.member-list .member-item .item-wraper .item-name{
+	width: 100%;
+	display: inline-block;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	margin-left: 1rem;
+	border-bottom: 1px solid #e2ecf0;
+}
+.member-list .member-item .item-wraper .item-name span{
+	width: 2.6rem;
+	display: inline-block;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	border-bottom: 1px solid #e2ecf0;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.member-list .member-item .depart i{
+	display: inline-block;
+	width: .64rem;
+	height: .64rem;
+	background-image: url(img/jump_icon_normal.png);
+	background-size: 100%;
+    position: absolute;
+    right: .22rem;
+    top: 50%;
+    margin-top: -.32rem;
+}
+.member-list .member-item .people i{
+	display: inline-block;
+	width: .44rem;
+	height: .44rem;
+	vertical-align: middle;
+	background-image: url(img/notchoose_icon.png);
+	background-size: 100%;
+	position: absolute;
+    right: .3rem;
+    top: 50%;
+    margin-top: -.22rem;
+}
+.member-list .member-item .people i:active{
+	background-image: url(img/choose_icon.png);
+}
+.member-list .member-item .people.selected i{
+	background-image: url(img/choose_icon.png);
+}
+.member-list .member-item .people.selected i:active{
+	background-image: url(img/notchoose_icon.png);
+}

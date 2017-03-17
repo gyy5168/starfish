@@ -1,0 +1,36 @@
+.icon-folder{
+    background-image: url(img/folder@2x.png);
+}
+.icon-image{
+    background-image: url(img/image@2x.png);
+}
+.icon-txt{
+    background-image: url(img/txt@2x.png);
+}
+.icon-code{
+    background-image: url(img/code@2x.png);
+}
+.icon-excel{
+    background-image: url(img/exl@2x.png);
+}
+.icon-music{
+    background-image: url(img/music@2x.png);
+}
+.icon-pdf{
+    background-image: url(img/pdf@2x.png);
+}
+.icon-ppt{
+    background-image: url(img/ppt@2x.png);
+}
+.icon-unknown{
+    background-image: url(img/unrecognized@2x.png);
+}
+.icon-video{
+    background-image: url(img/video@2x.png);
+}
+.icon-word{
+    background-image: url(img/word@2x.png);
+}
+.icon-zip{
+    background-image: url(img/zip@2x.png);
+}

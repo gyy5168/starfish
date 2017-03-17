@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script type="text/javascript" src="/static/lib/mod.js"></script>
+</head>
+
+<body>
+    <!--头部-->
+    <div class="header">
+        <div class="container">
+            <span class="logo">
+            </span>
+        </div>
+    </div>
+    <!--内容-->
+    <div class="content">
+        <div class="container">
+            <div class="login">
+                <h1>组织管理</h1>
+                <div class="login-username JS-login-username">
+                    <input type="text" placeholder="请输入手机号" />
+                    <span class="correct-icon"></span>
+                    <p>输入的手机格式不正确</p>
+                </div>
+                <div class="login-password JS-login-password">
+                    <input type="password" placeholder="请输入密码">
+                    <p>请输入密码</p>
+                </div>
+                <div class="login-check JS-login-check">
+                    <div class="check-wraper">
+                        <input type="text" class="check-code" placeholder="请输入验证码">
+                        <span class="loading-icon"></span>
+                        <span class="correct-icon"></span>
+
+                        <img src="" title="验证码" />
+                        <span class="check-refresh JS-check-refresh" title="刷新验证码"></span>
+                    </div>
+                    <p>验证码输入错误</p>
+                </div>
+                <div class="login-btn JS-login-submit">登录</div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+            <div class="container">
+                Copyright@2015 比特兄弟（北京）科技有限公司 京ICP备 13039396
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+require("main.js");
+</script>
+
+</html>

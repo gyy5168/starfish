@@ -1,0 +1,129 @@
+.form-people{
+	position: relative;
+	margin-left: .3rem;
+	border-bottom: 1px solid #eaf1f5;
+	overflow: auto;
+	padding-bottom: .2rem;
+
+	>label{
+		float: left;
+		display: inline-block;
+		font-size: .34rem;
+		margin-top: .2rem;
+		height: .48rem;
+		line-height: .48rem;
+		color: #8f959e;
+	}
+
+	>.input-wraper{
+		float: left;
+		position: relative;
+		display: inline-block;
+		margin-top: .2rem;
+		margin-left: .2rem;
+		margin-right: .8rem;
+		height: .48rem;
+		font-size: .28rem;
+		max-width: 100%;
+		overflow: hidden;
+
+		span{
+			display: inline-block;
+			padding-left: 1em;
+			color: transparent;
+		}
+
+		input{
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0;
+			padding:0;
+			border: none;
+			width: 100%;
+			font-size: .28rem;
+			color: #333;
+			height: inherit;
+			/*line-height: inherit;*/
+			outline: none;
+			-webkit-appearance:none;
+			background-color: transparent;
+		}
+	}
+
+	>.people-add{
+		position: absolute;
+		display: inline-block;
+		width: .46rem;
+		height: .46rem;
+		right: .3rem;
+		bottom: .21rem;
+		background-size: 100%;
+		background-image: url(img/add.png?__sprite);
+	}
+}
+.peopel-remove-panel{
+	position: relative;
+	height: .8rem;
+	background-color: #e6e7e9;
+
+	>.name{
+		position: absolute;
+		display: inline-block;
+
+		top: .1rem;
+		left: .3rem;
+		
+		max-width: 3rem;
+		font-size: .3rem;
+		color: #282828;
+
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	>.mail{
+		position: absolute;
+		display: inline-block;
+
+		top: .5rem;
+		left: .3rem;
+		
+		max-width: 3rem;
+		font-size: .28rem;
+		color: #74787e;
+
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	>.btn-ok,
+	>.btn-cancel{
+		position: absolute;
+		width: 1rem;
+		height: .58rem;
+		line-height: .56rem;
+		top: .11rem;
+		text-align: center;
+		border: 1px solid #cacaca;
+		border-radius: .04rem;
+		background-color: #fbfbfb;
+
+		font-size: .28rem;
+		color: #282828;
+	}
+
+	>.btn-cancel{
+		right: .3rem;
+	}
+
+	>.btn-ok{
+		right: 1.5rem;
+	}
+}
+
+
+
+

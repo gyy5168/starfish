@@ -1,0 +1,56 @@
+        <p class="input-name">
+            <label>姓名</label>
+            <input type="text" value="<%= data.name %>">
+            <!-- <span class="text-overflow"><%= data.name %></span> -->
+        </p>
+        <div class="name-info error-info">输入姓名不能为空</div>
+        <p class="input-sex self">
+            <label>性别</label>
+            <% var male,female %>
+            <% if(data.gender==1) {%>
+                <% female="selected" %>
+                <% male="" %>
+            <%} else{ %>
+                 <% male="selected" %>
+                 <% female="" %>
+            <% } %>
+            <span class="male <%= male %>">男</span>
+            <span class="female <%= female %>">女</span>
+        </p>
+
+        <!-- <p class="input-sex">
+            <label>性别</label>
+            <% var sex %>
+            <% if(data.gender==1) {%>
+                <% sex="女" %>
+            <%} else{ %>
+                <% sex="男" %>
+            <% } %>
+            <span><%= sex %></span>
+        </p> -->
+
+        <p class="text-phone">
+               <label>电话</label>
+               <span><%= data.phone %></span>
+        </p>
+
+        <p class="input-department">
+            <label>部门</label>
+
+            <% var list=[] %>
+            <% for(var i=0;i<data.departments_info.length;i++) {%>
+                 <% list.push(data.departments_info[i].name) %>
+            <% } %>
+
+            <input type="text" readonly="readonly" class="" value="<%= list.join("，") %>"/>
+        </p>
+
+        <p class="input-position">
+            <label>职位</label>
+            <input type="text" class="" value="<%= data.position %>" maxLength="30" placeholder="请输入职位信息">
+        </p>
+        <div class="department-info error-info">输入职位不能超过30个字</div>
+        <p class="input-intro">
+            <label>简介</label>
+            <textarea placeholder="请输入简介信息" maxLength="300"><%= data.intro %></textarea>
+        </p>

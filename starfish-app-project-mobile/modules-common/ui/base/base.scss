@@ -1,0 +1,126 @@
+.common-loading,
+.common-error,
+.common-empty {
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 9;
+    >.common-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 5rem;
+        margin-top: -2.5rem;
+        text-align: center;
+        >.common-icon {
+            display: inline-block;
+            width: 3.2rem;
+            height: 3.9rem;
+            background-size: 100%
+        }
+        >.common-text {
+            margin-top: .48rem;
+            font-size: .36rem;
+            color: #919397;
+        }
+    }
+}
+
+.common-loading .common-icon {
+    background-image: url(img/loading.gif);
+}
+
+.common-error .common-icon {
+    background-image: url(img/error.gif);
+}
+
+.common-empty .common-icon {
+    background-image: url(img/empty.gif);
+}
+
+.common-loading-more {
+    display: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.common-loading-more .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-image: url(img/loading.gif);
+    vertical-align: middle;
+}
+
+.common-load-more-error {
+    display: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #989da6;
+    cursor: pointer;
+}
+
+.common-load-more-none {
+    display: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #989da6;
+}
+
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icon.icon-jump {
+    height: 0.64rem;
+    width: 0.64rem;
+    position: absolute;
+    right: 0.1rem;
+    top: 50%;
+    margin-top: -.32rem;
+    background-image: url("img/jump_icon_normal.png");
+}
+
+.icon.icon-people-select-all {
+    height: 0.64rem;
+    width: 0.64rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 50%;
+    margin-top: -.32rem;
+    background-image: url("img/people_add.png");
+}
+
+.create .icon.icon-people-select-all {
+    height: 0.64rem;
+    width: 0.64rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 50%;
+    margin-top: -.32rem;
+    background-image: url("img/people_add.png");
+}
+
+textarea {
+    border: medium none;
+    height: auto;
+    margin: 0;
+    outline: medium none;
+    overflow: hidden;
+    padding: 0;
+    resize: none;
+}

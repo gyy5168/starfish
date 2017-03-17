@@ -1,0 +1,50 @@
+.relay-bar{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  .relay-bar-wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+  }
+
+  .relay-bar-content{
+    position: absolute;
+    left: 0.2rem;
+    right: 0.2rem;
+    height: 3.4rem;
+    bottom: 0.2rem;
+    border-radius: 0.02rem;
+
+    .relay,.relayToAll,.tranSend,.cancel{
+      font-size: 0.32rem;
+      color:#484b50;
+      background: #ffffff;
+      text-align: center;
+      line-height: 0.8rem;
+      height: 0.8rem;
+    }
+
+    &.relay-to-one{
+      height: 2.6rem;
+      .relay{
+        border-bottom: 1px solid #cccccc;
+      }
+    }
+
+    .relayToAll{
+      border-bottom: 1px solid #cccccc;
+      border-top: 1px solid #cccccc;
+    }
+    .cancel{
+      color: #007aff;
+      margin-top: 0.2rem;
+    }
+  }
+}

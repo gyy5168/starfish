@@ -1,0 +1,205 @@
+.org-structure {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 240px;
+    height: 100%;
+    font-size: 13px;
+    background-color: #f3f3f3;
+    border-right: 1px solid #d9dcdf;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    .header {
+        padding: 0 10px;
+        height: 50px;
+        line-height: 49px;
+        border-bottom: 1px solid #d9dcdf;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        .title {
+            color: #333;
+            width: 100px;
+            float: left;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .search {
+            float: right;
+            cursor: pointer;
+            width: 25px;
+            height: 49px;
+            position: relative;
+            >input {
+                width: 25px;
+                height: 30px;
+                border: 0;
+                outline: 0;
+                cursor: pointer;
+                background-color: transparent;
+                background: url(img/search.png) no-repeat right center;
+                // -webkit-transition: all 0.7s ease 0s;
+                // -moz-transition: all 0.7s ease 0s;
+                // -o-transition: all 0.7s ease 0s;
+                // transition: all 0.7s ease 0s;
+            }
+            >i {
+                display: none;
+            }
+            >ul {
+                display: none
+            }
+            &.active {
+                float: left;
+                width: 218px;
+                input {
+                    width: 218px;
+                    height: 30px;
+                    border: 0;
+                    outline: 0;
+                    padding-left: 5px;
+                    background: none;
+                    border: 1px solid #72bbff;
+                    width: 218px;
+                    background-color: #fff;
+                    cursor: text;
+                }
+                >i {
+                    width: 40px;
+                    height: 30px;
+                    display: inline-block;
+                    margin-left: -40px;
+                    margin-top: 9px;
+                    position: absolute;
+                    background: url(img/search-active.png) no-repeat right center;
+                }
+                >ul {
+                    background-color: #fff;
+                    margin-top: -4px;
+                    border: 1px solid #d9dcdf;
+                    li {
+                        padding: 0px 10px;
+                        height: 36px;
+                        line-height: 36px;
+                        font-size: 14px;
+                        &.member-title,
+                        &.depart-title {
+                            height: 30px;
+                            line-height: 30px;
+                            background-color: #eaeaea;
+                            margin-bottom: 5px;
+                            color: #999;
+                            display: none;
+                        }
+                        &.member,
+                        &.depart {
+                            color: #333;
+                            padding-left: 44px;
+                            >i {
+                                width: 24px;
+                                height: 24px;
+                                display: inline-block;
+                                position: absolute;
+                                left: 10px;
+                                margin-top: 6px;
+                                border-radius: 50%;
+                                background-size: 24px 24px;
+                                background-position: left center;
+                                background-repeat: no-repeat;
+                            }
+                            &:hover,
+                            &.selected {
+                                background-color: #eaeaea;
+                            }
+                        }
+                        &.member {
+                            span {
+                                display: inline-block;
+                                width: 66px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                            }
+                        }
+                        &.depart {
+                            span {
+                                display: inline-block;
+                                width: 122px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                    .member+.depart-title {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+        .add {
+            width: 30px;
+            height: 49px;
+            cursor: pointer;
+            float: right;
+            position: relative;
+            .add-icon {
+                width: 30px;
+                height: 49px;
+                cursor: pointer;
+                background: url(img/add.png) no-repeat right center;
+                display: inline-block;
+            }
+            ul {
+                display: none;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background-color: #fff;
+                width: 140px;
+                top: 45px;
+                left: -50px;
+                line-height: 32px;
+                border-radius: 3px;
+                box-shadow: 0 2px 10px 0 #595959;
+                .arrow {
+                    position: absolute;
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-color: transparent;
+                    border-bottom-color: #fff;
+                    content: "";
+                    top: -8px;
+                    left: 60px;
+                    border-width: 0px 10px 10px;
+                    border-top-width: 0;
+                }
+                .add-item {
+                    
+                    border-top: 1px solid #d9dcdf;
+                    padding-left:40px;
+                    &:hover {
+                        background-color: #eaeaea;
+                    }
+                    &.first-item {
+                        margin-top: 4px;
+                        border-top: none;
+                    }
+                    &.last-item {
+                        border-radius: 0px 0px 3px 3px;
+                    }
+                }
+            }
+        }
+    }
+    .depart-list {
+        top: 50px;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        overflow-y: auto;
+    }
+}

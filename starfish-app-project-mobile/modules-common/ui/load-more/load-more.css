@@ -1,0 +1,32 @@
+.common-loading-more {
+    display: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.common-loading-more .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-image: url(img/loading.gif);
+    vertical-align: middle;
+}
+.common-load-more-error {
+    display: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #989da6;
+    cursor: pointer;
+}
+.common-load-more-none {
+    display: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #989da6;
+}

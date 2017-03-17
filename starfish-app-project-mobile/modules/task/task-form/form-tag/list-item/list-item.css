@@ -1,0 +1,57 @@
+.tag-item {
+	background-color: #fff;
+}
+.tag-item .item-wraper{
+	overflow: hidden;
+	position: relative;
+	height: 1.2rem;
+}
+.tag-item:last-child .item-wraper{
+	border-bottom: none;
+}
+.tag-item .item-wraper img{
+	width: .74rem;
+	height: .74rem;
+	margin-top: .23rem;
+	border-radius: 50%;
+	position: absolute;
+}
+.tag-item .item-wraper .item-name{
+	width: 100%;
+	display: inline-block;
+	height: 1.2rem;sss
+	margin-left: 1rem;
+	border-bottom: 1px solid #e2ecf0;
+	padding-left: .34rem;
+}
+.tag-item .item-wraper .item-name span{
+	width: 2.6rem;
+	display: inline-block;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	border-bottom: 1px solid #e2ecf0;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tag-item .tag i{
+	display: inline-block;
+	width: .48rem;
+	height: .48rem;
+	vertical-align: middle;
+	background-image: url(img/notchoose_icon.png);
+	background-size: 100%;
+	position: absolute;
+    right: .3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tag-item .tag i:active{
+	background-image: url(img/choose_icon.png);
+}
+.tag-item .tag.selected i{
+	background-image: url(img/choose_icon.png);
+}
+.tag-item .tag.selected i:active{
+	background-image: url(img/notchoose_icon.png);
+}

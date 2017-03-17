@@ -1,0 +1,39 @@
+.task-form-charge{
+	position: relative;
+	margin-left: 45px;
+	font-size: 0;
+	margin-top: 18px;
+
+	.label{
+		display: inline-block;
+		width: 130px;
+		font-size: 13px;
+		color: rgba(56, 61, 72, 0.7);
+	}
+
+	.name{
+		display: inline-block;
+		font-size: 13px;
+		max-width: 80px;
+		color: #383d48;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.edit{
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 45px;
+		width: 18px;
+		height: 18px;
+		background-image: url(img/edit@2x.png?__sprite);
+		background-size: 100%;
+		cursor: pointer;
+
+		&:hover{
+			background-image: url(img/edit-active@2x.png?__sprite);
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.people-select{
+	
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	.input-wraper{
+		position: relative;
+		margin: 0 10px 7px;
+
+		input{
+			height: 22px;
+			width: 100%;
+			padding-left: 14px;
+			padding-right: 25px;
+			border-radius: 4px;
+			border: 1px solid #dfdfdf;
+			outline: none;
+		}
+
+		.icon-clean{
+			position: absolute;
+			display: none;
+			width: 20px;
+			height: 20px;
+			top: 1px;
+			right: 2px;
+			background-size: 100%;
+			background-image: url(img/clean@2x.png?__sprite);
+			cursor: pointer;
+
+			&:hover{
+				background-image: url(img/clean-active@2x.png?__sprite);
+			}
+		}
+	}
+
+	.list-wraper{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 22px;
+		bottom: 0;
+		overflow: auto;
+	}
+
+	
+}

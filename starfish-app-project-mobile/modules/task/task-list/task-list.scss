@@ -1,0 +1,130 @@
+.task-list-view {
+    height: 100%;
+    .task-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.1rem;
+        width: 100%;
+        font-size: .32rem;
+        background-color: #fff;
+        padding:0 .2rem;
+        color: #8f959e;
+        border-bottom: 1px solid #dbe2e7;
+        box-shadow: 0 1px 3px #e8eff4;
+        span {
+            display: inline-block;
+            position: relative;
+            /*width: 1.4rem;*/
+            height: 1.1rem;
+            border-bottom: .06rem solid transparent;
+            /*margin-right: .32rem;*/
+            line-height: 1.1rem;
+            // padding: 0 .12rem;
+            cursor: pointer;
+        }
+        span+span{
+            margin-left: .66rem;
+        }
+        span.selected {
+            border-bottom: .08rem solid #52A9E7;
+            color: #52A9E7;
+        }
+    }
+    .task-list {
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 1.1rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: auto;
+        color: #484b50;
+        font-size: .34rem;
+    }
+    .task-list .task-section {
+        background-color: #fff;
+        margin-top: .4rem;
+        /*border-bottom: 1px solid #e3ebf0;*/
+    }
+    .task-list .section-hd {
+        position: relative;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        font-size: 0;
+        color: #3d9ddb;
+    }
+    .task-list .section-dateIcon {
+        display: inline-block;
+        position: absolute;
+        top: .25rem;
+        left: .22rem;
+        width: .64rem;
+        height: .64rem;
+        background-image: url(img/calendar_icon.png);
+        background-size: 100%;
+    }
+    .task-list .section-hd .section-week {
+        font-size: .36rem;
+        margin-left: 1.06rem;
+    }
+    .task-list .section-hd .section-name {
+        font-size: .3rem;
+    }
+    .task-list .section-hd .section-date {
+        position: absolute;
+        height: 1.2rem;
+        width: 2rem;
+        line-height: 1.2rem;
+        right: 0;
+        top: 0;
+        font-size: .3rem;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #eb5750;
+    }
+    .task-list .task-more {
+        height: 0.5rem;
+        line-height: 0.5rem;
+        text-align: center;
+    }
+    .task-list .task-more span {
+        display: inline-block;
+        background-image: url(img/white_loading.gif);
+        width: .32rem;
+        height: .32rem;
+        background-size: 100%;
+    }
+    .task-empty {
+        position: absolute;
+        display: none;
+        top: 1.1rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        >.empty-content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            height: 2.4rem;
+            margin-top: -1.2rem;
+            text-align: center;
+            >.empty-icon {
+                display: inline-block;
+                width: .94rem;
+                height: 1.21rem;
+                background-size: 100%;
+                background-image: url(img/task-empty.png);
+            }
+            >.empty-text {
+                margin-top: .34rem;
+                font-size: .32rem;
+                color: #919397;
+            }
+        }
+    }
+}

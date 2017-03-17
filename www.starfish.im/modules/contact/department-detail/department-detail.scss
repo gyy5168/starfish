@@ -1,0 +1,140 @@
+.department-detail {
+    overflow: hidden;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    .department-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        .department-name {
+            background: #f3f3f3;
+            color: #999999;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e7;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+        .department-member-list,
+        .department-header {
+            min-width: 860px;
+            font-size: 0;
+            li{
+                border-bottom:1px solid #eee;
+                &:first-child{
+                    border-top:1px solid #eee;
+                }
+            }
+            span {
+                vertical-align: middle;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                font-size: 12px;
+                color: #333333;
+            }
+            .member-select {
+                width: 42px;
+                background: url("img/no-select.png") center no-repeat;
+                &.selected {
+                    background: url("img/select-blue.png") center no-repeat;
+                }
+            }
+            .member-name {
+                width: 100px;
+                text-indent: 40px;
+                margin-right: 40px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                position: relative;
+                i {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    content: " ";
+                    border-radius: 50%;
+                    top: 5px;
+                    left: 0px;
+                    background-position: left center;
+                    background-size: 30px 30px;
+                    background-repeat: no-repeat;
+                }
+            }
+            .member-sex {
+                width: 65px;
+            }
+            .member-phone {
+                width: 120px;
+            }
+            .member-department,
+            .member-position {
+                width: 108px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin-right: 40px;
+            }
+            .member-last-login-time {
+                width: 138px;
+            }
+        }
+        .department-member-list{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 90px;
+            overflow-y: auto;
+        }
+        .department-header{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50px;
+            // border-bottom:1px solid #eee;
+        }
+        li.picked,
+        li:hover {
+            background: #eeeeee;
+        }
+        .department-header {
+            span {
+                color: #999999;
+            }
+        }
+        .no-more,
+        .more-loading,
+        .more-error {
+            display: none;
+            font-size: 12px;
+            color: #989da6;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+        .more-error,
+        .more-loading {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .more-loading{
+            background: url("img/loading.gif") center no-repeat;
+            background-size:24px 24px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<div class="icon-wraper">
+	<% if ( type === "image" ) { %>
+		<img src="<%= url %>"/>
+	<% } else { %>
+		<span class="icon icon-<%= type %>"></span>
+	<% } %>
+</div>
+<span class="text JS-text"><%= name %></span>

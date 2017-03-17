@@ -1,0 +1,64 @@
+.form-people{
+
+	.group-content{
+		position: relative;
+		padding-left: 6px;
+		padding-right: 30px;
+		padding-bottom: 6px;
+		min-height: 40px;
+		font-size: 0;
+		cursor: text;
+	}
+
+	.group-content>.input-wraper{
+		display: inline-block;
+		position: relative;
+		margin-top: 6px;
+
+		height: 26px;
+		line-height: 26px;
+
+		font-size: 14px;
+		max-width: 100%;
+		overflow: hidden;
+
+		span{
+			display: inline-block;
+			padding-left: 1em;
+			color: transparent;
+
+		}
+
+		input{
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0;
+			padding:0;
+			border: none;
+			width: 100%;
+			font-size: 14px;
+			color: #333;
+			height: inherit;
+			/*line-height: inherit;*/
+			outline: none;
+			-webkit-appearance:none;
+			background-color: transparent;
+		}
+	}
+
+	>.people-add{
+		position: absolute;
+		display: inline-block;
+		right: 30px;
+		bottom: 10px;
+		width: 20px;
+		height: 20px;
+		background-size: 100%;
+		background-image: url(img/add.png?__sprite);
+	}
+}
+
+
+
+

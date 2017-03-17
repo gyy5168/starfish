@@ -1,0 +1,25 @@
+/*@require modules-common/init/reset.css */
+.content{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 230px;
+	text-align: center;
+ 
+ 	span{
+		display: inline-block;
+		width: 120px;
+		height: 120px;
+		background-size: 100%;
+		background-image: url(img/app@2x.png);
+	}
+
+ 	p{
+		margin: 20px 0 0 0 0;
+		color: #979da6;
+		font-size: 15px;
+	}
+}

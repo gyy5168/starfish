@@ -1,0 +1,45 @@
+.people-select-enhanced{
+	.group-item .people-item{
+		padding-left: 24px;
+	}
+	.people-item{
+		height: 32px;
+		line-height: 32px;
+		cursor: pointer;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+
+		&:nth-child(2n + 1){
+			background-color:#f7f7f7;
+		}
+
+		.check{
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			background-size: 100%;
+			background-image: url(img/uncheck@2x.png);
+			margin-right: 8px;
+			vertical-align: middle;
+		}
+
+		&.selected{
+			.check{
+				background-image: url(img/check@2x.png);
+			}
+		}
+
+		img{
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			margin-right: 8px;
+			vertical-align: middle;
+		}
+
+		.name{
+			vertical-align: middle;
+		}
+	}
+}

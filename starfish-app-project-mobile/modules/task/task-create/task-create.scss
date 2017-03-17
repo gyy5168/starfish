@@ -1,0 +1,57 @@
+.task-create {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    font-size: .32rem;
+    color: #8f959e;
+    .more-options {
+        color: #52a9e7;
+        display: inline-block;
+        line-height: 1.26rem;
+        height: 1.26rem;
+        text-align: center;
+        width: 100%;
+        background-color: #fff;
+        >div {
+            margin-left: .3rem;
+            border-bottom: 1px solid #e3ebf0;
+        }
+    }
+    .form-more {
+        display: none;
+        .expected_hours {
+            line-height: 1.2rem;
+            height: 1.2rem;
+            background-color: #fff;
+            >div {
+                margin-left: .3rem;
+                height: 100%;
+                border-bottom: 1px solid #e3ebf0;
+                label {
+                    height: 1.2rem;
+                    line-height: 1.2rem;
+                    color: #8f959e;
+                    position: absolute;
+                }
+                >div {
+                    float: right;
+                    padding-right: .3rem;
+                    input {
+                        border: none;
+                        background-color: #fff;
+                        margin: 0;
+                        height: .8rem;
+                        line-height: .34rem;
+                        font-size: .34rem;
+                        outline: none;
+                        width: 1.5rem;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

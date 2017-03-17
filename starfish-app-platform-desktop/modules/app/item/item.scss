@@ -1,0 +1,53 @@
+.app{
+	.item{
+		position: relative;
+		display: inline-block;
+		width: 160px;
+		text-align: center;
+		cursor: pointer;
+		.item-icon{
+			display: inline-block;
+			width: 80px;
+			height: 80px;
+			background-size: 100%;
+			&.project{
+				background-image: url(img/project@2x.png);
+			}
+			&.file{
+				background-image: url(img/file@2x.png);
+			}
+			&.mail{
+				background-image: url(img/mail@2x.png);
+			}
+			
+		}
+
+		.name{
+			display: block;
+			font-size: 18px;
+			color: #383d48;
+			margin-top: 20px;
+		}
+
+		&:hover{
+			.shortcut{
+				display: inline-block;
+			}
+		};
+
+		.shortcut{
+			position: absolute;
+			display: none;
+			top: 0px;
+			right: 30px;
+			width: 30px;
+			height: 30px;
+			background-size: 100%;
+			background-image: url(img/shortcut@2x.png?__sprite);
+
+			&.selected{
+				background-image: url(img/shortcut-active@2x.png?__sprite);
+			}
+		}
+	}
+}

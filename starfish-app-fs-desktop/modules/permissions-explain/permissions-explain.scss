@@ -1,0 +1,20 @@
+.permissions-explain{
+	width: 410px;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 32px;
+
+	th,
+	td{
+		text-align: left;
+		margin-right: 20px;
+
+		i{
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			background-size: 100%;
+			background-image: url(img/permissions@2x.png?__sprite);
+		}
+	}
+}

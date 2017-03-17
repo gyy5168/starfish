@@ -1,0 +1,119 @@
+.app{
+	position: relative;
+	height: 100%;
+	overflow-y:auto;
+
+
+	.empty{
+	 	position: absolute;
+	 	display: none;
+	 	left: 0;
+	 	right: 0;
+	 	top: 0;
+	 	bottom: 0;
+
+	 	.empty-content{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			height: 230px;
+			text-align: center;
+	 	}
+
+	 	.info-admin{
+	 		display: none;
+	 	}
+	 	.info{
+	 		display: block;
+	 	}
+
+	 	.icon{
+			display: inline-block;
+			width: 120px;
+			height: 120px;
+			background-size: 100%;
+			background-image: url(img/app@2x.png);
+		}
+
+		p{
+			margin: 20px 0 0 0 0;
+			color: #979da6;
+			font-size: 15px;
+		}
+
+		a{
+			display: inline-block;
+			width: 94px;
+			height: 29px;
+			line-height: 29px;
+			margin-top: 25px;
+			font-size: 12px;
+			color: #383d48;
+			border: 1px solid #acacac;
+			border-radius: 3px;
+			text-decoration: none;
+			color: #383d48;
+			outline: none;
+
+			i{
+				display: inline-block;
+				width: 13px;
+				height: 13px;
+				background-size: 100%;
+				background-image:url(img/add@2x.png);
+				vertical-align: middle;
+				margin-right: 5px;
+				margin-top: -3px;
+			}
+		}
+	 }
+
+	 &.admin .empty .set-btn{
+	 	display: inline-block;
+	 }
+
+	 &.admin .info-admin{
+	 	display: block;
+	 }
+	 &.admin .info{
+	 	display: none;
+	 }
+
+	 .content{
+	 	position: absolute;
+	 	left: 0;
+	 	right: 0;
+	 	top: 0;
+	 	bottom: 0;
+
+	 	.app-list{
+	 		position: absolute;
+	 		text-align: center;
+	 		height: 150px;
+	 		margin: auto;
+	 		top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+	 	}
+
+	 	.set-btn{
+	 		position: absolute;
+	 		display: none;
+	 		top:20px;
+	 		right: 20px;
+	 		width: 25px;
+	 		height: 25px;
+	 		background-size: 100%;
+	 		background-image: url(img/set@2x.png);
+	 		
+	 	}
+	 }
+
+	 &.admin .set-btn{
+	 	display: inline-block;
+	 }
+}

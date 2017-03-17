@@ -1,0 +1,189 @@
+.transfer-item{
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #d5d5d5;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 80px;
+	.title{
+	  	margin-top: 13px;
+	  	width: 200px;
+		font-size: 13px;
+		color: #383b48;
+	  	height: 14px;
+		line-height: 1;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.item-bd{
+		height: 28px;
+		line-height: 28px;
+	}
+
+	.state-error{
+		display: none;
+		color: #d23535;
+		font-size: 13px;
+	}
+
+	.state-wait,
+	.state-success{
+		font-size: 13px;
+	}
+
+	.state-success{
+		display: none;
+	}
+
+	.progress-wraper{
+		position: relative;
+		display: none;
+		margin-right: 12px;
+		font-size: 13px;
+		color: #74787e;
+	}
+
+	.progress{
+		position: relative;
+		display: inline-block;
+		width: 186px;
+		height: 6px;
+		margin-right: 12px;
+		border-radius: 6px;
+		background-color: #dcdbdb;
+		border: 1px solid #c7c7c7;
+	}
+
+	.progress-inner{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height:6px;
+		border-radius: 6px;
+		background-color: #52a9e7;
+		border: 1px solid #3f8cc3;
+	}
+
+	.progress-num{
+		vertical-align: middle;
+	}
+
+	.restart-icon{
+		position: absolute;
+		display: inline-block;
+		right: 29px;
+		top: 30px;
+		width: 18px;
+		height: 18px;
+		background-image: url(img/restart@2x.png?__sprite);
+		background-size: 100%;
+		cursor: pointer;
+	}
+
+	.restart-icon:active{
+		background-image: url(img/restart-active@2x.png?__sprite);
+	}
+
+	.cancel-icon{
+		position: absolute;
+		display: inline-block;
+		right: 0px;
+		top: 30px;
+		width: 18px;
+		height: 18px;
+		background-image: url(img/remove@2x.png?__sprite);
+		background-size: 100%;
+		cursor: pointer;
+	}
+
+	.cancel-icon:active{
+		background-image: url(img/remove-active@2x.png?__sprite);
+	}
+
+	.item-ft{
+		font-size: 12px;
+		color: #74787e;
+		line-height: 1;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	&.wait{
+		.progress-wraper{
+			display: none;
+		}
+		.state-wait{
+			display: block;
+		}
+		.state-error{
+			display: none;
+		}
+		.state-success{
+			display: none;
+		}
+		.restart-icon{
+			display: none;
+		}
+	}
+
+	&.success{
+		.progress-wraper{
+			display: none;
+		}
+		.state-wait{
+			display: none;
+		}
+		.state-error{
+			display: none;
+		}
+		.state-success{
+			display: block;
+		}
+		.restart-icon{
+			display: none;
+		}
+	}
+
+	&.error{
+		.progress-wraper{
+			display: none;
+		}
+		.state-wait{
+			display: none;
+		}
+		.state-error{
+			display: block;
+		}
+		.state-success{
+			display: none;
+		}
+		.restart-icon{
+			display: inline-block;
+		}
+	}
+
+	&.progress{
+		.progress-wraper{
+			display: block;
+		}
+		.state-wait{
+			display: none;
+		}
+		.state-error{
+			display: none;
+		}
+		.state-success{
+			display: none;
+		}
+		.restart-icon{
+			display: none;
+		}
+	}
+}
+
+
+

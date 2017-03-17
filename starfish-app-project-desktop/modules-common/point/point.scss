@@ -1,0 +1,71 @@
+.point{
+	position: absolute;
+	display: none;
+	height: 41px;
+	line-height: 41px;
+	min-width: 205px;
+	top: 18px;
+	left: 50%;
+	padding-left: 40px;
+	padding-right: 50px;
+	text-align: center;
+	z-index: 20;
+	font-size: 13px;
+	color: #fff;
+	border-radius: 2px;
+	background-color: rgba(#3f4653, .9);
+	-webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+
+    .point-icon{
+    	display: none;
+    	font-size: 0;
+    	padding: 8px;
+		background-size: 100%;
+		background-image: url(img/warn@2x.png);
+		margin-right:10px;
+		vertical-align: middle;
+		background-color: transparent;
+    }
+
+    &.success{
+    	background-color: rgba(#6ac44e, .9);
+    	.point-icon{
+    		display: inline;
+    		background-image: url(img/success@2x.png);
+    	}
+	}
+
+	&.error{
+		background-color: rgba(#ff9f33, .9);
+		.point-icon{
+			display: inline;
+    		background-image: url(img/warn@2x.png);
+    	}
+	}
+
+	&.loading{
+		background-color: rgba(#3f4653, .9);
+    	.point-icon{
+    		display: inline;
+    		background-image: url(img/loading.gif);
+    	}
+	}
+
+    .point-text{
+		font-size: 13px;
+	    color: #fff;
+    }
+
+    .close{
+    	position: absolute;
+    	width: 10px;
+    	height: 10px;
+    	background-size: 100%;
+    	top: 15px;
+    	right: 10px;
+    	background-image: url(img/close@2x.png);
+    	cursor: pointer;
+    }
+}

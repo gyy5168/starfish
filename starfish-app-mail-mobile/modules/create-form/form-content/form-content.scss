@@ -1,0 +1,22 @@
+.form-content{
+	position: relative;
+	width: 100%;
+	padding: .26rem .3rem;
+	min-height: 2.5rem;
+	outline: none;
+	border: none;
+
+	font-size: .28rem;
+	color: #484b50;
+	line-height: 1.5;
+	resize:none;
+
+	&::-webkit-input-placeholder{
+		font-size: .28rem;
+		color:#8f959e;
+	}
+}
+
+
+
+

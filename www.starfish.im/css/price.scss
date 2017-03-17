@@ -1,0 +1,185 @@
+.price {
+    height: 1050px;
+    .block-bg {
+        height: 240px;
+        background-color: #f4f4f4;
+    }
+    .editions {
+        margin-top: -180px;
+        .edition-item {
+            width: 350px;
+            height: 900px;
+            float: left;
+            .edition-price {
+                width: 350px;
+                height: 420px;
+                text-align: center;
+                color: #fff;
+                font-size: 30px;
+                font-family: "FZLTXihei";
+                border-radius: 20px;
+                padding-top: 30px;
+                span {
+                    display: inline-block;
+                    width: 350px;
+                    &.edition-name {
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                    &.edition-num {
+                        margin-top: 45px;
+                        height: 100px;
+                        img {
+                            height: 100px;
+                        }
+                    }
+                    &.edition-info {
+                        margin-top: 15px;
+                        font-size: 18px;
+                        font-family: "FZLTXihei";
+                        line-height: 25px;
+                        height: 50px;
+                    }
+                    &.edition-buy {
+                        margin-top: 50px;
+                    }
+                }
+            }
+            .edition-function {
+                width: 350px;
+                padding: 50px 20px 0;
+                .edition-title {
+                    padding-bottom: 20px;
+                    .edition-name {
+                        display: inline-block;
+                        width: 350px;
+                        font-size: 24px;
+                        font-family: "FZLTXihei";
+                        height: 24px;
+                        line-height: 24px;
+                    }
+                    .edition-include {
+                        display: inline-block;
+                        width: 350px;
+                        font-size: 16px;
+                        font-family: "FZLTXihei";
+                        margin-top: 10px;
+                        height: 16px;
+                        line-height: 16px;
+                    }
+                }
+                .function-list {
+                    width: 350px;
+                    margin-top: 20px;
+                    font-size: 16px;
+                    font-family: "FZLTXihei";
+                    color: #333;
+                    .function-item {
+                        position: relative;
+                        padding-left: 18px;
+                        color: #333;
+                        height: 16px;
+                        line-height: 16px;
+                        i {
+                            width: 8px;
+                            height: 8px;
+                            display: inline-block;
+                            position: absolute;
+                            top: 3px;
+                            left: 0;
+                        }
+                    }
+                    .function-item+.function-item {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            &.foundation {
+                .edition-price {
+                    background-color: #4cb992;
+                    button {
+                        background-color: #3b9075;
+                        width: 190px;
+                        &:hover {
+                            background-color: #3b9075;
+                        }
+                    }
+                }
+                .edition-function {
+                    .edition-title {
+                        color: #4cb992;
+                        border-bottom: 2px solid #4cb992;
+                    }
+                    .function-list {
+                        width: 350px;
+                        .function-item {
+                            i {
+                                background-color: #a7dcaa;
+                            }
+                        }
+                    }
+                }
+            }
+            &.standard {
+                margin-left: 88px;
+                .edition-price {
+                    background-color: #3398e0;
+                    button {
+                        background-color: #0b67a8;
+                        width: 190px;
+                        &:hover {
+                            background-color: #0b67a8;
+                        }
+                    }
+                }
+                .edition-function {
+                    .edition-title {
+                        color: #3398e0;
+                        border-bottom: 2px solid #3398e0;
+                    }
+                    .function-list {
+                        width: 350px;
+                        .function-item {
+                            i {
+                                background-color: #9dcce8;
+                            }
+                        }
+                    }
+                }
+            }
+            &.enterprise {
+                float: right;
+                .edition-price {
+                    background-color: #ea9e53;
+                    button {
+                        background-color: #b5773a;
+                        width: 190px;
+                        &:hover {
+                            background-color: #b5773a;
+                        }
+                    }
+                    span {
+                        &.edition-info {
+                            line-height: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+                .edition-function {
+                    .edition-title {
+                        color: #ea9e53;
+                        border-bottom: 2px solid #ea9e53;
+                    }
+                    .function-list {
+                        width: 350px;
+                        .function-item {
+                            i {
+                                background-color: #ead0b5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

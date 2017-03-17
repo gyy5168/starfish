@@ -1,0 +1,22 @@
+/*  @require modules-common/ui/button/button.scss  */
+.confirm{
+	display: none;
+	.modal-dialog{
+        margin: 200px auto 0 auto;
+		width: 368px;
+	}
+
+	.confirm-bd{
+		margin: 26px 20px 22px 20px;
+		line-height:19px;
+		font-size: 13px;
+		color: #383d48;
+		text-align: left;
+	}
+}
+
+.confirm-ft{
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+}

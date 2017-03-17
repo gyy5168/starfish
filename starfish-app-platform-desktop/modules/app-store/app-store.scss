@@ -1,0 +1,45 @@
+.app-store{
+	.nav{
+		height: 42px;
+		line-height: 42px;
+		text-align: center;
+		font-size: 15px;
+		color: #383d48;
+		background-color: #fff;
+
+		a{
+			position: absolute;
+			display: inline-block;
+			left: 15px;
+			top: 10px;
+			width: 24px;
+			height: 24px;
+			background-size: 100%;
+			background-image: url(img/back@2x.png?__sprite);
+			text-decoration: none;
+
+			&:hover{
+				background-image: url(img/back-active@2x.png?__sprite);
+			}
+		}
+	}
+	.bd{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 42px;
+		bottom: 0;
+		background-color: #f7f8fb;
+	}
+	.bd-content{
+		ul{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			
+			padding:16px 20px;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+<span class="member-select JS-member-select"></span>
+<span class="member-name"><i style='background-image:url("<%= data.avatar %>")'></i><%= data.name %></span>
+<span class="member-sex">
+<% var sex %>
+<% if(data.gender==1) {%>
+    <% sex="女" %>
+<%} else{ %>
+    <% sex="男" %>
+<% } %>
+<% var sex="" %>
+    <% if(data.gender) {%>
+        <% if(data.gender==1) {%>
+            <% sex="女" %>
+        <%}else{%>
+            <% sex="男" %>
+ <% }} %>  
+<%= sex %>
+</span>
+<span class="member-phone"><%= data.phone %></span>
+<span class="member-department"><%= data.department %></span>
+<span class="member-position"><%= data.position %></span>
+<span class="member-last-login-time"><%= data.time %></span>

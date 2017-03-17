@@ -1,0 +1,21 @@
+#!/bin/bash
+SVC_LOG="/mnt1/logs/svc.log"
+
+date >> $SVC_LOG
+echo 'starfish-ws start' >> $SVC_LOG
+
+. /opt/mos/python-env/bin/activate
+
+cd /opt/mos/codebase/starfish-ws
+
+export LANG="en_US.utf8"
+export LC_ALL="en_US.UTF-8"
+export LC_LANG="en_US.UTF-8"
+
+exec setuidgid mos uwsgi \
+    --env DJANGO_ENV=test \
+    --uwsgi-socket 127.0.0.1:6002 \
+    --module starfish.wsgi \
+    --master \
+    --die-on-term \
+    --processes 2 --threads 2 >> $SVC_LOG 2>&1

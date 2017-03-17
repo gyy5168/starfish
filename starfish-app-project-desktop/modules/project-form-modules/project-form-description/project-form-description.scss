@@ -1,0 +1,34 @@
+.project-form-description{
+	margin-top: 10px;
+	line-height:0;
+
+	textarea{
+		line-height:19px;
+		width: 100%;
+		padding: 8px 10px;
+		color: #383d48;
+		background-color: transparent;
+		border: 1px solid transparent;
+		font-size: 13px;
+		overflow:hidden;
+		resize:none;
+		outline: none;
+		margin:0;
+		-webkit-transition: box-shadow 0.30s ease-in-out; 
+		transition: box-shadow 0.30s ease-in-out;
+	}
+
+	textarea:hover{
+		border: 1px solid #e1e1e1;
+	}
+
+	textarea:focus{
+		border: 1px solid #52a9e7;
+		box-shadow: 0 0 8px #d4ebf8;
+	}
+
+	textarea::-webkit-input-placeholder{
+		color:#8c959d;
+		line-height: 19px;
+	}
+}

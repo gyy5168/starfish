@@ -1,0 +1,114 @@
+.project-detail-view{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	.nav{
+		font-size: 15px;
+		color: #383d48;
+		height: 66px;
+		line-height: 66px;
+		border-bottom: 1px solid #ebeeee;
+		padding-left: 12px;
+		padding-right: 16px;
+
+		.nav-item{
+			cursor:default;
+		}
+		.nav-item.index{
+			color: #52a9e7;
+			cursor: pointer;
+			text-decoration: none;
+		}
+	}
+
+	.detail-content{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 66px;
+		overflow: auto;
+
+		.hr{
+			border-top:1px solid #e5e5e5;
+			margin-top:20px;
+		}
+	}
+
+	.detail-form{
+		position: relative;
+		width: 680px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.btns{
+		display: none;
+		margin-top: 16px;
+		line-height: 0;
+		text-align: center;
+
+		button{
+			width: 64px;
+			height: 30px;
+			line-height: 28px;
+			border-radius: 2px;
+			text-align: center;
+			padding: 0;
+			cursor: pointer;
+			outline: none;
+		}
+
+		.btn-ok{
+			margin-left: 10px;
+			color: #fff;
+			background-color: #52a9e7;
+			border: none;
+
+			&:hover{
+				background-color: #3677b0;
+			};
+		}
+
+		.btn-cancel{
+			color: #383d48;
+			border: 1px solid #c9ccd3;
+			background-color: #fafafa;
+			&:hover{
+				background-color: #e5e5e5;
+			};
+		}
+	}
+
+	.project-form-close{
+		position: relative;
+		font-size: 13px;
+		color: #383d48;
+		margin-top: 8px;
+
+		label{
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100px;
+			padding-left: 10px;
+			height: 55px;
+			line-height: 55px;
+		}
+
+		.group-content{
+			position: relative;
+			height: 55px;
+			margin-left: 100px;
+		}
+
+		.btn-project-close{
+			margin-top: 12px;
+		}
+
+	}
+}

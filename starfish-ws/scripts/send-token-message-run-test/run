@@ -1,0 +1,13 @@
+#!/bin/bash
+source /opt/mos/codebase/bb_bin/common.sh
+
+SVC_LOG="/mnt1/logs/svc.log"
+
+date >> $SVC_LOG
+echo 'send-token-message start' >> $SVC_LOG
+
+. /opt/mos/python-env/bin/activate
+
+export DJANGO_ENV=script_test
+cd /opt/mos/codebase/starfish-ws/scripts
+exec setuidgid mos python $(py_or_pyc send-token-message.py) >> $SVC_LOG 2>&1

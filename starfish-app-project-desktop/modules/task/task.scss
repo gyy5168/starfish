@@ -1,0 +1,40 @@
+.task-view{
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	>.task-content{
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+
+		>.g-task-list{
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		>.g-task-list.narrow{
+			right: 378px;
+		}
+
+		>.g-task-create,
+		>.g-task-detail,
+		>.g-statistics{
+			position: absolute;
+			display: none;
+			width:378px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			border-left: 1px solid #fafafa;
+		}
+	} 
+}

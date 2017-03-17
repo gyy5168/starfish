@@ -1,0 +1,59 @@
+/* @require modules-common/ui/button/button.scss */
+.people-select-all{
+	font-size: 13px;
+	color: #383d48;
+
+	.panel-wraper{
+		position: relative;
+		height: 292px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+
+	.list-title{
+		height: 32px;
+		line-height: 32px;
+	}
+
+	.left-panel{
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		/*width: 270px;*/
+		width: 56%;
+	}
+
+	.right-panel{
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		/*width: 180px;*/
+		width: 41%;
+	}
+
+	.left-panel-content,
+	.right-panel-content{
+		/*position: relative;*/
+		
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 32px;
+		bottom: 0;
+		overflow-y:auto; 
+		/*border: 1px solid #d5d5d5;
+		&:hover{
+			border: 1px solid #52a9e7;
+		}*/
+	}
+
+	.btns{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+
+	}
+}

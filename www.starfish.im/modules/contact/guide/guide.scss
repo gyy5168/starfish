@@ -1,0 +1,34 @@
+/*  @require modules-common/ui/button/button.scss  */
+
+.guide-modal {
+    display: none;
+    .modal-dialog {
+        width: 400px;
+        height: 220px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -110px;
+        margin-left: -200px;
+    }
+    .confirm-bd {
+        margin: 20px 20px 0px 20px;
+        height: 90px;
+        line-height: 19px;
+        font-size: 13px;
+        color: #383d48;
+        text-align: center;
+        span {
+            margin-top:30px;
+            display: inline-block;
+        }
+    }
+    .confirm-ft {
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        .confirm-ok {
+            margin-left: 15px;
+        }
+    }
+}

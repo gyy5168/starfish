@@ -1,0 +1,63 @@
+.set-right-panel{
+    position: absolute;
+    display:none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    >.content{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        >.content-hd{
+            height: 43px;
+
+            .search{
+                position: absolute;
+                top: 10px;
+                left: 350px;
+                width: 220px;
+                height: 23px;
+
+                input{
+                    height: 23px;
+                    
+                    width: 100%;
+                    border: 1px solid #eee;
+                    outline: none;
+                    color: #383d48;
+                    font-size: 12px;
+                    border-radius: 23px;
+                    padding-left: 20px;
+                    background: url("../img/serch_icon.png") 5px 5px no-repeat;
+                    background-size: 12px 12px;
+                }
+
+                input::-webkit-input-placeholder{
+                    color: #989da6;
+                    font-size: 12px;
+                }
+
+                input:focus{
+                    border: 1px solid #4fa8ea;
+                }
+
+            }
+        }
+
+        >.content-bd{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 43px;
+            bottom: 0;
+        }
+
+    }
+
+    
+}

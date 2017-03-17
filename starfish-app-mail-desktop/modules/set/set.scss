@@ -1,0 +1,64 @@
+.set-page{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	
+	overflow: auto;
+	.nav{
+		height: 50px;
+		line-height: 50px;
+		font-size: 15px;
+		color: #383d48;
+		padding-left:15px;
+		border-bottom: 1px solid #eee;
+		background-color: #f8f8fa;
+		.index{
+			cursor: pointer;
+			color: #52a9e7;
+		}
+	}
+
+	.main{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50px;
+		bottom:0;
+	}
+
+	.sub-nav{
+		position: absolute;
+		left: 0;
+		width: 170px;
+		bottom: 0;
+		top: 0;
+		font-size: 15px;
+		color: #383d48;
+		background-color: #eff0f2;
+
+		li{
+			height: 45px;
+			line-height: 45px;
+			padding-left: 40px;
+			cursor: pointer;
+		}
+
+		li.selected{
+			background-color: #fff;
+		}
+	}
+
+	.sub-main{
+		position: absolute;
+		top: 0;
+		left: 170px;
+		bottom: 0;
+		right: 0;
+        
+	}
+}
+
+
+

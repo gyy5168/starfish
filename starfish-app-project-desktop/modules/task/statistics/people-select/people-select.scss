@@ -1,0 +1,36 @@
+.statistics-people-select{
+
+	.all-member{
+		font-size: 13px;
+		color: #383d48;
+		font-weight: bold;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 5px 10px;
+		cursor: pointer;
+	}
+
+	.split-line{
+		position: relative;
+		border-top: 1px solid #e1e1e1;
+		margin: 8px 10px;
+
+		.cover{
+			position: absolute;
+			font-size: 13px;
+			line-height: 1;
+			color: #9399a9;
+			background-color: #fff;
+			top: -7px;
+			left: 50%;
+			margin-left: -20px;
+			width: 40px;
+			text-align: center;
+		}
+	}
+
+	.people-select .list-wraper{
+		top:67px;
+	}
+	
+}

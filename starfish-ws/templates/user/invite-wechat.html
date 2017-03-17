@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>{{admin.name}}邀请你加入{{org.name}}</title>
+</head>
+<style type="text/css">
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    background-color: #f4fbff;
+}
+label, input{
+    padding: 0;
+    margin: 0;
+}
+.info{
+    height: 1rem;
+    border-bottom: #dee5ea;
+    background-color: #f2f5f7;
+    color: #3d9ddb;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 1rem;
+    margin: 0;
+}
+.logo{
+    margin-top: .66rem;
+    text-align: center;
+    line-height: 0;
+}
+.logo img{
+    width: 1.77rem;
+    height: 1.72rem;
+}
+form{
+    margin-top: .62rem;
+    text-align: center;
+}
+.form-group{
+    position: relative;
+    font-size: 0;
+    margin-left: .34rem;
+}
+/*.form-group label{
+    display: inline-block;
+    height: 1.1rem;
+    width: 1.32rem;
+    line-height: 1.1rem;
+    font-size: .34rem;
+    color: #484b50;
+    text-align: center;
+}*/
+.form-group input{
+    height: 1.1rem;
+    width: 100%;
+    font-size: .34rem;
+    color: #979da1;
+    border: none;
+    border-bottom: 1px solid #dee5da;
+    background-color: #f4fbff;
+}
+.form-group input:focus{
+    outline: none;
+}
+.verCode-get{
+    position: absolute;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    top: 0;
+    right: .34rem;
+    color: #3d9ddb;
+    font-size: .34rem;
+    cursor: pointer;
+}
+.countDown{
+    position: absolute;
+    display: none;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    top: 0;
+    right: .34rem;
+    font-size: .34rem;
+    color: #797d84;
+}
+.countDown i{
+    color: #3d9ddb; 
+}
+.group-password span{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 1.1rem;
+    height: 1.1rem;
+    width: .94rem;
+    z-index: 10;
+}
+.group-password i{
+    display: inline-block;
+    width: .46rem;
+    height: .24rem;
+    vertical-align: middle;
+    background-image: url("/static/invite-mobile/switch_icon_normal.png");
+    background-size: 100%;
+}
+.group-password span.selected i{
+    background-image: url("/static/invite-mobile/switch_icon_pressed.png");
+}
+form p{
+    text-align: left;
+    padding-left: .34rem;
+    height: .28rem;
+    font-size: .28rem;
+    margin: 0;
+    padding-top: .3rem;
+    color: #797d84;
+}
+.submit{
+    display: inline-block;  
+    width: 6.12rem;
+    height: .96rem;
+    line-height: .96rem;
+    margin: .62rem auto 0;
+    color: #fff;
+    font-size: .34rem;
+    background-color: #3d9ddb;
+    border: none;
+    border-radius: .48rem;
+    -webkit-appearance: none;
+}
+.submit:focus{
+    outline: none;
+}
+.submit:active{
+    opacity: .4;
+}
+.point-wraper{
+    display: none;
+}
+
+.point-wraper{
+    position: fixed;
+    /*将top设为固定值且靠上,可以防止虚拟键盘出现或者消失的时候,样式卡顿*/
+    top: 3rem;
+    width: 100%;
+    text-align: center;
+}
+.point-black{
+    display: inline-block;
+    z-index: 1000;
+    font-size: .32rem;
+    border-radius: .12rem;
+    line-height: .4rem;
+    padding: .34rem .34rem;
+    background-color: rgba(0,0,0,0.7);
+}
+.point-black .point-text{
+    color: #fff;
+}
+
+/* media 基准 720 */
+@media only screen and (max-width:310px){
+    html {
+        font-size: 43.0555556px;
+    }
+}
+
+@media only screen and (max-width:320px) and (min-width:310px) {
+    html {
+        font-size: 43.0555556px;
+    }
+}
+
+@media only screen and (max-width:350px) and (min-width:320px) {
+    html {
+        font-size: 44.4444444px;
+        /*font-size: 43px;*/
+    }
+}
+
+@media only screen and (max-width:360px) and (min-width:350px) {
+    html {
+        font-size:48.6111111px;
+    }
+}
+
+@media only screen and (max-width:400px) and (min-width:360px) {
+    html {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:470px) and (min-width:400px) {
+    html {
+        font-size: 55.5555556px;
+
+    }
+}
+
+@media only screen and (max-width:480px) and (min-width:470px) {
+    html {
+        font-size: 65.2777778px;
+    }
+}
+
+@media only screen and (max-width:540px) and (min-width:480px) {
+    html {
+        font-size: 66.6666667px;
+    }
+}
+@media only screen and (max-width:560px) and (min-width:540px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+@media only screen and (max-width:570px) and (min-width:560px) {
+    html {
+        font-size: 77.7777778px;
+    }
+}
+
+@media only screen and (max-width:630px) and (min-width:570px) {
+    html {
+        font-size: 79.1666667px;
+    }
+}
+
+@media only screen and (max-width:640px) and (min-width:630px) {
+    html {
+        font-size: 87.5px;
+    }
+}
+
+@media only screen and (max-width:710px) and (min-width:640px) {
+    html {
+        font-size: 88.8888889px;
+    }
+}
+@media only screen and (max-width:720px) and (min-width:710px) {
+    html {
+        font-size: 98.6111111px;
+    }
+}
+@media only screen and (min-width:720px){
+    html {
+        font-size: 100px;
+    }
+}
+
+</style>
+<body>
+<p class="info">
+{{admin.name}}邀请你加入{{org.name}}
+</p>
+<div class="logo">
+    <img src="/static/invite-mobile/logo.png">
+</div>
+<form method="POST" action="{{request.path}}">
+    <div class="form-group">
+        <input type="text" name="name" placeholder="请输入姓名" autocomplete = "off" id="name">
+    </div>
+    <div class="form-group">
+        <input type="text" name="account" placeholder="请输入手机号码"  autocomplete = "off" id="phone">
+        <span id="verCodeGet" class="verCode-get">点击获取验证码</span>
+        <span id="countDown" class="countDown"><i></i> 秒后重新发送</span>
+    </div>
+    <div class="form-group">
+        <input type="text" name="token" placeholder="请输入验证码"  autocomplete = "off" id="verCode">
+    </div>
+    <div class="form-group group-password">
+        <input type="password" name="password" placeholder="请输入密码"  autocomplete = "off" id="password">
+        <span id="switchPassword"><i></i></span>
+    </div>
+    <input type="hidden" name="c" value="{{security_code}}" id="securityCode">
+    <P>密码由6-15位数字、字母或符号组合</P>
+    <input type="submit" value="提交并下载" class="submit" id="submit">
+</form>
+<div id="blackPoint" class="point-wraper">
+    <div class="point point-black">
+      <span class="JS-icon icon-loading"></span><span class="point-text" id="pointText"></span>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="/static/invite-mobile/zepto.min.js"></script>
+<script type="text/javascript">
+    var url = "{{request.path}}";
+    var blackPoint = {
+        $elem: $("#blackPoint"),
+        $text: $("#pointText"),
+        //消息默认显示时间
+        showTime: 2000,
+
+        //用来保存
+        timeFn: function() {},
+
+        //消息一定时间后消失
+        show: function(content, time) {
+            var that = this;
+            content = content || "无内容";
+            time = time || this.showTime;
+            clearTimeout(this.timeFn);
+            this.$text.text(content);
+            this.$elem.show();
+            this.timeFn = setTimeout(function() {
+                that.hide();
+            }, time);
+        },
+
+        hide: function() {
+            this.$elem.hide();
+        }
+    };
+
+    $("#switchPassword").on("click", function( event ){
+        var $this = $( this );
+        if ( $this.hasClass("selected")) {
+            $this.removeClass("selected");
+            $("#password").attr("type", "password");
+        } else {
+            $( this ).addClass("selected");
+            $("#password").attr("type", "text");
+        }
+        event.stopPropagation();
+        event.preventDefault();
+        return false;
+    });
+
+    $("#submit").on("click", function(event){
+        var name = $("#name").val(),
+            password = $("#password").val(),
+            phone = $("#phone").val(),
+            verCode = $("#verCode").val();
+
+        name =  name.replace(/\s/g,"");
+        password =  password.replace(/\s/g,"");
+        phone =  phone.replace(/\s/g,"");
+        verCode =  verCode.replace(/\s/g,"");
+
+        if ( name == "" ) {
+            blackPoint.show("姓名没有填写");
+            event.preventDefault();
+            return false;
+        }
+
+        if( phone == ""){
+            blackPoint.show("手机号码没有填写");
+            event.preventDefault();
+            return false;
+        }
+
+        if( !checkmo( phone) ) {
+            blackPoint.show("手机号码不正确");
+            event.preventDefault();
+            return false;
+        }
+
+        if( verCode == ""){
+            blackPoint.show("验证码没有填写");
+            event.preventDefault();
+            return false;
+        }
+
+        if( password == ""){
+            blackPoint.show("密码没有填写");
+            event.preventDefault();
+            return false;
+        }
+        if ( password.length < 6 || password.length > 15) {
+            blackPoint.show("密码长度范围是6-15");
+            event.preventDefault();
+            return false;
+        }
+        event.preventDefault();
+        var formData = new FormData();
+        formData.append("name", name);
+        formData.append("account", phone);
+        formData.append("token", verCode);
+        formData.append("password", password);
+        formData.append("c", $("#securityCode").val());
+        $.ajax({
+            url:url,
+            type:"POST",
+            processData: false,
+            contentType: false,
+            data:formData,
+            success: function(data){
+                if ( data.errcode === 0 ) {
+                    blackPoint.show("注册成功");
+                    window.location.href = data.download_url;
+                } else {
+                    if ( data.errcode === 1 ) {
+                        blackPoint.show("手机号码已经被使用");
+                    } else if( data.errcode === 25 ){
+                        blackPoint.show("验证码错误");
+                    } else {
+                        blackPoint.show("未知错误");
+                    }
+                    
+                    clearCount();
+                    $countDown.hide();
+                    $verCodeGet.show();
+                }
+            },
+            error: function(){
+                blackPoint.show("请检查网络");
+                clearCount();
+                $countDown.hide();
+                $verCodeGet.show();
+            }
+        });
+
+        event.preventDefault();
+        return false;
+    });
+
+    var time = 60;
+    var timeFn;
+    var $verCodeGet = $("#verCodeGet");
+    var $countDown = $("#countDown");
+    var $countDownNum = $countDown.find("i");
+
+    function startCount(){
+        time = 60;
+        $verCodeGet.hide();
+        $countDown.show();
+        $countDownNum.html( time );
+        timeFn = setInterval( function(){
+            if ( time === 0 ) {
+                clearInterval(timeFn);
+                $countDown.hide();
+                $verCodeGet.show();
+                return;
+            }
+            time--;
+            $countDownNum.html( time );
+        }, 1000);
+    }
+
+    function clearCount(){
+        clearInterval(timeFn);
+    }
+
+    function checkmo(str){
+        // return /^(?:13\d|14|15|18)-?\d{5}(\d{3}|\*{3})$/.test( str );
+        return /^1[3|4|5|8][0-9]\d{8}$/.test( str );
+    }
+
+    $verCodeGet.on("click", function( event ){
+        var phone = $("#phone").val();
+        if (phone == "") {
+            blackPoint.show("请先填写手机号码");
+            event.preventDefault();
+            return;
+        }
+        if( !checkmo(phone) ){
+            blackPoint.show("手机号码不正确");
+            event.preventDefault();
+            return;
+        }
+        $.ajax({
+            url:"https://api.starfish.im/v1/tokens",
+            type:"POST",
+            dataType:"json",
+            contentType:"application/json",
+            data:JSON.stringify({
+                phone:phone,
+                type:1
+            }),
+            success: function(data){
+                if ( data.errcode === 0 ) {
+                    // 成功
+                } else {
+                    blackPoint.show("获取失败,检查手机号码是否正确");
+                    clearCount();
+                    $countDown.hide();
+                    $verCodeGet.show();
+                }
+            },
+            error: function(){
+                blackPoint.show("请检查网络");
+                clearCount();
+                $countDown.hide();
+                $verCodeGet.show();
+            }
+        });
+        startCount();
+    });
+
+</script>
+</html>

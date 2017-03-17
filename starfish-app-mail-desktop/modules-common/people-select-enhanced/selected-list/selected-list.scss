@@ -1,0 +1,58 @@
+.people-select-enhanced{
+	.selected-list{
+		position: absolute;
+		right: 0;
+		top: 0;
+		.list-title{
+			height: 32px;
+			line-height: 32px;
+		}
+		>ul{
+			width: 180px;
+			height: 262px;
+			overflow-y:auto; 
+			border: 1px solid #d5d5d5;
+			&:hover{
+				border: 1px solid #52a9e7;
+			}
+		}
+	}
+	.selected-item{
+		height: 32px;
+		line-height: 32px;
+		cursor: pointer;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+
+		&:nth-child(2n + 1){
+			background-color:#f7f7f7;
+		}
+
+		.remove{
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			background-size: 100%;
+			background-image: url(img/remove@2x.png);
+			margin-right: 8px;
+			margin-left: 10px;
+			vertical-align: middle;
+			&:hover{
+				background-image: url(img/remove-active@2x.png);
+			}
+		}
+
+		img{
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			margin-right: 8px;
+			vertical-align: middle;
+		}
+
+		.name{
+			vertical-align: middle;
+		}
+	}
+}

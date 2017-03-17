@@ -1,0 +1,24 @@
+<!-- @require modules-common/ui/button/button.scss -->
+<div class="hd">
+	<div class="action reply JS-action">
+		<span class="action-icon"></span><span class="action-drop"></span>
+		<ul class="action-panel JS-action-panel">
+			<li data-action="reply"><span class="reply-icon"></span>回复</li>
+			<li data-action="reply-all" class="JS-reply-all"><span class="reply-all-icon"></span>回复全部</li>
+			<li data-action="forward"><span class="forward-icon"></span>转发</li>
+		</ul>
+	</div>
+	<div class="people-info JS-people-info"></div>
+	<div class="form JS-form"></div>
+</div>
+<div class="bd JS-bd">
+	<div class="content JS-content" contenteditable='true'>
+	</div>
+	<span class="JS-origin-switch switch"></span>
+	<div class="origin-content JS-origin-content" contenteditable='true'></div>
+</div>
+
+<div class="ft">
+	<span class="send JS-send common-button-small">发送<i></i></span>
+	<span class="remove JS-remove">关 闭</span>
+</div>

@@ -1,0 +1,58 @@
+$height: 55px;
+.project-form-charge{
+	position: relative;
+	font-size: 13px;
+	color: #383d48;
+	margin-top: 8px;
+
+	label{
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100px;
+		padding-left: 10px;
+		height: $height;
+		line-height: $height;
+	}
+
+	.group-content{
+		position: relative;
+		margin-left: 100px;
+
+		.content{
+			height: $height;
+			line-height: $height;
+			vertical-align: middle;
+			display: inline-block;
+
+			img{
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				border-radius: 40px;
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+
+			span{
+				vertical-align: middle;
+			}
+		}
+
+		.edit{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			vertical-align: middle;
+			background-size: 100%;
+			background-image: url(img/edit.png?__sprite);
+			cursor: pointer;
+			&:hover{
+				background-image:url(img/edit-active.png?__sprite);
+			};
+		}
+
+	}
+
+}

@@ -1,0 +1,21 @@
+.permissions-list{
+	position: relative;
+	border: 1px solid #e1e1e1;
+	color: #383d48;
+	min-height: 128px;
+	.add{
+		height: 32px;
+		line-height: 32px;
+		padding-left: 10px;
+		cursor: pointer;
+		span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-size: 100%;
+			background-image: url(img/add@2x.png?__sprite);
+			vertical-align: middle;
+			margin-top: -4px;
+		}
+	}
+}

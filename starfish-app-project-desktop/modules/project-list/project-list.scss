@@ -1,0 +1,97 @@
+.project-list-view{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #eaeef0;
+	padding-left: 45px;
+	overflow-y:auto;
+	.status{
+		height: 50px;
+		margin-left: -45px;
+		border-bottom:1px solid #d5d5d5;
+		text-align: center;
+		padding-right:50px;
+		span{
+			float: right;
+			display: inline-block;
+			width: 71px;
+			height: 32px;
+			line-height: 30px;
+			border:1px solid #52a9e7;
+			margin-top: 9px;
+			background-color:#fff;
+			color: #52a9e7;
+			font-size: 15px;
+			cursor: pointer;
+			&.active{
+				background-color:#52a9e7;
+				color: #fff;
+			}
+			&.status-open{
+				border-right:0;
+				border-radius:3px 0px 0px 3px;
+			}
+			&.status-closed{
+				border-left:0;
+				border-radius:0px 3px 3px 0px;
+			}
+		}
+	}
+	ul{
+		margin-top: 30px;
+	}
+	.project-empty{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: none;
+		text-align: center;
+
+		.text{
+			display: inline-block;
+			position: absolute;
+
+			width: 74px;
+			height: 74px;
+			top: 50%;
+			margin-top: -37px;
+
+		}
+	}
+	.project-add{
+		display: none;
+		position: relative;
+		width: 262px;
+		height: 184px;
+		float: left;
+		margin-right: 30px;
+		margin-bottom: 25px;
+		background-color: #fff;
+		border: 1px solid #d7ddde;
+		text-align: center;
+		cursor: pointer;
+
+		h2{
+			font-size: 13px;
+			color: #333333;
+			margin-top: 122px;
+			font-weight: normal;
+		}
+
+		.add-icon{
+			display: inline-block;
+			position: absolute;
+			top: 56px;
+			left: 109px;
+			width: 44px;
+			height: 44px;
+			background-size: 100%;
+			background-image: url(img/add@2x.png?__sprite);
+
+		}
+	}
+}

@@ -1,0 +1,15 @@
+<div class="JS-orgin">
+	<div style="font-size:13px;color:#383d48;line-height:1.7;margin-top:20px;">
+		<div>---------- 原始邮件 ----------</div>
+		<div>发件人： <%= from %></div>
+		<div>日期： <%= date %></div>
+		<div>主题： <%= subject %></div>
+		<div>收件人： <%= to %></div>
+		<% if ( cc ) { %>
+			<div>抄送： <%= cc %></div>
+		<% } %>
+		<br>
+	</div>
+	<div style="font-size:13px;color:#383d48;line-height:1.7;"><%= content %></div>
+</div>
+

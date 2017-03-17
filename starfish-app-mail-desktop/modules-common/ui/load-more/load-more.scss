@@ -1,0 +1,15 @@
+.common-loading-more {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+
+	.icon{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-size: 100%;
+		background-image: url(img/loading.gif);
+		vertical-align: middle;
+	}
+}

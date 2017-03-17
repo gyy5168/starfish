@@ -1,0 +1,48 @@
+<div class="unread JS-unread item-unread show"></div>
+<div class="detail-sender">
+        <span>发件人:</span>
+        <span class="sender-name"><%= sender %></span>
+    </div>
+      <div class="detail-relayLogo JS-relayLogo"></div>
+    <div class="detail-receive JS-detail-receive">
+        <span>收件人:</span>
+         <ul>
+                <% for( var i=0;i<receiver.length;i++ ) { %>
+                  <li><span class="mail-user"><%= receiver[i].username %></span><span class="mail-name">&lt;<%= receiver[i].mailname %>&gt;</span></li>
+                <% } %>
+         </ul>
+    </div>
+  <div class="detail-receive JS-detail-cc <%= cc.showClass %>">
+        <span>抄&nbsp;送:</span>
+         <ul>
+                <% for( var i=0;i<cc.length;i++ ) { %>
+                  <li><span class="mail-user"><%= cc[i].username %></span><span class="mail-name">&lt;<%= cc[i].mailname %>&gt;</span></li>
+                <% } %>
+         </ul>
+    </div>
+    <div class="detail-showAll JS-detail-showAll">显示全部</div>
+    <div class="detail-time">
+        <span>时&nbsp;间:</span>
+        <span><%= date %></span>
+    </div>
+    <div class="short-content JS-short-content"><%= shortContent %></div>
+     <div class="detail-more JS-detail-more"></div>
+    <div class="detail-content JS-detail-content"><%= detailContent %> </div>
+
+    <div class="detail-attachments JS-detail-attachments <%= attachments.attachmentsClass %>" >
+    	<div class="attachments-info"><%= attachments.length %> 个附件</div>
+    	<ul>
+    		<% for( var i = 0, len = attachments.length; i < len; i++ ){ %>
+    			<li class="JS-attachment" data-id="<%= attachments[i].id %>" data-name="<%= attachments[i].name %>" data-minetype = "<%= attachments[i].mimetype %>">
+    				<div class="<%= attachments[i].type %> icon"></div>
+    				<div class="size"><%= attachments[i].filesize %></div>
+    				<div class="name"><%= attachments[i].name %></div>
+    			</li>
+    		<% } %>
+    	</ul>
+    </div>
+
+
+
+
+

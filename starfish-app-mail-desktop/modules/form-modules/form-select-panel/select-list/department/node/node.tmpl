@@ -1,0 +1,18 @@
+<div class='group-hd  JS-group-hd'>
+	<% if ( children_count !== 0 ) { %>
+		<span class="group-arrow JS-arrow">
+			<i></i>
+		</span>
+	<% } %>
+	
+	<span class="group-name"><%= name %></span>
+	<span class="check JS-check"></span>
+	<span class="unassigned">未分配</span>
+</div>
+<div class="group-bd JS-group-bd">
+	<ul></ul>
+	<div class="JS-load-more load-more">点击加载更多</div>
+	<div class="JS-more-error more-error">加载失败， 点击重新加载</div>
+	<div class="JS-more-loading more-loading">正在加载...</div>
+	<div class="JS-no-more no-more">已显示全部</div>
+</div>

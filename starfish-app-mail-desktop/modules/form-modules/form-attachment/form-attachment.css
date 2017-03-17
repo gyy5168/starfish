@@ -1,0 +1,22 @@
+.form-attachment{
+
+}
+.form-attachment .btn{
+	display: inline-block;
+	font-size: 13px;
+	color: #5a9ee9;
+	line-height: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+.form-attachment .btn i{
+	display: inline-block;
+	width: 10px;
+	height: 14px;
+	vertical-align: middle;
+	background-size: 100%;
+	background-image: url(img/attachment@2x.png?__sprite);
+	margin-right: 10px;
+	margin-top: -4px;
+}
+

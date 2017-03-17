@@ -1,0 +1,111 @@
+$height: 55px;
+.project-form-member{
+	position: relative;
+	font-size: 13px;
+	color: #383d48;
+	margin-top: 7px;
+
+	label{
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100px;
+		padding-left: 10px;
+		height: $height;
+		line-height: $height;
+	}
+
+	.group-content{
+		position: relative;
+		margin-left: 100px;
+
+		.add-button,
+		.remove-button{
+			display: inline-block;
+			line-height: $height;
+			width: 40px;
+			height: 40px;
+			margin-top: 7px;
+			margin-bottom: 8px;
+			background-size: 100%;
+			cursor: pointer;
+		}
+
+		.add-button{
+			margin-right: 10px;
+			background-image: url(img/add.png?__sprite);
+			&:hover{
+				background-image:url(img/add-active.png?__sprite);
+			};
+		}
+
+		.remove-button{
+			background-image: url(img/remove.png?__sprite);
+			&:hover{
+				background-image:url(img/remove-active.png?__sprite);
+			};
+		}
+
+		.list-wraper{
+			max-height: 320px;
+			overflow-y:auto; 
+		}
+
+		ul{
+
+			li{
+				position: relative;
+				display: inline-block;
+				width: 56px;
+				margin-right: 30px;
+				margin-top: 30px;
+				text-align: center;
+
+				img{
+					width: 40px;
+					height: 40px;
+					border-radius: 40px;
+					vertical-align: middle;
+					margin-right: 5px;
+				}
+
+				.name{
+					margin-top: 7px;
+					display: block;
+					vertical-align: middle;
+					white-space:nowrap;
+					text-overflow:ellipsis;
+					overflow:hidden;
+				}
+				
+				.remove{
+					position: absolute;
+					display: none;
+					width: 14px;
+					height: 14px;
+					right: 8px;
+					top: 0;
+					background-size: 100%;
+					background-image:url(img/close@2x.png?__sprite);
+					cursor: pointer;
+					&:hover{
+						background-image:url(img/close-active@2x.png?__sprite);
+					};
+				}
+			}
+
+			&.removing .remove{
+				display: inline-block;
+			}
+
+			li:hover{
+				.remove{
+					visibility: visible;
+				}
+			}
+
+		}
+	}
+
+}

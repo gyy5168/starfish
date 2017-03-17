@@ -1,0 +1,40 @@
+.department-detail .float-panel{
+    position: absolute;
+    right: -350px;
+    width: 350px;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 2px 10px 0 #595959;
+    border-radius: 3px;
+    background: #FFFFFF;
+    z-index: 2;
+    display: block;
+
+    .close{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 49px;
+        height: 49px;
+        z-index: 25;
+        cursor: pointer;
+        background: url("img/close.png") center no-repeat;
+        &:hover{
+            background: url("img/close-active.png") center no-repeat;
+        }
+    }
+
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;;
+
+    &.goLeft{
+        -webkit-transform: translate(-350px,0);
+        -moz-transform: translate(-350px,0);
+        -ms-transform: translate(-350px,0);
+        -o-transform: translate(-350px,0);
+        transform: translate(-350px,0);
+    }
+}

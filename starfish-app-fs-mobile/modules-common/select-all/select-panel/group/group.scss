@@ -1,0 +1,87 @@
+.people-all-group{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+	
+
+	>ul,
+	>.empty,
+	>.loading,
+	>.error{
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	>.empty,
+	>.loading,
+	>.error{
+		font-size: .32rem;
+		text-align: center;
+	}
+
+	>ul{
+		display: block;
+		overflow-y: auto;
+        >.no-more,
+		>.more-loading,
+		>.more-error{
+			display: none;
+			font-size: .36rem;
+			color: #989da6;
+			text-align: center;
+			height: 1.08rem;
+			line-height: 1.08rem;
+		}
+	}
+
+	.item{
+		position: relative;
+
+		>.item-avatar{
+			position: absolute;
+			display: inline-block;
+			width: 1.08rem;
+			height: 1.08rem;
+			border-radius: 1.08rem;
+			left: .34rem;
+			top: .14rem;
+			background-size: 100%;
+		}
+		
+		>.item-name{
+			height: 1.28rem;
+			line-height: 1.28rem;
+			font-size: .36rem;
+			color: #393d48;
+			margin-left: 1.76rem;
+			padding-right: .9rem;
+			border-bottom: 1px solid rgba(#919397, .5);
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+
+		>.checkbox{
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 1.28rem;
+			width: .9rem;
+			background: url(img/unselect.png) no-repeat center;
+			background-size: .44rem .44rem;
+		}
+
+		&.selected>.checkbox{
+			background-image: url(img/select.png);
+		}
+
+	}
+
+}

@@ -1,0 +1,167 @@
+.feature {
+    height: 600px;
+}
+
+.function {
+    height: 600px;
+    background-color: #f4f4f4;
+}
+
+.platform {
+    height: 600px;
+    background: url("../img/platform-bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.case {
+    height: 600px;
+    background-color: #f4f4f4;
+}
+
+// .download {
+//     height: 680px;
+//     text-align: center;
+//     .download-apps {
+//         margin-top: 120px;
+//         height: 340px;
+//         .app {
+//             display: inline-block;
+//             width: 200px;
+//             float: left;
+//             margin-left: 50px;
+//             padding: 24px 0px;
+//             span {
+//                 display: inline-block;
+//                 width: 200px;
+//                 &.img {
+//                     width: 112px;
+//                     height: 112px;
+//                     background-size: 112px 112px;
+//                 }
+//                 &.name {
+//                     font-size: 20px;
+//                     height: 20px;
+//                     line-height: 20px;
+//                     font-family: "FZLTXihei";
+//                     color: #333;
+//                     margin-top: 50px;
+//                 }
+//                 &.text {
+//                     font-size: 16px;
+//                     height: 16px;
+//                     line-height: 16px;
+//                     white-space: nowrap;
+//                     font-family: "FZLTXihei";
+//                     color: #666;
+//                     margin-top: 20px;
+//                 }
+//             }
+//             &.iphone {
+//                 span {
+//                     &.img {
+//                         background: url("../img/iphone.png?__sprite") no-repeat center;
+//                     }
+//                 }
+//             }
+//             &.android {
+//                 span {
+//                     &.img {
+//                         background: url("../img/android.png?__sprite") no-repeat center;
+//                     }
+//                 }
+//             }
+//             &.mac {
+//                 span {
+//                     &.img {
+//                         background: url("../img/mac.png?__sprite") no-repeat center;
+//                     }
+//                 }
+//             }
+//             &.windows {
+//                 span {
+//                     &.img {
+//                         background: url("../img/windows.png?__sprite") no-repeat center;
+//                     }
+//                 }
+//             }
+//             &.code {
+//                 height: 280px;
+//                 border: 1px solid #d5d5d5;
+//                 margin-left: 62px;
+//                 span {
+//                     &.img {
+//                         width: 140px;
+//                         height: 140px;
+//                         background: url("../img/mobile-code.png?__sprite") no-repeat center;
+//                         background-size: 140px 140px;
+//                     }
+//                     &.name {
+//                         font-size: 20px;
+//                         font-family: "FZLTXihei";
+//                         color: #333;
+//                         margin-top: 20px;
+//                     }
+//                     &.text {
+//                         font-size: 20px;
+//                         font-family: "FZLTXihei";
+//                         color: #333;
+//                         margin-top: 14px;
+//                     }
+//                 }
+//             }
+//             a {
+//                 margin-top: 54px;
+//             }
+//             &.first-item {
+//                 margin-left: 0px;
+//             }
+//             &.last-item {
+//                 float: right;
+//             }
+//         }
+//     }
+// }
+
+body.show-modal {
+    overflow: hidden;
+}
+
+.mobile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #999;
+    z-index: 11;
+    overflow: hidden;
+    display: none;
+    .modal-content {
+        height: 196px;
+        top: 50%;
+        margin-top: -98px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        button {
+            width: 420px;
+            height: 88px;
+            display: block;
+            margin: 0 auto;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-size: 32px;
+            font-family: "FZLTXihei";
+            color: #fff;
+            cursor: pointer;
+            &.back-to-starfish {
+                border-radius: 12px;
+                background-color: #52a9e7;
+            }
+            &.stay-here {
+                margin-top: 20px;
+            }
+        }
+    }
+}

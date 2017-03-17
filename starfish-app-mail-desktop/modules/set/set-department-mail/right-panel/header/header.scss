@@ -1,0 +1,49 @@
+.right-panel-content .department-set-hd {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 43px;
+  z-index: 100;
+  .button-back{
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    width: 61px;
+    font-size: 13px;
+    color: #38404d;
+    background: #eff0f2;
+    border: 1px solid #9399a8;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+  }
+
+  .button-search{
+    position: absolute;
+    left: 350px;
+    top: 10px;
+    width: 220px;
+    height: 23px;
+
+    input{
+      width: 220px;
+      height: 23px;
+      outline: none;
+      border: 1px solid #eee;
+      font-size: 12px;
+      border-radius: 10px;
+      padding-left:  20px;
+      line-height: 23px;
+      background: url("../img/serch_icon.png") 5px 5px no-repeat;
+      background-size: 12px 12px;
+      color:#383d48;
+      ::-webkit-input-placeholder{
+        color: #989da6;
+      }
+
+      &:focus{
+        border: 1px solid #4fa8ea;
+      }
+    }
+  }
+}

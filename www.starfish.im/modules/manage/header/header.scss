@@ -1,0 +1,54 @@
+.manage-header{
+    position: relative;
+    height: 68px;
+    background: #283b53;
+    padding: 14px 20px 0 20px;
+
+    >.new-org{
+        float: left;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        color: #798799;
+        font-size: 14px;
+        margin-left: 30px;
+        text-decoration: none;
+
+        &:hover{
+            color: #72bbff;
+            text-decoration: #798799;
+        }
+    }
+
+    >.manage-user{
+        float: right;
+        height: 40px;
+        line-height: 40px;
+
+        .user-name,
+        .user-exit{
+            height: 40px;
+            line-height: 40px;
+            vertical-align: middle;
+            color: #798799;
+            font-size: 14px;
+        }
+
+        .user-exit{
+            cursor: pointer;
+            &:hover{
+                color: #72bbff;
+            }
+        }
+
+        .user-line{
+            display: inline-block;
+            width: 2px;
+            height: 30px;
+            line-height: 40px;
+            vertical-align: middle;
+            margin: 0 5px;
+            background: url("img/line.png") center no-repeat;
+        }
+    }
+  }

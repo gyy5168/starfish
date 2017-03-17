@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>发布版本</title>
+</head>
+<body>
+<form action="/v1/versions" method="post" enctype="multipart/form-data">
+    <p>
+    平台：
+    <select name="platform">
+        {% for k, v in platforms.items %}
+        <option value="{{ k }}">{{ v }}</option>
+        {% endfor %}
+    </select>
+    </p>
+    <p>
+    渠道：
+    <select name="code">
+        <option value="yxt">云学堂</option>
+        <option value="starfish">官方</option>
+    </select>
+    </p>
+    <p>
+    是否调试：
+    <select name="debug">
+        <option value="0">正式版</option>
+        <option value="1">调试版</option>
+    </select>
+    </p>
+    <p>
+    版本号：<input name="version" />（版本号示例：0.1.30）
+    </p>
+    <p>
+    release notes：<textarea name="release_notes"></textarea>
+    </p>
+    <p>
+    <input type="file" name="datafile" size="40">（文件名示例：Starfish-V1.3.0.exe）
+    </p>
+    <input type="submit">
+</form>
+</body>
+</html>

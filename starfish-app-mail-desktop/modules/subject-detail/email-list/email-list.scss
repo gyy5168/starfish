@@ -1,0 +1,31 @@
+.email-list{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+
+	padding-left: 30px;
+	padding-right: 30px;
+
+
+	.content-replay{
+		margin-top: 50px;
+		font-size: 13px;
+
+		.input{
+			height: 40px;
+			line-height: 40px;
+			border: 1px solid #e1e1e1;
+			padding-left: 10px;
+			font-size: 13px;
+			color: #989da6;
+
+			span{
+				color: #52a9e7;
+				cursor: pointer;
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+<div class="inner">
+	<span class="drag JS-drag" title="拖动排序"></span>
+	<span class="index JS-index"><%= index %></span>
+	<span class="mark JS-mark <%= markClass %>" title="<%= markTitle %>"></span>
+	<div class="content <%= contentClass %>">
+		<span class="status JS-status" data-id="<%= status.id %>" data-type="<%= status.is_system %>" data-name="<%= status.name %>" title="搜索状态"><% if (status.name){ %>[<%= status.name %>]<% } %></span>
+		<% for(var i = 0, len = tags.length;  i < len; i++ ) { %>
+			<span class="tag JS-tag" data-id="<%= tags[i].id %>" title="搜索标签"><%= tags[i].name %></span>
+		<% } %>
+		<span class="subject"><%= subject %></span>
+	</div>
+
+	<span class="time <%= timeClass %>"><%= time %></span>
+	<span class="charge JS-charge" data-id="<%= chargeId %>" title="搜索成员"><%= charge %></span>
+	
+</div>
+<span class="arrow JS-arrow"><i></i></span>

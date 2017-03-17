@@ -1,0 +1,19 @@
+module.exports = [{
+	id:1,
+	name:"项目",
+	icon:"project",
+	type:"协作",
+	description:"最专业的项目管理系统，研发进度、任务清单尽在你的掌握之中，starfish官方出品。"
+},{
+	id:2,
+	name:"文件",
+	icon:"file",
+	type:"协作",
+	description:"企业文件云管理，可以邀请成员来管理文件，也可以设置隐私文件，灵活管理企业内的文件，starfish官方出品。"
+},{
+	id:3,
+	name:"邮件",
+	icon:"mail",
+	type:"协作",
+	description:"轻松拥有自己的邮件系统，让邮件也可以像聊天会话一样简单"
+}];

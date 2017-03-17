@@ -1,0 +1,13 @@
+.form-content .content{
+	resize:none;
+	outline: none;
+	border: none;
+	line-height: 26px;
+	width: 100%;
+	padding: 7px 12px;
+	min-height: 300px;
+	font-size: 16px;
+	background-color: transparent;
+	vertical-align: top;
+	overflow: auto;
+}

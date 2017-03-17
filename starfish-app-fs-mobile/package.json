@@ -1,0 +1,11 @@
+{
+  "name": "starfish",
+  "description": "starfish",
+  "dependencies": {
+    "fis": "1.8.x",
+    "fis-parser-utc": "0.0.2",
+    "fis-postprocessor-require-async": "0.0.8",
+    "fis-postpackager-autoload": "0.0.x",
+    "fis-postpackager-simple": "0.0.x"
+  }
+}

@@ -1,0 +1,10 @@
+.select-layer{
+	display: none;
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: 10;
+	background-color: #e0e8ee;
+	opacity: .3;
+	cursor: default;
+}

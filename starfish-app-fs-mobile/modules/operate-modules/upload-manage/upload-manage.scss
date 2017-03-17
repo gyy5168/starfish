@@ -1,0 +1,50 @@
+.upload-manage{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+
+	>.info{
+		height: .64rem;
+		line-height: .64rem;
+		font-size: .24rem;
+		color: #74787e;
+		padding-left: .3rem;
+		background-color: #eff2f6;
+	}
+
+	>.operate-panel{
+		position: absolute;
+		display:none;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 10;
+		background-color: rgba(0,0,0,.3);
+
+		ul{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			padding-left: .22rem;
+			padding-right: .22rem;
+		}
+
+		li{
+			height: .98rem;
+			line-height: .98rem;
+			background-color: rgba(255,255,255,.9);
+			border-radius: .05rem;
+			font-size: .32rem;
+			color: #383d48;
+			margin-bottom: .22rem;
+			text-align: center;
+		}
+		
+	}
+}

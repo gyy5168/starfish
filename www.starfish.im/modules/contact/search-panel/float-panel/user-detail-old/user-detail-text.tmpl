@@ -1,0 +1,43 @@
+    <p class="text-name">
+        <label>姓名</label>
+        <span class="text-overflow"><%= data.name %></span>
+    </p>
+
+    <p class="text-sex">
+        <label>性别</label>
+         <% var sex %>
+         <% if(data.gender==1) {%>
+            <% sex="女" %>
+         <%} else{ %>
+            <% sex="男" %>
+            <% } %>
+        <span><%= sex %></span>
+    </p>
+
+    <p class="text-sex">
+       <label>电话</label>
+       <span><%= data.phone %></span>
+   </p>
+
+    <p class="text-department">
+        <label>部门</label>
+        <span class="text-overflow"><%= data.departments.join(",") %></span>
+    </p>
+
+    <p class="text-position">
+        <label>职位</label>
+        <% var pos=data.position %>
+        <% if(!data.position){ %>
+           <% pos="请输入职位信息" %>
+        <% } %>
+        <span class="text-overflow"><%= pos %></span>
+    </p>
+
+    <p class="text-intro">
+        <label>简介</label>
+         <% var intro=data.intro %>
+         <% if(!data.intro){ %>
+            <% intro="请输入职位信息" %>
+         <% } %>
+        <span><%= intro %></span>
+    </p>

@@ -1,0 +1,37 @@
+.form-people-item{
+	float: left;
+	position: relative;
+	display: inline-block;
+	height: .48rem;
+	line-height: .46rem;
+	max-width: 2rem;
+	border-radius: .48rem;
+	margin-top: .2rem;
+	margin-left: .2rem;
+	padding-left: .2rem;
+	padding-right: .4rem;
+	border: 1px solid #d3eaff;
+	background-color: #e7f3ff;
+
+	color: #282828;
+	font-size: .28rem;
+	
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+
+	.remove{
+		position: absolute;
+		display: inline-block;
+		width: .2rem;
+		height: .2rem;
+		right: .1rem;
+		top: .12rem;
+		background-size: 100%;
+		background-image: url(img/remove.png?__inline);
+	}
+}
+
+
+
+

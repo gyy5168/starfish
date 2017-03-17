@@ -1,0 +1,53 @@
+/*  @require modules-common/ui/button/button.scss  */
+
+.import-member-modal {
+    display: none;
+    .modal-dialog {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+    }
+    .confirm-bd {
+        margin: 20px 20px 0px 20px;
+        line-height: 19px;
+        font-size: 13px;
+        color: #383d48;
+        text-align: left;
+        height: 90px;
+        div {
+            height: 50px;
+            position: relative;
+            span {
+                display: inline-block;
+                width: 250px;
+                float: left;
+            }
+            button {
+                width: 80px;
+                float: right;
+            }
+            input {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 80px;
+                height: 30px;
+                opacity: 0;
+                cursor: pointer;
+                display: inline-block;
+                z-index: 2;
+            }
+        }
+    }
+    .confirm-ft {
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        .confirm-ok {
+            margin-left: 15px;
+        }
+    }
+}

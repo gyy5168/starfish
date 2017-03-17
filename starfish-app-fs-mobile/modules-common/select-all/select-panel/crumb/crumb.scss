@@ -1,0 +1,29 @@
+.crumb-list{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: .64rem;
+  color: #52A9E7;
+  line-height: .64rem;
+  font-size: 0;
+  padding-left: 0.3rem;
+
+  li{
+    display: inline-block;
+    font-size: .32rem;
+    >.name{
+      max-width: 2rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  li:last-child{
+    color:#919397;
+    .seperate{
+      display: none;
+    }
+  }
+
+}

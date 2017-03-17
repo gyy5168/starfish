@@ -1,0 +1,45 @@
+.common-loading,
+.common-error,
+.common-empty{
+	position: absolute;
+	display: none;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	>.common-content{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		height: 5rem;
+		margin-top: -2.5rem;
+		text-align: center;
+
+		>.common-icon{
+			display: inline-block;
+			width: 3.2rem;
+			height: 3.9rem;
+			background-size: 100%
+		}
+
+		>.common-text{
+			margin-top: .48rem;
+			font-size: .36rem;
+			color: #919397;
+		}
+	}
+}
+
+.common-loading .common-icon{
+	background-image: url(img/loading.gif);
+}
+
+.common-error .common-icon{
+	background-image: url(img/error.gif?__inline);
+}
+
+.common-empty .common-icon{
+	background-image: url(img/empty.gif);
+}

@@ -1,0 +1,48 @@
+.create-form{
+	margin-top: 10px;
+
+	.form-group{
+		position: relative;
+		color: #333;
+	}
+
+	label{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 75px;
+		height: 40px;
+		line-height: 40px;
+		text-align: right;
+		padding-right: 5px;
+		color: #383d48;
+		font-size: 14px;
+	}
+
+	.group-content{
+		position: relative;
+		margin-left: 75px;
+		margin-right: 20px;
+		min-height: 40px;
+		border: 1px solid #eaedef;
+		background-color: #fff;
+	}
+
+	.form-cc{
+		margin-top: 20px;
+	}
+
+	.form-bcc{
+		margin-top: 20px;
+	}
+
+	.form-subject{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.attachment{
+		margin-left: 75px;
+	}
+}
+

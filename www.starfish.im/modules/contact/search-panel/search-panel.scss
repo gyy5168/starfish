@@ -1,0 +1,69 @@
+.search-panel{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius:6px;
+
+    .search-back{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    >.search-head{
+        font-size: 16px;
+        text-align: center;
+        color: #333333;
+        height: 50px;
+        line-height: 50px;
+        background: #f3f3f3;
+        border-bottom: 1px solid #e2e5e9;
+    }
+
+    .search-keyword{
+        height: 42px;
+        padding-left: 20px;
+        font-size: 0;
+        line-height: 42px;
+        border-bottom: 1px solid #ededed;
+
+        span{
+            vertical-align: middle;
+            display: inline-block;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 14px;
+            height: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+
+            &:hover{
+                color: #72bbff;
+            }
+            &.active{
+                color: #72bbff;
+                border-color: #72bbff;
+            }
+
+
+            &.keyword-people{
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .search-content{
+        // position: absolute;
+        // left: 0;
+        // top: 94px;
+        // right: 0;
+        // bottom: 0;
+        // margin-top: 94px;
+    }
+
+}

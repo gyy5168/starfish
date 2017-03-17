@@ -1,0 +1,54 @@
+.transfer-btn{
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 23px;
+	height: 36px;
+	line-height: 36px;
+	text-align: right;
+	cursor: pointer;
+
+	i{
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		cursor: pointer;
+		vertical-align: middle;
+		background-size: 100%;
+		background-image: url(img/transfer-btn@2x.png?__sprite);
+	}
+
+	&:hover i{
+		background-image: url(img/transfer-btn-active@2x.png?__sprite);
+	}
+	
+
+	&.loading{
+		i{
+			background-size: 100%;
+			background-image: url(img/transfer-loading@2x.gif);
+		}
+		
+		&:hover i{
+			background-size: 100%;
+			background-image: url(img/transfer-loading@2x.gif);
+		}
+	}
+
+	&.error{
+
+		i{
+			background-image: url(img/transfer-error@2x.png?__sprite);
+		}
+		
+
+		&:hover i{
+			background-image: url(img/transfer-error@2x.png?__sprite);
+		}
+	}
+
+	.text{
+		font-size: 13px;
+		color: #383d48;
+	}
+}

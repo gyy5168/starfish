@@ -1,0 +1,66 @@
+/*  @require modules-common/ui/button/button.scss  */
+
+.rename-depart-modal {
+    display: none;
+    .modal-dialog {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -200px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .confirm-bd {
+        margin: 20px 20px 0px 20px;
+        line-height: 19px;
+        font-size: 13px;
+        color: #383d48;
+        text-align: left;
+        height: 90px;
+        input {
+            outline: none;
+            border: 1px solid #ccc;
+            width: 360px;
+            height: 40px;
+            color: #333;
+            margin-top:30px;
+            font-size: 14px;
+            padding-left: 10px;
+        }
+        input:focus {
+            border: 1px solid #72bbff;
+        }
+        input::-webkit-input-placeholder {
+            color: #999 !important;
+        }
+        input:-moz-placeholder {
+            color: #999 !important;
+        }
+        input::-moz-placeholder {
+            color: #999 !important;
+        }
+        input:-ms-input-placeholder {
+            color: #999 !important;
+        }
+        span {
+            background: url(img/validate-error.png) no-repeat 0 center;
+            font-size: 12px;
+            display: inline-block;
+            padding-left: 24px;
+            height: 14px;
+            line-height: 14px;
+            margin-top: 10px;
+            color: #ff3b30;
+        }
+    }
+    .confirm-ft {
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        .confirm-ok {
+            margin-left: 15px;
+        }
+    }
+}

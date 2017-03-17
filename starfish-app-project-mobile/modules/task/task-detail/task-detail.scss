@@ -1,0 +1,118 @@
+.task-detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    font-size: .32rem;
+    color: #8f959e;
+    .task-form {
+        overflow: auto;
+        bottom: 1rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        >i {
+            display: inline-block;
+            height: .64rem;
+            left: 0.2rem;
+            position: absolute;
+            top: .58rem;
+            width: .64rem;
+            background-size: 100%;
+            content: " ";
+            background-image: url(img/check_box_icon_normal.png);
+            z-index: 2;
+        }
+        >i.completed {
+            background-image: url(img/completed_icon_normal.png);
+        }
+        .task-comments {
+            margin-top: .3rem;
+            background-color: #fff;
+            label {
+                height: 1.1rem;
+                line-height: 1.1rem;
+                padding-left: .34rem;
+            }
+            .comment-list {
+                .item-people {
+                    font-size: .34rem;
+                }
+                .item-time {
+                    position: absolute;
+                    font-size: .3rem;
+                    right: .34rem;
+                }
+                .item-content {
+                    text-align: left;
+                    line-height: .54rem;
+                    margin-right: .34rem;
+                    font-size: .34rem;
+                    color: #484b50;
+                }
+            }
+        }
+    }
+    .task-comment-send {
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        /*hack 设置border后不设置1px,页面会有滑动条出现*/
+        width: 100%;
+        height: 1rem;
+        line-height: 1rem;
+        font-size: .34rem;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+        background-color: #f9f9f9;
+        input {
+            height: .68rem;
+            width: 5.7rem;
+            border-radius: .68rem;
+            padding: 0 .34rem;
+        }
+        input,
+        input:focus {
+            border: 1px solid #dcdcdc;
+            outline: none;
+        }
+        textarea {
+            height: .68rem;
+            width: 5.7rem;
+            border-radius: .2rem;
+            padding: 0 .34rem;
+            font-size: .32rem;
+            min-height: .7rem;
+            max-height: 1.6rem;
+            padding: .15rem;
+            margin-top: .15rem;
+        }
+        textarea,
+        textarea:focus {
+            border: 1px solid #dcdcdc;
+            outline: none;
+        }
+        .comment-send {
+            display: inline-block;
+            float: right;
+            margin-right: .2rem;
+            color: #3d9ddb;
+        }
+    }
+    .modify-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+        overflow-y: auto;
+        display: none;
+        background-color: #fff;
+    }
+}

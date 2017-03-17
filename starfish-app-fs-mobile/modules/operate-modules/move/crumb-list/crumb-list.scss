@@ -1,0 +1,36 @@
+.crumb-list-wrapper {
+  padding-left: 0.30rem;
+  li {
+    float: left;
+    margin: 0;
+    font-size: 0;
+    color: #989da6;
+
+    span {
+      display: inline-block;
+      height: 0.62rem;
+      font-size: 0.24rem;
+      color: #989da6;
+      vertical-align: middle;
+      line-height: 0.62rem;
+      max-width: 2rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    span.icon {
+      width: 0.18rem;
+      height: 0.38rem;
+      background: url("./img/level_icon.png") center no-repeat;
+      background-size: 100%;
+      margin: 0 .1rem 0;
+    }
+  }
+  li:last-child{
+    .icon{
+      display: none;
+    }
+  }
+
+}
+

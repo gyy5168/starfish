@@ -1,0 +1,84 @@
+.task-form-title{
+	position: relative;
+	font-size: 0;
+	padding-top:12px;
+	.edit-icon{
+		display: inline-block;
+		position: absolute;
+
+		top: 21px;
+		left: 10px;
+		width: 16px;
+		height: 16px;
+
+		background-image: url(img/tag@2x.png?__sprite);
+		background-size: 100%;
+		cursor: pointer;
+
+		&:active{
+			background-image: url(img/tag-active@2x.png?__sprite);
+		}
+	}
+
+	.textAreaContainer{
+		margin-left: 39px;
+		margin-right: 39px;
+	}
+
+	.edit-area{
+		width: 100%;
+		padding: 4px 5px;
+		color: #333333;
+		line-height: 25px;
+		background-color: transparent;
+		border: 1px solid transparent;
+		font-size: 15px;
+		overflow:hidden;
+		margin: 0;
+		resize:none;
+		outline: none;
+		-webkit-transition: box-shadow 0.30s ease-in-out; 
+		transition: box-shadow 0.30s ease-in-out;
+
+		&:hover{
+			border: 1px solid #d2d4d5;
+		}
+
+		&:focus{
+			border: 1px solid #52a9e7;
+			box-shadow: 0 0 8px #d4ebf8;
+		}
+
+		&:-webkit-input-placeholder{
+			color:#8c959d;
+			line-height: 1.4;
+		}
+	}
+
+	.background{
+		display: none;
+		position: absolute;
+	}
+
+	.tags{
+		display: none;
+		position: absolute;
+
+		width: 50px;
+		height: 100px;
+
+		font-size: 14px;
+		text-align: center;
+		background-color: #fff;
+
+		overflow: hidden;
+		z-index: 20;
+
+		.tag{
+			&:hover{
+				color:#fff;
+				background-color: blue;
+			}
+		}
+	}
+}

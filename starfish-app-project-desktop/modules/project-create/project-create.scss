@@ -1,0 +1,59 @@
+/* @require modules-common/ui/button/button.scss */
+.project-create-view{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+
+	.nav{
+		font-size: 15px;
+		color: #383d48;
+		height: 66px;
+		line-height: 66px;
+		border-bottom: 1px solid #ebeeee;
+		padding-left: 12px;
+		padding-right: 16px;
+
+		.nav-item{
+			cursor:default;
+		}
+		.nav-item.index{
+			color: #52a9e7;
+			cursor: pointer;
+			text-decoration: none;
+		}
+	}
+
+	.create-content{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 66px;
+		overflow: auto;
+	}
+
+	.create-form{
+		width: 680px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		padding-left: 20px;
+		padding-right: 20px;
+		overflow-y: auto;
+
+		.hr{
+			border-top:1px solid #e5e5e5;
+			margin-top:20px;
+		}
+	}
+
+	.btns{
+		position: relative;
+		height: 50px;
+		margin-top: 30px;
+		text-align: center;
+	}
+}

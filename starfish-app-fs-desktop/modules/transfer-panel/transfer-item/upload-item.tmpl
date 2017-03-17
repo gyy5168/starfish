@@ -1,0 +1,16 @@
+<div class="title"><%= fileName %></div>
+<div class="item-bd">
+	<div class="progress-wraper JS-progress">
+		<div class="progress">
+			<div class="JS-progress-inner progress-inner"></div>
+		</div><span class="progress-num JS-num"></span>
+	</div>
+	<div class="JS-state-wait state-wait">等待上传</div>
+	<div class="JS-state-error state-error">上传失败</div>
+	<div class="JS-state-success state-success">上传成功</div>
+</div>
+<div class="item-ft">
+	上传目录: <%= filePath %>
+</div>
+<span class="restart-icon JS-re" title="重新上传"></span>
+<span class="cancel-icon JS-cancel" title="删除"></span>

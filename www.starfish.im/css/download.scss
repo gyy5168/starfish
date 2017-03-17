@@ -1,0 +1,125 @@
+
+.download {
+    // height: 680px;
+    text-align: center;
+    .block-title{
+        height: 240px;
+        width: 100%;
+        background:#f4f4f4;
+        img{
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: 75px;
+        }
+    }
+    .download-apps {
+        margin-top: 100px;
+        .app {
+            display: inline-block;
+            width: 200px;
+            float: left;
+            margin-left: 50px;
+            height: 400px;
+            span {
+                display: inline-block;
+                width: 200px;
+                &.img {
+                    width: 120px;
+                    height: 120px;
+                    background-size: 120px 120px;
+                }
+                &.name {
+                    font-size: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    font-family: "FZLTXihei";
+                    color: #333;
+                    margin-top: 24px;
+                }
+                &.text {
+                    font-size: 16px;
+                    height: 16px;
+                    line-height: 16px;
+                    white-space: nowrap;
+                    font-family: "FZLTXihei";
+                    color: #666;
+                    margin-top: 30px;
+                }
+                &.version {
+                    font-size: 16px;
+                    height: 16px;
+                    line-height: 16px;
+                    white-space: nowrap;
+                    font-family: "FZLTXihei";
+                    color: #666;
+                    margin-top: 8px;
+                }
+            }
+            &.iphone {
+                span {
+                    &.img {
+                        background: url("../img/download/iphone.png?__sprite") no-repeat center;
+                    }
+                }
+            }
+            &.android {
+                span {
+                    &.img {
+                        background: url("../img/download/android.png?__sprite") no-repeat center;
+                    }
+                }
+            }
+            &.mac {
+                span {
+                    &.img {
+                        background: url("../img/download/mac.png?__sprite") no-repeat center;
+                    }
+                }
+            }
+            &.windows {
+                span {
+                    &.img {
+                        background: url("../img/download/windows.png?__sprite") no-repeat center;
+                    }
+                }
+            }
+            &.code {
+                height: 275px;
+                border: 1px solid #d5d5d5;
+                margin-left: 62px;
+                padding-top: 20px;
+                span {
+                    &.img {
+                        width: 140px;
+                        height: 140px;
+                        background: url("../img/download/mobile-code.png?__sprite") no-repeat center;
+                        background-size: 140px 140px;
+                    }
+                    &.name {
+                        font-size: 20px;
+                        font-family: "FZLTXihei";
+                        color: #333;
+                        margin-top: 20px;
+                    }
+                    &.text {
+                        font-size: 20px;
+                        font-family: "FZLTXihei";
+                        color: #333;
+                        margin-top: 14px;
+                    }
+                }
+            }
+            a {
+                margin-top: 54px;
+            }
+            &.first-item {
+                margin-left: 0px;
+            }
+            &.last-item {
+                float: right;
+            }
+        }
+    }
+}
+

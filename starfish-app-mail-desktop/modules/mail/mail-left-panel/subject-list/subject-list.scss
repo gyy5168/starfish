@@ -1,0 +1,32 @@
+.subject-list{
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+
+	.empty{
+		position: absolute;
+		display: none;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		text-align: center;
+
+		div{
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			color: #828282;
+			font-size: 18px;
+			text-align: center;
+		}
+	}
+}
+
+
+
+
+

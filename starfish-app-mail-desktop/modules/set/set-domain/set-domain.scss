@@ -1,0 +1,71 @@
+.set-domain{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    overflow: auto;
+
+    >.domain-content{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 50px;
+        overflow: auto;
+
+        >ul{
+            margin-top: 10px;
+        }
+
+        >.domain-add{
+            display: inline-block;
+            height: 18px;
+            margin-left: 50px;
+            margin-top: 10px;
+            cursor: pointer;
+            color: #52a9e7;
+            font-size: 13px;
+            >.icon{
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background-size: 100%;
+                background-image: url(img/add@2x.png?__sprite);
+                vertical-align: middle;
+            }
+            >span{
+                display: inline-block;
+                height: 18px;
+                vertical-align: middle;
+            }
+            >.limit{
+                color: #989da6;
+            }
+        }
+    }
+
+    >.domain-info{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50px;
+        line-height: 40px;
+        padding-left: 51px;
+        font-size: 13px;
+
+        span{
+           color: #989da6;
+            cursor: pointer;
+            vertical-align: middle;
+            display: inline-block;
+
+            &.more{
+              color: #52a9e7;
+              text-decoration: underline;
+            }
+        }
+    }
+}

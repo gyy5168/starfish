@@ -1,0 +1,67 @@
+.file-list-wrapper {
+  .no-more,
+  .more-loading,
+  .more-error{
+    display: none;
+    font-size: .36rem;
+    color: #989da6;
+    text-align: center;
+    height: 1.08rem;
+    line-height: 1.08rem;
+  }
+
+  li {
+    position: relative;
+    height: 1.28rem;
+    overflow: hidden;
+
+    > .icon {
+      position: absolute;
+      display: inline-block;
+      width: .72rem;
+      height: .72rem;
+      left: .3rem;
+      top: .28rem;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    > .content {
+      height: inherit;
+      padding-top: .2rem;
+      margin-left: 1.29rem;
+      border-bottom: 1px solid #e2ecf0;
+    }
+
+    .name {
+      height: .56rem;
+      line-height: .56rem;
+      font-size: .32rem;
+      color: #383d48;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .date {
+      position: relative;
+      height: .48rem;
+      line-height: .48rem;
+      font-size: .24rem;
+      color: #989da6;
+    }
+
+    .size {
+      position: absolute;
+      height: inherit;
+      line-height: inherit;
+      right: 0;
+      top: 0.9rem;
+    }
+  }
+  li.unable-move{
+    .icon,.name,.date{
+      opacity: 0.5;
+    }
+  }
+}

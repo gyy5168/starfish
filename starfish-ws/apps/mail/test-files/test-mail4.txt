@@ -1,0 +1,16 @@
+Received: from bitbrothers_test1$163.com ( [180.120.176.84] ) by
+ ajax-webmail-wmsvr146 (Coremail) ; Tue, 15 Oct 2013 17:12:15 +0800 (CST)
+X-Originating-IP: [180.120.176.84]
+Date: Tue, 15 Oct 2013 17:12:15 +0800 (CST)
+From: bitbrothers_test1 <bitbrothers_test1@163.com>
+To: "bob@ibm.starfish.im" <bob@ibm.starfish.im>
+Subject: =?GBK?B?sKG5/rn+uf4=?=
+X-Priority: 3
+X-Mailer: Coremail Webmail Server Version SP_ntes V3.5 build
+ 20130822(23259.5548.5550) Copyright (c) 2002-2013 www.mailtech.cn 163com
+Content-Transfer-Encoding: base64
+Content-Type: text/plain; charset=GBK
+MIME-Version: 1.0
+Message-ID: <89321cd.f3ea.141bb631852.Coremail.bitbrothers_test1@163.com>
+
+uf65/g==

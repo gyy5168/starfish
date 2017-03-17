@@ -1,0 +1,34 @@
+.mail-create{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	overflow-y:auto; 
+	background-color: #fdfdfe;
+
+	.create-hd{
+		border-bottom: 1px solid #dce2ea;
+
+		h1{
+			height: 79px;
+			line-height: 79px;
+			font-size: 18px;
+			font-weight: normal;
+			color: #383d48;
+			text-align: center;
+			margin: 0;
+		}
+	}
+
+	.create-ft{
+		margin-top: 30px;
+		margin-left: 75px;
+		.btn-ok{
+			margin-right: 10px;
+		}
+		
+	}
+}
+
+

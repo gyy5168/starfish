@@ -1,0 +1,52 @@
+MIME-Version: 1.0
+Received: by 10.216.175.65 with HTTP; Mon, 23 Sep 2013 18:23:32 -0700 (PDT)
+In-Reply-To: <CAKK_GM84r=s+9sY+-BKX9hPywbcdzPGtD0u6M1Upyz+njiSeQw@mail.gmail.com>
+References: <523fb016.2590420a.79b8.6b0eSMTPIN_ADDED_MISSING@mx.google.com>
+    <CAKK_GM84r=s+9sY+-BKX9hPywbcdzPGtD0u6M1Upyz+njiSeQw@mail.gmail.com>
+Date: Tue, 24 Sep 2013 09:23:32 +0800
+Delivered-To: zenglu.liu@gmail.com
+Message-ID: <CAKK_GM87i2sinDC-4VSZ6pKQJ5ACec9Preoa0J0mAZ4wffV-7A@mail.gmail.com>
+Subject: Re: ab31d5d7-93e6-4c88-8e96-6ce40500928f
+From: =?GB2312?B?wfXU9sK7?= <zenglu.liu@gmail.com>
+To: bob@ibm.starfish.im
+Content-Type: multipart/alternative; boundary=001a113367042afeef04e716fc81
+
+--001a113367042afeef04e716fc81
+Content-Type: text/plain; charset=GB2312
+Content-Transfer-Encoding: quoted-printable
+
+test
+
+
+2013/9/24 =C1=F5=D4=F6=C2=BB <zenglu.liu@gmail.com>
+
+> hello
+>
+>
+> 2013/9/23 <bob@ibm.starfish.im>
+>
+>> 1f91aa33-fe69-49e5-8a44-a19fbc331afa
+>>
+>
+>
+
+--001a113367042afeef04e716fc81
+Content-Type: text/html; charset=GB2312
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">test<br></div><div class=3D"gmail_extra"><br><br><div clas=
+s=3D"gmail_quote">2013/9/24 =C1=F5=D4=F6=C2=BB <span dir=3D"ltr">&lt;<a hre=
+f=3D"mailto:zenglu.liu@gmail.com" target=3D"_blank">zenglu.liu@gmail.com</a=
+>&gt;</span><br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8e=
+x;border-left:1px #ccc solid;padding-left:1ex">
+<div dir=3D"ltr">hello<br></div><div class=3D"gmail_extra"><br><br><div cla=
+ss=3D"gmail_quote">2013/9/23  <span dir=3D"ltr">&lt;<a href=3D"mailto:bob@i=
+bm.starfish.im" target=3D"_blank">bob@ibm.starfish.im</a>&gt;</span><br><bl=
+ockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #=
+ccc solid;padding-left:1ex">
+
+1f91aa33-fe69-49e5-8a44-a19fbc331afa<br>
+</blockquote></div><br></div>
+</blockquote></div><br></div>
+
+--001a113367042afeef04e716fc81--

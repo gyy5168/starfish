@@ -1,0 +1,108 @@
+.muti-operate{
+    position: absolute;
+    right: 0;
+    width: 350px;
+    top: 0;
+    bottom: 0;
+    display: none;
+
+    .muti-operate-head{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 49px;
+        background: #eaeaea;
+        font-size: 16px;
+        line-height: 49px;
+        text-align: center;
+
+
+        span{
+            display: inline-block;
+            vertical-align: middle;
+            color: #333333;
+            font-size: 16px;
+        }
+    }
+
+    ul{
+        position: absolute;
+        left: 0;
+        top: 49px;
+        right: 0;
+        bottom: 70px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-left: 7px;
+        padding-right: 7px;
+
+
+        li{
+            float: left;
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 12px;
+            margin-top: 20px;
+            height: 86px;
+            border: none;
+            position: relative;
+            left: 0;
+            top: 0;
+            transition: display .5s;
+
+            div {
+                width: 60px;
+                height: 60px;
+                background-size: 60px 60px;
+                background-position: center;
+                background-repeat: no-repeat;;
+                border-radius: 50%;
+            }
+
+            span{
+                position: absolute;
+                right: 5px;
+                top: -5px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                background: url("img/delete.png") center no-repeat;
+                &:hover{
+                    background: url("img/delete-active.png") center no-repeat;
+                }
+            }
+
+            p{
+                margin-top: 12px;
+                font-size: 14px;
+                height: 14px;
+                color: #333333;
+                line-height: 14px;
+                text-align: center;
+            }
+        }
+    }
+    .muti-point{
+        position: absolute;
+        bottom: 70px;
+        left: 50%;
+        height: 41px;
+    }
+
+    .action{
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        right: 0;
+        height: 30px;
+
+        span.delete{
+            margin-left: 145px;
+        }
+    }
+}
+
+
+

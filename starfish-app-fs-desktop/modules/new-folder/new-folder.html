@@ -1,0 +1,39 @@
+<!-- @require modules-common/ui/button/button.scss -->
+<div class="content JS-content">
+	<div class="name">
+		<input class="JS-name" placeholder="文件夹名称">
+	</div>
+
+	<div class="permissions">
+
+		<div class="permissions-label">权限设置：</div>
+
+		<div class="permissions-option JS-option    JS-privacy">
+			<div class="permissions-option-radio">
+				<span class="permissions-radio-icon"></span> 暂时设为隐私文件夹
+			</div>
+		</div>
+		<div class="permissions-option JS-option selected JS-manage">
+			<div class="permissions-option-radio">
+				<span class="permissions-radio-icon"></span> 邀请别人管理文件夹
+			</div>
+
+			<div class="permissions-set JS-permissions-set">
+				
+
+				<p class="permissions-info">
+					了解权限级别 <span title='<link rel="import" href="../permissions-explain/permissions-explain.html?__inline">'></span>
+				</p>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div class="btns">
+		<button class="common-button-small white JS-cancel JS-modal-close">取消</button>
+		<button class="common-button-small JS-ok">确定<i></i></button>
+	</div>
+</div>
+<link rel="import" href="/modules-common/ui/load/small/load.html?__inline">
+<link rel="import" href="/modules-common/ui/load-error/small/load-error.html?__inline">

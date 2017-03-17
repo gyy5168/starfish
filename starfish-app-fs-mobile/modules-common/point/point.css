@@ -1,0 +1,49 @@
+.point{
+	position: absolute;
+	display: none;
+	width: 100%;
+	top: 40%;
+	z-index: 20;
+	text-align: center;
+}
+.point div{
+	display: inline-block;
+	font-size: 0;
+	padding-left: .3rem;
+	padding-right: .3rem;
+	border-radius: .12rem;
+	background-color: rgba(0,0,0,0.7);
+}
+.point-icon{
+	display: none;
+	width: .34rem;
+	height: .34rem;
+	margin-right: .1rem;
+	vertical-align: middle;
+	background-size: 100%;
+	background-color: transparent;
+}
+.point-icon.loading{
+	background-image: url(img/loading.gif);
+}
+.point-icon.success{
+	background-image: url(img/success.png);
+}
+.point-icon.error{
+	background-image: url(img/error.png);
+}
+.point-text{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: .32rem;
+    line-height: .8rem;
+    color: #fff;
+}
+
+.point-mask{
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}

@@ -1,0 +1,104 @@
+/*  @require modules-common/ui/button/button.scss  */
+.move{
+	.file-info{
+		height: 50px;
+		padding-top: 22px;
+		font-size: 13px;
+		color: #74787e;
+		margin: 0 20px;
+	}
+
+	.ul-wraper{
+		margin-left: 20px;
+		margin-right: 20px;
+		height: 232px;
+		border: 1px solid #d5d5d5;
+		font-size: 13px;
+		color: #383d48;
+		overflow-y:auto; 
+
+		.root .item-hd{
+			padding-left: 20px;
+		}
+	}
+
+	.item-hd{
+		height: 32px;
+		line-height: 32px;
+		cursor: pointer;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	li.selected>.item-hd{
+		background-color: #f1f2f3;
+	}
+
+	.item-hd .action{
+		display: inline-block;
+		visibility: hidden;
+		width: 12px;
+		height: 12px;
+		margin-right: 5px;
+		background-size: 100%;
+		background-image: url(img/plus@2x.png?__sprite);
+		vertical-align: middle;
+	}
+
+	li.has-dir>.item-hd .action{
+		visibility: visible;
+	}
+
+	li.has-dir.loading>.item-hd .action{
+		background-position:0 0;
+		background-size: 100%;
+		background-image: url(img/loading.gif);
+	}
+
+	li.opened>ul{
+		display: block;
+	}
+
+	li>ul{
+		display: none;
+	}
+
+	li.opened>.item-hd .action{
+		background-image: url(img/minus@2x.png?__sprite);
+	}
+
+	.item-hd .folder{
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		margin-right: 8px;
+		background-size: 100%;
+		background-image: url(img/folder-close@2x.png?__sprite);
+		vertical-align: middle;
+	}
+
+	li.opened>.item-hd .folder{
+		background-image: url(img/folder-open@2x.png?__sprite);
+	}
+
+	li .text{
+		vertical-align: middle;
+		height: 32px;
+		line-height: 32px;
+	}
+
+	.move-ft{
+		height: 72px;
+		line-height: 72px;
+		text-align: center;
+
+		.cancel{
+			margin-right: 10px;
+		}
+	}
+}
+
+
+
+

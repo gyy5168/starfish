@@ -1,0 +1,160 @@
+.file-list-item {
+    position: relative;
+    height: 1.28rem;
+    overflow: hidden;
+}
+
+.file-list-item > .icon {
+    position: absolute;
+    display: inline-block;
+    width: .72rem;
+    height: .72rem;
+    left: .3rem;
+    top: .28rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.file-list-item > .icon i {
+    position: absolute;
+    right: -.1rem;
+    bottom: -.1rem;
+    width: .4rem;
+    height: .4rem;
+    background-size: 100%;
+}
+
+.file-list-item.success .icon-state {
+    background-image: url(img/success.png);
+}
+
+.file-list-item.error .icon-state {
+    background-image: url(img/error.png);
+}
+
+.file-list-item.progress .icon-state {
+    background-image: url(img/progress.png);
+}
+
+.file-list-item > .content {
+    height: inherit;
+    padding-top: .2rem;
+    margin-left: 1.29rem;
+    margin-right: .9rem;
+    border-bottom: 1px solid #e2ecf0;
+}
+
+.file-list-item .name {
+    height: .56rem;
+    line-height: .56rem;
+    font-size: .32rem;
+    color: #383d48;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.file-list-item .saved-module {
+    position: relative;
+    height: .48rem;
+    line-height: .48rem;
+    font-size: .24rem;
+    color: #989da6;
+}
+
+.file-list-item .success-module {
+    position: relative;
+    height: .48rem;
+    line-height: .48rem;
+    font-size: .24rem;
+    color: #989da6;
+}
+
+.file-list-item .wait-module {
+    position: relative;
+    height: .48rem;
+    line-height: .48rem;
+    font-size: .24rem;
+    color: #989da6;
+}
+
+.file-list-item .error-module {
+    position: relative;
+    height: .48rem;
+    line-height: .48rem;
+    font-size: .24rem;
+    color: #ff3b30;
+}
+
+.file-list-item .progress-module {
+    position: relative;
+    height: .48rem;
+    line-height: .48rem;
+    font-size: .24rem;
+    color: #989da6;
+}
+
+.file-list-item .progress-module .progress-bar {
+    position: relative;
+    display: inline-block;
+    width: 2.68rem;
+    height: .12rem;
+    border: 1px solid #d7d7d7;
+    vertical-align: middle;
+    border-radius: .12rem;
+}
+
+.file-list-item .progress-module .progress-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-radius: .12rem;
+    background-color: #52a9e7;
+    border: 1px solid #3f8cc3;
+}
+
+.file-list-item .progress-module .progress-num {
+    display: inline-block;
+    margin-left: .06rem;
+    vertical-align: middle;
+}
+
+.file-list-item .saved-module,
+.file-list-item .success-module,
+.file-list-item .wait-module,
+.file-list-item .error-module,
+.file-list-item .progress-module {
+    display: none;
+}
+
+.file-list-item.saved .saved-module {
+    display: block;
+}
+
+.file-list-item.success .success-module {
+    display: block;
+}
+
+.file-list-item.wait .wait-module {
+    display: block;
+}
+
+.file-list-item.error .error-module {
+    display: block;
+}
+
+.file-list-item.progress .progress-module {
+    display: block;
+}
+
+.file-list-item > .remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: inherit;
+    width: .9rem;
+    background: url(img/remove.png) no-repeat center;
+    background-size: 0.4rem 0.4rem;
+}

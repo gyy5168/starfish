@@ -1,0 +1,92 @@
+.statistics-view{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #f7f8fb;
+
+	font-size: 0;
+	overflow-y: auto;
+
+	.hd{
+		margin-top: 25px;
+		margin-left: 15px;
+
+		.text{
+			font-size: 13px;
+			color: #383d48;
+			margin-right: 7px;
+			vertical-align: middle;
+		}
+
+		.select-icon{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			vertical-align: middle;
+			background-image: url(img/open.png?__sprite);
+			background-size: 100%;
+			background-repeat: no-repeat;
+
+			&:hover{
+				background-image: url(img/open-press.png?__sprite);
+			}
+		}
+	}
+
+	.name{
+		margin-top: 20px;
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.bd{
+		margin-top: 35px;
+		margin-bottom: 40px;
+		text-align: center;
+
+		.icon{
+			display: inline-block;
+			width: 85px;
+			height: 85px;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			font-size: 25px;
+			padding-top: 20px;
+
+			.label{
+				font-size: 13px;
+			}
+		}
+
+		.uncomplete-icon{
+			color: #e54857;
+			margin-right: 57px;
+			background-image: url(img/uncmlp-bg.png?__sprite);
+		}
+
+		.complete-icon{
+			color: #4395dc;
+			background-image: url(img/cmlp-bg.png?__sprite);
+		}
+	}
+
+	.title{
+		margin-left: 20px;
+		margin-bottom: 20px;
+		font-size: 13px;
+		color: #383d48;
+	}
+
+	.mt4{
+		margin-top: 40px;
+	}
+
+	.chart{
+		position: relative;
+		margin-left: 20px;
+		margin-right: 20px;
+		height: 152px;
+	}
+}

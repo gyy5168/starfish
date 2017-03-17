@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Starfish-专业的企业沟通平台</title>
+    <link href="css/index.css" rel="stylesheet">
+    <meta name="keywords" content="比特兄弟,Starfish,企业内部通讯录,企业内部微信,开源软件,开放源码,企业即时通讯软件,Starfish.im">
+    <meta name="description" content="Starfish是一个干净纯粹的企业内部沟通平台，让员工不被生活噪音所干扰。基础服务免费，服务开放，软件开源，数据归企业所有，保证企业能够随时取走全部消息数据。">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <script>
+    (function() {
+        var userAgent = navigator.userAgent;
+        var platform;
+        if (!!userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
+            platform = "ios";
+            location.href = "https://api.starfish.im/v1/downloads/starfish/ios";
+        } else{
+            // (userAgent.indexOf('Android') > -1 || userAgent.indexOf('Linux') > -1) 
+            platform = "android";
+            location.href = "https://api.starfish.im/v1/downloads/starfish/android";
+        }
+    })();
+    </script>
+</head>
+
+<body>
+</body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?7284f1b8df8c176b2136a6683e5ec7e0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</html>

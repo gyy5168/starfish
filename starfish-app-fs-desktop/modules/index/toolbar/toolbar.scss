@@ -1,0 +1,31 @@
+
+.toolbar{
+	height: 78px;
+	line-height: 78px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-bottom: 1px solid #e2e4e7;
+	font-size: 15px;
+	-webkit-user-select:none;
+	user-select:none;
+
+	.upload{
+		margin-right: 20px;
+		i{
+			background-image: url(img/upload@2x.png?__sprite);
+		}
+	}
+
+	.new{
+		i{
+			background-image: url(img/new@2x.png?__sprite);
+		}
+
+		&:active i{
+			background-image: url(img/new-active@2x.png?__sprite);
+		}
+	}
+}
+
+
+

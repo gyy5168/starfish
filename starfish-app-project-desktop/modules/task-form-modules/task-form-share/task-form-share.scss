@@ -1,0 +1,76 @@
+.task-form-share{
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 500px;
+	height: 473px;
+	margin-left: -250px;
+	margin-top: -236px;
+	border-radius: 5px;
+	border: 1px solid #bbb;
+	background-color: #f0eff0;
+	box-shadow: 0 4px 8px rgba(0,0,0,.2);
+	z-index: 10;
+
+	.share-hd{
+		margin-bottom: 16px;
+	}
+	.share-hd h2{
+		margin: 0;
+		height: 48px;
+		line-height: 48px;
+		font-size: 18px;
+		color: #383d48;
+		margin-left: 20px;
+		font-weight: normal;
+	}
+
+	.share-ft{
+		height: 60px;
+		line-height: 60px;
+		margin-right: 20px;
+		text-align: right;
+	}
+	.share-ft span{
+		display: inline-block;
+		width: 80px;
+		height: 24px;
+		line-height: 24px;
+		border-radius: 5px;
+		vertical-align: middle;
+		font-size: 15px;
+		cursor: pointer;
+		text-align: center;
+	}
+	.share-ft .cancel{
+		margin-right: 20px;
+		border: 1px solid #ccc;
+		background-color: #fff;
+		color: #383d4f;
+	}
+	.share-ft .cancel:active{
+		background-color: #2e8afc;
+		color: #fff;
+	}
+
+	.share-ft .ok{
+		background-color: #429cfc;
+		border: 1px solid #1980ed;
+		color: #fff;
+	}
+	.share-ft .ok:active{
+		background-color: #2e8afc;
+	}
+}
+
+.share-mask{
+	position: absolute;
+	display: none;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	/*background-color: rgba(0,0,0, .3);*/
+	z-index: 5;
+}

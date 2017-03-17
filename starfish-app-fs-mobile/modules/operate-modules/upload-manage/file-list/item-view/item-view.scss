@@ -1,0 +1,188 @@
+.file-list-item{
+	position: relative;
+	height: 1.28rem;
+	overflow: hidden;
+
+	>.icon{
+		position: absolute;
+		display: inline-block;
+		width: .72rem;
+		height: .72rem;
+		left: .3rem;
+		top: .28rem;
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+		i{
+			position: absolute;
+			right: -.1rem;
+			bottom: -.1rem;
+			width: .4rem;
+			height: .4rem;
+			background-size: 100%;
+		}
+	}
+
+	&.success .icon-state{
+		background-image: url(img/success.png);
+	}
+
+	&.error .icon-state{
+		background-image: url(img/error.png);
+	}
+
+	&.progress .icon-state{
+		background-image: url(img/progress.png);
+	}
+
+	>.content{
+		height: inherit;
+		padding-top: .2rem;
+		margin-left: 1.29rem;
+		margin-right: .9rem;
+		border-bottom: 1px solid #e2ecf0;
+	}
+
+	.name{
+		height: .56rem;
+		line-height: .56rem;
+		font-size: .32rem;
+		color: #383d48;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.success-module{
+		position: relative;
+		height: .48rem;
+		line-height: .48rem;
+		font-size: .24rem;
+		color: #989da6;
+	}
+
+	.wait-module{
+		position: relative;
+		height: .48rem;
+		line-height: .48rem;
+		font-size: .24rem;
+		color: #989da6;
+	}
+
+	.error-module{
+		position: relative;
+		height: .48rem;
+		line-height: .48rem;
+		font-size: .24rem;
+		color: #ff3b30;
+	}
+
+	.progress-module{
+		position: relative;
+		height: .48rem;
+		line-height: .48rem;
+		font-size: .24rem;
+		color: #989da6;
+
+		.progress-bar{
+			position: relative;
+			display: inline-block;
+			width: 2.68rem;
+			height: .12rem;
+			border: 1px solid #d7d7d7;
+			vertical-align: middle;
+			border-radius: .12rem;
+		}
+
+		.progress-inner{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 0;
+			height: 100%;
+			border-radius: .12rem;
+			background-color: #52a9e7;
+			border: 1px solid #3f8cc3;
+		}
+
+		.progress-num{
+			display: inline-block;
+			margin-left: .06rem;
+			vertical-align: middle;
+		}
+	}
+
+	&.success{
+		.success-module{
+			display: block;
+		}
+		.wait-module{
+			display: none;
+		}
+		.error-module{
+			display: none;
+		}
+		.progress-module{
+			display: none;
+		}
+		.remove{
+			display: none;
+		}
+	}
+
+	&.wait{
+		.success-module{
+			display: none;
+		}
+		.wait-module{
+			display: block;
+		}
+		.error-module{
+			display: none;
+		}
+		.progress-module{
+			display: none;
+		}
+	}
+
+	&.error{
+		.success-module{
+			display: none;
+		}
+		.wait-module{
+			display: none;
+		}
+		.error-module{
+			display: block;
+		}
+		.progress-module{
+			display: none;
+		}
+	}
+
+	&.progress{
+		.success-module{
+			display: none;
+		}
+		.wait-module{
+			display: none;
+		}
+		.error-module{
+			display: none;
+		}
+		.progress-module{
+			display: block;
+		}
+	}
+
+	>.remove{
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: inherit;
+		width: .9rem;
+		background: url(img/remove.png) no-repeat center;
+		background-size: .4rem .4rem;
+	}
+
+}

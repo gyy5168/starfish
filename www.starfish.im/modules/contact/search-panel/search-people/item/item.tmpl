@@ -1,0 +1,16 @@
+<span class="people-name"><i style='background-image:url("<%= data.avatar %>")'></i><%= data.name %></span>
+
+<% var sex %>
+    <% if(data.gender==1) {%>
+    <% sex="女" %>
+    <%} else{ %>
+    <% sex="男" %>
+<% } %>
+
+<span class="people-sex"><%= sex %></span>
+<span class="people-phone"><%= data.phone %></span>
+<span class="people-department"><%= data.department %></span>
+<span class="people-position"><%= data.position %></span>
+<span class="people-time"><%= data.time %></span>
+
+

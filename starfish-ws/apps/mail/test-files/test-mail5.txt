@@ -1,0 +1,22 @@
+MIME-Version: 1.0
+Received: by 10.216.5.137 with HTTP; Thu, 20 Mar 2014 23:04:01 -0700 (PDT)
+Date: Fri, 21 Mar 2014 14:04:01 +0800
+Delivered-To: zenglu.liu@gmail.com
+Message-ID: <CAKK_GM9kQWfqjzm4SQxf8AQAfvZsSDuFjFrsx8-4pPHf5n9CWg@mail.gmail.com>
+Subject: =?GB2312?B?aGVsbG8g1tDOxA==?=
+From: =?GB2312?B?wfXU9sK7?= <zenglu.liu@gmail.com>
+To: "bob@ibm.starfish.im" <bob@ibm.starfish.im>
+Content-Type: multipart/alternative; boundary=001a1134096ef903b704f517a6ba
+
+--001a1134096ef903b704f517a6ba
+Content-Type: text/plain; charset=GB2312
+Content-Transfer-Encoding: base64
+
+aGVsbG8g1tDOxA0K
+--001a1134096ef903b704f517a6ba
+Content-Type: text/html; charset=GB2312
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">hello =D6=D0=CE=C4<br></div>
+
+--001a1134096ef903b704f517a6ba--

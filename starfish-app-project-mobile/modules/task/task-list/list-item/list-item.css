@@ -1,0 +1,78 @@
+.task-list .task-item{
+	font-size: 0;
+	position: relative;
+}
+.task-list .task-item .task-wraper{
+	margin: .2rem .22rem;
+	padding: .34rem .22rem;
+	border:1px solid #e3ebf0;
+	border-radius: .05rem;
+
+}
+.task-list .task-item .task-complete{
+	position: absolute;
+	top: 0;
+	left: .3rem;
+	display: inline-block;
+}
+.task-list .task-complete span{
+	cursor: pointer;
+	display: inline-block;
+	margin-top: .28rem;
+	width: .64rem;
+	height: .64rem;
+	background-image: url(img/check_box_icon_normal.png);
+    background-size: 100%;
+}
+.task-list .task-complete span:active{
+	background-image: url(img/check_box_icon_pressed.png);
+}
+.task-list .task-complete.selected span{
+	background-image: url(img/completed_icon_normal.png);
+}
+.task-list .task-complete.selected span:active{
+	background-image: url(img/completed_icon_pressed.png);
+}
+.task-list .task-subject{
+	cursor: pointer;
+	margin-left: .72rem;
+	font-size: .34rem;
+	line-height: .5rem;
+	color: #484b50;
+	word-wrap: break-word;
+}
+.task-list .task-subject.selected{
+	color: #9d98a6;
+}
+.task-list .task-subject span{
+	font-size: .3rem;
+	color: #ffffff;
+	background-color: #9d98a6;
+	padding: 0 .11rem;
+	margin-top: .1rem;
+	border-radius: .04rem;
+	display: inline-block;
+}
+
+.task-list .task-item .task-assignee{
+	width: 1.2rem;
+	line-height: .3rem;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	font-size: .3rem;
+	color: #74787e;
+	margin-top: .34rem;
+	margin-left: .72rem;
+	display: inline-block;
+}
+.task-list .task-item .task-time{
+	width: 2rem;
+	line-height: .3rem;
+	font-size: .3rem;
+	color: #989da6;
+	margin-top: .34rem;
+	float: right;
+	display: inline-block;
+	text-align: right;
+}

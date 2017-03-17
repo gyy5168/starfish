@@ -1,0 +1,46 @@
+.common-load-error-small {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.common-load-error-small .error-container {
+    position: absolute;
+    font-size: .34rem;
+    color: #989da6;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.6rem;
+    margin-top: -2.3rem;
+}
+
+.common-load-error-small .error-container span {
+    margin-top: .2rem;
+    display: block;
+}
+
+.common-load-error-small .error-container i {
+    display: block;
+    background-image: url(img/data_failed_icon.png);
+    width: 1rem;
+    height: 1rem;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+.common-load-error-small .error-container button {
+    margin-top: .2rem;
+    background-color: #fff;
+    border: 1px solid #52b1f1;
+    font-size: .34rem;
+    border-radius: .08rem;
+    color: #52b1f1;
+    padding: .1rem .6rem;
+}

@@ -1,0 +1,14 @@
+#!/bin/bash
+source /opt/mos/codebase/bb_bin/common.sh
+
+SVC_LOG="/mnt1/logs/svc.log"
+
+date >> $SVC_LOG
+echo 'push-to-ios-devices start' >> $SVC_LOG
+
+. /opt/mos/python-env/bin/activate
+
+export DJANGO_ENV=script_test
+export IOS_PUSH_ENV=push_sandbox
+cd /opt/mos/codebase/starfish-ws/scripts
+exec setuidgid mos python push-to-ios-devices-v2.py >> $SVC_LOG 2>&1

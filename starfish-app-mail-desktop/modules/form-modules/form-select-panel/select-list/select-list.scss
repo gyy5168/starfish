@@ -1,0 +1,45 @@
+.form-select-list{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	>.tab-nav{
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		>span{
+			display: inline-block;
+			height: 33px;
+			line-height: 33px;
+			width: 33%;
+			/*border-bottom: 2px solid transparent;*/
+			cursor: pointer;
+			text-align: center;
+
+			&.active{
+				border-bottom: 2px solid #53a8e8;
+			}
+		}
+	}
+
+	>.tab-bd{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 33px;
+		bottom: 0;
+		>.tab-item{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			display:none;
+
+			&.show{
+				display:block;
+			}
+		}
+	}
+	
+}

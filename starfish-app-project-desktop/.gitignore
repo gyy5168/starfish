@@ -1,0 +1,11 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+npm-debug.log
+
+logs/*
+!.gitkeep
+node_modules/
+tmp
+.idea/*

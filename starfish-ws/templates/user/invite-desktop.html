@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>{{admin.name}}邀请你加入{{org.name}}</title>
+</head>
+<style type="text/css">
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    font-size: 16px;
+    background-color: #fcfcfc;
+}
+
+.info{
+    color: #3d9ddb;
+    font-size: 18px;
+    text-align: center;
+    margin: 84px 0 16px;
+}
+
+.content{
+    position: relative;
+    width: 1000px;
+    height: 614px;
+    margin: 0 auto;
+    background-image: url(/static/invite-desktop/bg.png);
+}
+.logo{
+    text-align: center;
+    line-height: 0;
+}
+.logo img{
+    margin-top: 60px;
+    width: 106px;
+    height: 130px;
+    background-image: url(/static/invite-desktop/logo.png);
+}
+form{
+    margin-top: 62px;
+}
+.form-group{
+    position: relative;
+    line-height: 50px;
+}
+.form-group label{
+    display: inline-block;
+    vertical-align: top;
+    height: 50px;
+    width: 348px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #484b50;
+    text-align: right;
+    margin-right: 22px;
+}
+.form-group input{
+    height: 52px;
+    line-height: 52px\9;
+    width: 336px;
+    font-size: 16px;
+    color: #808080;
+    border: none;
+    padding-left: 18px;
+    border-bottom: 1px solid #e5e8eb;
+    background-color: #fcfcfc;
+    vertical-align: top;
+}
+.form-group input:disabled{
+    background-color: #fcfcfc;
+}
+.form-group input:focus{
+    outline: none;
+}
+.group-password span.selected{
+    background-image: url("/static/invite-desktop/switch_icon_pressed.png");
+}
+.form-group.tips label{
+    height: 1px;
+}
+.tips{
+    display: inline-block;
+    text-align: left;
+    color: #3d9ddb;
+    width: 345px; 
+    font-size: 12px;
+    margin: 18px 0 30px 390px;
+}
+.form-group .error{
+    display: none;
+    color: #808080;
+    font-size: 12px;
+}
+.form-group .icon-error{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 16px;
+    width: 16px;
+    height: 16px;
+    background-image: url(/static/invite-desktop/error_icon.png);
+    margin-right: 8px;
+}
+.submit{
+    display: inline-block;
+    width: 345px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 370px;
+    color: #fff;
+    font-size: 16px;
+    background-image: url(/static/invite-desktop/button_normal.png);
+    border: none;
+}
+.submit:focus{
+    outline: none;
+}
+.submit:active{
+    background-image: url(/static/invite-desktop/button_pressed.png);
+}
+
+</style>
+<body>
+    <div class="wraper">
+        <p class="info">
+            {{admin.name}}邀请你加入{{org.name}}
+        </p>
+        <div class="content">
+            <div class="logo">
+                <img src="/static/invite-desktop/logo.png">
+            </div>
+            <form method="POST" action="{{request.path}}">
+                <div class="form-group">
+                    <label>账号</label><input type="text" value="{{account}}" disabled>
+                </div>
+                <div class="form-group">
+                    <label>姓名</label><input type="text" name="name" placeholder="请输入名称" id="name" autocomplete = "off">
+                    <span class="error" id="nameError">
+                        <i class="icon-error"></i>
+                        <span></span>
+                    </span>
+                </div>
+                <div class="form-group group-password">
+                    <label>密码</label><input type="password" name="password" placeholder="请输入密码" id="password" autocomplete = "off">
+                    <span class="error" id="passwordError">
+                        <i class="icon-error"></i>
+                        <span></span>
+                    </span>
+                </div>
+                <input type="hidden" name="c" value="{{security_code}}">
+                <input type="hidden" name="account" value="{{account}}">
+                
+                <P class="tips">密码由6-15位数字、字母或符号组合</P>
+    
+                
+                <input type="submit" value="确定" class="submit" id="submit">
+            </form>
+        </div>
+        
+        <div id="blackPoint" class="point-wraper">
+            <div class="point point-black">
+              <span class="point-text" id="pointText"></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="/static/invite-desktop/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+
+    var $name = $("#name"),
+        $password = $("#password"),
+        $nameError = $("#nameError"),
+        $passwordError = $("#passwordError");
+
+    function nameVerify(){
+        var name = $name.val();
+        if ( name == "") {
+            $nameError.find("span:first").text("姓名不能为空");
+            $nameError.css("display", "inline-block");
+            return false;
+        }
+        if ( name.indexOf(" ") >= 0 ) {
+            $nameError.find("span:first").text("姓名不能含有空格");
+            $nameError.css("display", "inline-block");
+            return false;
+        }
+        $nameError.hide();
+        return true;
+    }
+
+    function passwordVerify(){
+        var password = $password.val();
+        if ( password == "") {
+            $passwordError.find("span:first").text("密码不能为空");
+            $passwordError.css("display", "inline-block");
+            return false;
+        }
+        if ( password.indexOf(" ") >= 0 ) {
+            $passwordError.find("span:first").text("密码不能含有空格");
+            $passwordError.css("display", "inline-block");
+            return false;
+        }
+
+        if ( password.length < 6 ) {
+            $passwordError.find("span:first").text("密码长度不能小于6");
+            $passwordError.css("display", "inline-block");
+            return false;
+        }
+
+        if ( password.length > 15 ) {
+            $passwordError.find("span:first").text("密码长度不能大于15");
+            $passwordError.css("display", "inline-block");
+            return false;
+        }
+
+        $passwordError.hide();
+        return true;
+    }
+
+    $name.on("blur", nameVerify);
+    $password.on("blur", passwordVerify);
+
+    $("#submit").on("click", function(event){
+        if ( !nameVerify() ) {
+            event.preventDefault();
+            return false;
+        }
+        if ( !passwordVerify() ) {
+            event.preventDefault();
+            return false;
+        }
+    });
+</script>
+</html>

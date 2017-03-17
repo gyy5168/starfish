@@ -1,0 +1,47 @@
+.task-detail-integration{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	.hide{
+		display: none;
+	}
+
+	.removed{
+		display: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		text-align: center;
+
+		.content{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			height: 230px;
+		}
+
+		.icon{
+			display: inline-block;
+			width: 120px;
+			height: 120px;
+			background-size: 100%;
+			background-image: url(img/empty@2x.png?__sprite);
+		}
+
+		.text{
+			font-size: 16px;
+			color: #989da6;
+			margin-top: 32px;
+		}
+	}
+
+}

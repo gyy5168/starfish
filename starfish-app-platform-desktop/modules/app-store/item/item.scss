@@ -1,0 +1,72 @@
+/*@require modules-common/ui/button/button.scss */
+.app-store{
+	.item{
+		position: relative;
+		height: 130px;
+		margin-bottom: 5px;
+		border: 1px solid #edeef2;
+		background-color: #fff;
+		overflow: hidden;
+		
+		.item-icon{
+			position: absolute;
+			left: 25px;
+			top: 25px;
+			display: inline-block;
+			width: 80px;
+			height: 80px;
+			background-size: 100%;
+
+			&.project{
+				background-image: url(img/project@2x.png);
+			}
+			&.file{
+				background-image: url(img/file@2x.png);
+			}
+			&.mail{
+				background-image: url(img/mail@2x.png);
+			}
+		}
+	}
+
+	.intro{
+		position: absolute;
+		left: 135px;
+		top: 40px;
+		width: 215px;
+
+		.name{
+			font-size: 20px;
+			color: #383d48;
+			line-height: 1;
+		}
+
+		.type{
+			margin-top: 15px;
+			font-size: 15px;
+			color: #9298a5;
+			line-height: 1;
+		}
+	}
+
+	.description{
+		margin-left: 350px;
+		margin-right: 340px;
+		margin-top: 50px;
+
+		font-size: 13px;
+		line-height: 20px;
+		color: #91979f;
+	}
+
+	button{
+		position: absolute;
+		right: 20px;
+		top: 50px;
+	}
+}
+
+
+
+
+

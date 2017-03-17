@@ -1,0 +1,23 @@
+<div class="user-name-city self">
+    <!-- <i style='background-image:url("<%= data.avatar %>")'></i> -->
+    <div class="logo-wraper">
+        <img src="<%= data.avatar %>" class="JS-user-logo">
+        <span class="logo-action JS-logo-action">修改头像</span>
+        <input class="upload-file JS-user-logo-file" type="file" size="1">
+    </div>
+    <div class="user-name  text-overflow">
+        <span class="name"><%= data.name %></span>
+             <% var admin %>
+             <% if(data.is_admin) {%>
+                <% admin="isAdmin" %>
+             <% } else {%>
+                 <% admin="notAdmin" %>
+             <% } %>
+
+        <span class="admin <%= admin %>">(&nbsp;管理员&nbsp;)</span>
+    </div>
+    <div class="user-city">
+        <%= data.location %>
+    </div>
+</div>
+<p class="time">最后登录时间<span><%= data.time %><span></p>

@@ -1,0 +1,39 @@
+.task-filter-status{
+	position: relative;
+	font-size: 13px;
+	color: #383d48;
+	margin-bottom:15px;
+
+	.hd{
+		height: 29px;
+		line-height: 29px;
+		.title{
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+	}
+
+	.content{
+		height: 32px;
+		line-height: 32px;
+	}
+
+	.item{
+		margin-right: 28px;
+		cursor: pointer;
+		i{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			vertical-align: middle;
+			margin-right: 10px;
+			margin-top: -3px;
+			background-size: 100%;
+			background-image:url(img/uncheck@2x.png?__sprite);
+		}
+		&.selected i{
+			background-image:url(img/check@2x.png?__sprite);
+		}
+	}
+
+}

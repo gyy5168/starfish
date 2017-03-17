@@ -1,0 +1,40 @@
+.file-andriod{
+	background-image: url(img/andriod.png);
+}
+.file-music{
+	background-image: url(img/music.png);
+}
+.file-code{
+	background-image: url(img/code.png);
+}
+.file-pdf{
+	background-image: url(img/pdf.png);
+}
+.file-ppt{
+	background-image: url(img/ppt.png);
+}
+.file-video{
+	background-image: url(img/video.png);
+}
+.file-word{
+	background-image: url(img/word.png);
+}
+.file-txt{
+	background-image: url(img/txt.png);
+}
+.file-zip{
+	background-image: url(img/zip.png);
+}
+.file-image{
+	background-image: url(img/image.png);
+}
+.file-excel{
+	background-image: url(img/exl.png);
+}
+.file-folder{
+	background-image: url(img/folder.png);
+}
+.file-unrecognized{
+	background-image: url(img/unrecognized.png);
+}
+

@@ -1,0 +1,117 @@
+.people-all-people{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+	
+
+	>ul{
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	/*修复 bug*/
+	>.common-loading,
+	>.common-error,
+	>.common-empty{
+		display: block;
+	}
+
+	>ul{
+		display: block;
+		overflow-y: auto;
+		>.more-loading,
+		>.more-error{
+			display: none;
+			font-size: .36rem;
+			color: #393d48;
+			text-align: center;
+			height: 1.08rem;
+			line-height: 1.08rem;
+		}
+	}
+
+	.department,
+	.item{
+		position: relative;
+
+		>.item-avatar{
+			position: absolute;
+			display: inline-block;
+			width: 1.08rem;
+			height: 1.08rem;
+			border-radius: 1.08rem;
+			left: .34rem;
+			top: .14rem;
+			background-size: 100%;
+		}
+		
+		>.item-name{
+			height: 1.28rem;
+			line-height: 1.28rem;
+			font-size: .36rem;
+			color: #393d48;
+			margin-left: 1.76rem;
+			padding-right: 1.2rem;
+			border-bottom: 1px solid rgba(#919397, .5);
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+
+		>.arrow-right{
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 1.28rem;
+			width: .9rem;
+			background: url(img/arrow-right.png) no-repeat center;
+			background-size: .2rem .34rem;
+		}
+
+		>.checkbox{
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 1.28rem;
+			width: .9rem;
+			background: url(img/unselect.png) no-repeat center;
+			background-size: .44rem .44rem;
+		}
+
+		>.unassigned{
+			position: absolute;
+			display: none;
+			right: .23rem;
+			top: 0;
+			height: 1.28rem;
+			line-height: 1.28rem;
+			color: #919397;
+			font-size: .28rem;
+			text-align: right;
+		}
+
+		&.disabled{
+			>.checkbox{
+				display: none;
+			}
+
+			>.unassigned{
+				display: inline-block;
+			}
+		}
+
+		&.selected>.checkbox{
+			background-image: url(img/select.png);
+		}
+
+	}
+
+
+}

@@ -1,0 +1,65 @@
+.task-form-attachment{
+	position: relative;
+	font-size: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	.textrow{
+		height: 32px;
+		line-height: 32px;
+		margin-left: 45px;
+		color: rgba(56, 61, 72, 0.7);
+
+		.label{
+			font-size: 13px;
+			display: inline-block;
+			width: 130px;
+		}
+
+		.addText{
+			font-size: 13px;
+			color: #4395dc;
+			
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+
+	.attachment-item{
+		position: relative;
+
+		.file-name{
+			display: inline-block;
+			width: 90%;
+			font-size: 14px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+
+		.remove-icon{
+			position: absolute;
+			display: inline-block;
+
+			top: 50%;
+			right: 10px;
+			margin-top: -10px;
+			width: 20px;
+			height: 20px;
+
+			background-image: url(img/remove.png?__sprite);
+			background-size: 100%;
+			background-repeat: no-repeat;
+
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+
+	ul{
+		margin-left: 45px;
+		margin-right: 45px;
+	}
+}

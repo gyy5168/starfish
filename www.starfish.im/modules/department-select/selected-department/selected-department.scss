@@ -1,0 +1,44 @@
+.selected-department-content{
+    position: relative;
+    padding: 10px;
+    height: 345px;
+    overflow: auto;
+    border: 1px solid #b5b5b5;
+
+    li{
+        position: relative;
+        height: 40px;
+        line-height: 40px;
+        img{
+            width: 30px;
+            height:30px;
+            line-height: 40px;
+            vertical-align: middle;
+            border-radius: 30px;
+        }
+
+        .selected-name{
+            display: inline-block;
+            font-size: 14px;
+            color: #333;
+            line-height: 40px;
+            vertical-align: middle;
+            width: 150px;
+            text-overflow:ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+
+        .selected-remove{
+            position: absolute;
+            display: inline-block;
+            top: 13px;
+            right: 0;
+            width: 14px;
+            height: 14px;
+            background: url("img/remove.png?__inline") center no-repeat;
+            cursor: pointer;
+        }
+    }
+}

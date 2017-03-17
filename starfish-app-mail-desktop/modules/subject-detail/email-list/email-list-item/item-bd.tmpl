@@ -1,0 +1,33 @@
+<!-- 邮件内容 -->
+<div class="detail-content JS-content">
+	<%= content %>
+</div>
+
+<!-- 邮件附件 -->
+<div class="attachments JS-attachments <%= attachmentsClass %>">
+	<div class="attachments-info">普通附件：共<%= attachments.length %> 个</div>
+	<ul>
+		<% for( var i = 0, len = attachments.length; i < len; i++ ){ %>
+			<li class="JS-attachment" data-id="<%= attachments[i].id %>" data-name="<%= attachments[i].name %>" data-minitype = "<%= attachments[i].minitype %>">
+				<% if ( attachments[i].type === "image" ) { %>
+					<img src="<%= attachments[i].url %>">
+				<% } else { %>
+					<span class="icon-<%= attachments[i].type %> icon"></span>
+				<% } %>
+
+				<div class="name"><%= attachments[i].name %></div>
+				<div class="action">
+					<span class="action-item JS-download">下载</span>
+					<span class="action-item JS-preview">预览</span>
+				</div>
+			</li>
+		<% } %>
+	</ul>
+</div>
+
+<!-- 原始邮件图标 -->
+<span class="JS-origin-switch origin-switch <%= switchClass %>" title="原始邮件"></span>
+
+<!-- 原始邮件内容 -->
+<div class="JS-origin-content origin-content"><%= originContent %></div>
+

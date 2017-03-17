@@ -1,0 +1,66 @@
+.form-people-select .people-list{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+
+	li{
+		white-space: nowrap;
+		min-height: 32px;
+	}
+
+	.item{
+		position: relative;
+		line-height: 20px;
+		padding: 6px 24px 6px 14px;
+		cursor: pointer;
+
+		/*&:nth-child(2n + 1){
+			background-color:#f7f7f7;
+		}*/
+
+		.item-avatar{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			vertical-align: middle;
+			background-color: #f5f5f5;
+		}
+
+		.item-name{
+			display: inline-block;
+			vertical-align: middle;
+            max-width: 200px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+		}
+
+		.check{
+			display: inline-block;
+			position: absolute;
+			top: 9px;
+			right: 6px;
+			width: 14px;
+			height: 14px;
+			background-size: 100%;
+			background-image: url(img/uncheck@2x.png);
+		}
+
+		&.selected{
+			.check{
+				background-image: url(img/check@2x.png);
+			}
+		}
+	}
+
+	.load-more{
+		line-height: 32px;
+		padding-left: 40px;
+		cursor: pointer;
+	}
+
+}

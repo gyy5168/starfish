@@ -1,0 +1,14 @@
+.form-combin{
+	height: 35px;
+	line-height: 35px;
+	margin-left:75px; 
+	font-size: 13px;
+	color: #5a9ee9;
+}
+.form-combin span{
+	cursor: pointer;
+	color: #5a9ee9;
+}
+.form-combin span:hover{
+	border-bottom: 1px solid #5a9ee9;
+}

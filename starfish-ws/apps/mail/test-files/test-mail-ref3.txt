@@ -1,0 +1,27 @@
+Delivered-To: zenglu.liu@gmail.com
+Received: by 10.216.175.65 with SMTP id y43csp74348wel;
+        Sun, 22 Sep 2013 20:05:59 -0700 (PDT)
+X-Received: by 10.67.23.199 with SMTP id ic7mr22703498pad.73.1379905558615;
+        Sun, 22 Sep 2013 20:05:58 -0700 (PDT)
+Return-Path: <bob@ibm.starfish.im>
+Received: from server002 ([42.96.196.4])
+        by mx.google.com with ESMTPS id sj5si21081739pab.139.1969.12.31.16.00.00
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Sun, 22 Sep 2013 20:05:58 -0700 (PDT)
+Received-SPF: neutral (google.com: 42.96.196.4 is neither permitted nor denied by best guess record for domain of bob@ibm.starfish.im) client-ip=42.96.196.4;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 42.96.196.4 is neither permitted nor denied by best guess record for domain of bob@ibm.starfish.im) smtp.mail=bob@ibm.starfish.im
+Date: Sun, 22 Sep 2013 20:05:58 -0700 (PDT)
+Message-ID: <523fb016.2590420a.79b8.6b0eSMTPIN_ADDED_MISSING@mx.google.com>
+Received: from server000 ([10.129.48.12])
+    by server002 with esmtpa (Exim 4.72)
+    (envelope-from <bob@ibm.starfish.im>)
+    id 1VNwTB-0004bI-5q; Mon, 23 Sep 2013 11:05:53 +0800
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: ab31d5d7-93e6-4c88-8e96-6ce40500928f
+From: bob@ibm.starfish.im
+Cc: bitbrothers_test3@163.com
+
+1f91aa33-fe69-49e5-8a44-a19fbc331afa

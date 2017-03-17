@@ -1,0 +1,49 @@
+.people-select-all .selected-list{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	border: 1px solid #d5d5d5;
+
+	.item{
+		position: relative;
+		height: 32px;
+		line-height: 32px;
+		padding-right: 20px;
+		padding-left: 5px;
+		cursor: pointer;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.item-avatar{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		vertical-align: middle;
+		background-color: #f5f5f5;
+		background-size: 100%;
+	}
+
+	.item-remove{
+		position: absolute;
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		top: 9px;
+		right: 3px;
+		background-size: 100%;
+		background-image: url(img/remove@2x.png);
+		&:hover{
+			background-image: url(img/remove-active@2x.png);
+		}
+	}
+
+	.item-name{
+		vertical-align: middle;
+	}
+}

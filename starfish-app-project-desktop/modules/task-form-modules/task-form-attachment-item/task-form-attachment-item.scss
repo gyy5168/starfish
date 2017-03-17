@@ -1,0 +1,154 @@
+.task-form-attachment-item{
+	position: relative;
+	font-size: 13px;
+	color: #484b50;
+	height: 24px;
+	/*line-height: 24px;*/
+
+	.name{
+		display: block;
+		width: 230px;
+		height: inherit;
+		line-height: 24px;
+		text-overflow:ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		/*vertical-align: middle;*/
+		cursor: pointer;
+	}
+	.progress{
+		position: absolute;
+		display: inline-block;
+		font-size: 13px;
+		width: 40px;
+		height: 24px;
+		line-height: 24px;
+		left: 215px;
+		top: 0px;
+		text-align: right;
+	}
+	.reload{
+		position: absolute;
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		left: 240px;
+		top: 4px;
+		background-size: 100%;
+		background-image: url(img/reload@2x.png?__sprite);
+		cursor: pointer;
+
+		&:hover{
+			background-image: url(img/reload-active@2x.png?__sprite);
+		}
+	}
+	.download{
+		position: absolute;
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		left: 240px;
+		top: 4px;
+		background-size: 100%;
+		background-image: url(img/download@2x.png?__sprite);
+		cursor: pointer;
+
+		&:hover{
+			background-image: url(img/download-active@2x.png?__sprite);
+		}
+	}
+
+	.cancel{
+		position: absolute;
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		left: 260px;
+		top: 4px;
+		background-size: 100%;
+		background-image: url(img/cancel@2x.png?__sprite);
+		cursor: pointer;
+
+		&:hover{
+			background-image: url(img/cancel-active@2x.png?__sprite);
+		}
+	}
+
+}
+.task-form-attachment-item.wait{
+	.progress{
+		display: inline-block;
+	}
+	.reload{
+		display: none;
+	}
+	.cancel{
+		display: inline-block;
+	}
+	.download{
+		display: none;
+	}
+
+}
+.task-form-attachment-item.progress{
+	.name{
+		color: #83868c;
+	}
+	.progress{
+		display: inline-block;
+	}
+	.reload{
+		display: none;
+	}
+	.cancel{
+		display: inline-block;
+	}
+	.download{
+		display: none;
+	}
+	
+}
+.task-form-attachment-item.success{
+	.name{
+		color: #409ee0;
+		&:hover{
+			color:#1780ca;
+		}
+	}
+	.progress{
+		display: none;
+	}
+	.reload{
+		display: none;
+	}
+	.cancel{
+		display: inline-block;
+	}
+	.download{
+		display: inline-block;
+	}
+	
+}
+.task-form-attachment-item.error{
+	.name{
+		color: #ec3232;
+	}
+	.progress{
+		display: none;
+	}
+	.reload{
+		display: inline-block;
+	}
+	.cancel{
+		display: inline-block;
+	}
+	.download{
+		display: none;
+	}
+}
+
+.task-form-attachment.create{
+	.download{
+		display: none;
+	}
+}

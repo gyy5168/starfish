@@ -1,0 +1,16 @@
+<!-- 邮件头信息 -->
+<div class="detail-info">
+	<span class="detail-text"><%= info %></span>
+	<div class="more">
+		<span class="more-icon JS-info-icon" title="查看详情"></span>
+		<ul class="more-panel JS-info-panel">
+			<li><span class="panel-label">发件人：</span><span class="panel-text"><%= infoForm %></span></li>
+			<li><span class="panel-label">收件人：</span><span class="panel-text"><%= infoTo %></span></li>
+			<% if( infoCC ) { %>
+				<li><span class="panel-label">抄　送：</span><span class="panel-text"><%= infoCC %></span></li>
+			<% } %>
+			<li><span class="panel-label">日　期：</span><span class="panel-text"><%= infoDate %></span></li>
+			<li><span class="panel-label">主　题：</span><span class="panel-text"><%= infoSubject %></span></li>
+		</ul>
+	</div>
+</div>

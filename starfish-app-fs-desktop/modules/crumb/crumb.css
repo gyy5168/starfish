@@ -1,0 +1,28 @@
+.crumb{
+	padding: 10px 20px;
+	color: #74787e;
+	font-size: 15px;
+	height: 45px;
+	overflow: hidden;
+	word-break:break-all;
+}
+
+.crumb .item{
+	display: inline-block;
+	max-width: 150px;
+	cursor: pointer;
+	margin-right: 5px;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.crumb .arrow{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.crumb .arrow:last-child{
+	display: none;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "point",
+  "homepage": "https://github.com/bit-mobile/point",
+  "version": "0.0.1",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "061ff4eb58ad2007048d7bf5dc14e50775b2e158"
+  },
+  "_source": "git://github.com/bit-mobile/point.git",
+  "_target": "~0.0.1",
+  "_originalSource": "bit-mobile/point"
+}
