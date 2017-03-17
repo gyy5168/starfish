@@ -1,2 +1,2 @@
 # starfish
-starfish apps
+starfish web apps
